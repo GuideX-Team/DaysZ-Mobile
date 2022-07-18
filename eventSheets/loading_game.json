@@ -1,0 +1,43 @@
+{
+	"name": "Loading_Game",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 221321637893186
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "loading_bar",
+					"sid": 162180312371206,
+					"parameters": {
+						"width": "loadingprogress*1226"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 294201843704573,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 951078536817258,
+					"parameters": {
+						"layout": "Game"
+					}
+				}
+			],
+			"sid": 680277016235906
+		}
+	],
+	"sid": 884648962505466
+}

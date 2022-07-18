@@ -1,0 +1,13 @@
+{
+	"name": "КартинкиHELP",
+	"plugin-id": "Sprite",
+	"sid": 549971375632101,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"donate_logo",
+		"help_back",
+		"vk_logo"
+	]
+}

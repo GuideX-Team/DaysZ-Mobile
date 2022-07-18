@@ -1,0 +1,53 @@
+{
+	"name": "thirst_bar2",
+	"plugin-id": "Sprite",
+	"sid": 780433022049460,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 14,
+						"height": 46,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3958126,
+						"collisionPoly": {
+							"points": [
+								0.20689655172413793,
+								0.3333333333333333,
+								0.7068965517241379,
+								0.057971014492753624,
+								0.7586206896551724,
+								0.5072463768115942,
+								0.8620689655172417,
+								0.8913043478260869,
+								0.7068965517241379,
+								0.9420289855072463,
+								0.10344827586206896,
+								0.8913043478260869
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 684737701552122,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

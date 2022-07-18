@@ -1,0 +1,16 @@
+{
+	"name": "КартинкиМеняютЦвет",
+	"plugin-id": "Sprite",
+	"sid": 518765797945591,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"EXIT",
+		"HELP",
+		"NEWS",
+		"PLAY_LEFT",
+		"PLAY_RIGHT",
+		"SETTINGS"
+	]
+}

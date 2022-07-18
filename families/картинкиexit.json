@@ -1,0 +1,11 @@
+{
+	"name": "КартинкиEXIT",
+	"plugin-id": "Sprite",
+	"sid": 101214846725112,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"exit_back"
+	]
+}

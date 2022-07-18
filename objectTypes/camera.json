@@ -1,0 +1,50 @@
+{
+	"name": "Camera",
+	"plugin-id": "Sprite",
+	"sid": 465403048732250,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"sid": 794449341167210
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "СледитьЗа",
+			"sid": 804072772436288
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3678176,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 639753931179968,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

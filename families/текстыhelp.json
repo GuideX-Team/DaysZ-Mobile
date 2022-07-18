@@ -1,0 +1,14 @@
+{
+	"name": "ТекстыHELP",
+	"plugin-id": "Text",
+	"sid": 859404269490978,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"help_text",
+		"CLOSE_HELP",
+		"vk_text",
+		"donate_text"
+	]
+}

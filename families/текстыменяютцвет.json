@@ -1,0 +1,27 @@
+{
+	"name": "ТекстыМеняютЦвет",
+	"plugin-id": "Text",
+	"sid": 111015018544740,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"CHANGE_SERVER",
+		"CHARACTER",
+		"CLOSE_NEWS",
+		"CLOSE_HELP",
+		"EXIT_NO2",
+		"EXIT_YES2",
+		"PLAY",
+		"vk_text",
+		"donate_text",
+		"create_character_text",
+		"CLOSE_CHARACTER",
+		"PAUSE_EXIT",
+		"PAUSE_SETTINGS",
+		"PAUSE_SAVE",
+		"PAUSE_LOAD",
+		"PAUSE_CONTINUE",
+		"PAUSE"
+	]
+}

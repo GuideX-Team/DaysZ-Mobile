@@ -1,0 +1,11 @@
+{
+	"name": "КартинкиNEWS",
+	"plugin-id": "Sprite",
+	"sid": 989739318224218,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"news_back"
+	]
+}

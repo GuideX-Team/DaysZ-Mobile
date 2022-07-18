@@ -1,0 +1,53 @@
+{
+	"name": "health_back2",
+	"plugin-id": "Sprite",
+	"sid": 701115145133869,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 56,
+						"height": 56,
+						"originX": 0.7068965517241379,
+						"originY": 0.7573757763975154,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3665963,
+						"collisionPoly": {
+							"points": [
+								0.20689655172413793,
+								0,
+								0.7068965517241379,
+								0,
+								0.7586206896551724,
+								0,
+								0.8620689655172417,
+								0.7573757763975154,
+								0.7068965517241379,
+								0.870600414078675,
+								0.10344827586206896,
+								0.7573757763975154
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 153469209082023,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

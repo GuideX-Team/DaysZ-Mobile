@@ -1,0 +1,19 @@
+{
+	"name": "ТекстыCHARACTER",
+	"plugin-id": "Text",
+	"sid": 855594969215768,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"character_head",
+		"character_bottom",
+		"character_name",
+		"character_sex",
+		"character_shoes",
+		"character_top",
+		"create_character_text",
+		"character_text",
+		"CLOSE_CHARACTER"
+	]
+}

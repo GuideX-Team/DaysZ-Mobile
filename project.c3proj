@@ -1,0 +1,616 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 30200,
+	"name": "DaysM PC",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Спрайт",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Текст",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Клавиатура",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Мышь",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Тач",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Аудио",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Кнопка",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Браузер",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Ввод текста",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "List",
+			"name": "Список",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Карта тайлов",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Тайловый фон",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "shadowlight",
+			"name": "Теневой свет",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Следить за",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Направлений",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Поле зрения",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Твердый",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "shadowcaster",
+			"name": "Тень",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Таймер",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Перетаскивание",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "radialblur",
+			"name": "Радиальное размытие",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "darken",
+			"name": "Затемнение",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blurvertical",
+			"name": "Размытие по вертикали",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "pixellate",
+			"name": "Пикселировать",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "waterbg",
+			"name": "Водный фон",
+			"author": "Viktor Korsun",
+			"version": "r302",
+			"bundled": false
+		}
+	],
+	"uniqueId": "ybl31iyy9xq",
+	"objectTypes": {
+		"items": [
+			"Аудио",
+			"version",
+			"logo_menu",
+			"logo_menu2",
+			"exit_back",
+			"exit_text",
+			"EXIT_YES",
+			"EXIT_NO",
+			"Control_menu",
+			"Браузер",
+			"help_back",
+			"help_text",
+			"donate_logo",
+			"donate_text",
+			"vk_logo",
+			"vk_text",
+			"CLOSE_HELP",
+			"SETTINGS",
+			"EXIT",
+			"play_back",
+			"play_back2",
+			"statistic",
+			"play_back3",
+			"PLAY",
+			"time_surv",
+			"kill_players",
+			"kill_zombie",
+			"travel_distance",
+			"distance_hit",
+			"time_surv_value",
+			"kill_players_value",
+			"kill_zombie_value",
+			"travel_distance_value",
+			"distance_hit_value",
+			"PLAY_RIGHT",
+			"PLAY_LEFT",
+			"CHARACTER",
+			"CHANGE_SERVER",
+			"HELP",
+			"NEWS",
+			"loading_bar",
+			"loading_back",
+			"news_back",
+			"news_text",
+			"news_description",
+			"CLOSE_NEWS",
+			"EXIT_YES2",
+			"EXIT_NO2",
+			"character_back",
+			"character_back2",
+			"character_head",
+			"create_character_text",
+			"character_shoes",
+			"character_top",
+			"character_bottom",
+			"character_sex",
+			"character_text",
+			"character_name",
+			"CHARACTER_NAME_VALUE",
+			"CHARACTER_SEX_VALUE",
+			"CHARACTER_HEAD_VALUE",
+			"CHARACTER_TOP_VALUE",
+			"CHARACTER_BOTTOM_VALUE",
+			"CHARACTER_SHOES_VALUE",
+			"CLOSE_CHARACTER",
+			"temp_back2",
+			"temp_bar",
+			"hungry_back2",
+			"hungry_bar2",
+			"blood_back",
+			"blood_bar",
+			"thirst_back2",
+			"thirst_bar2",
+			"health_back2",
+			"health_bar2",
+			"check_cpu",
+			"check_gpu",
+			"check_time",
+			"check_distance",
+			"check_objects",
+			"КартаТайлов",
+			"tail_wall",
+			"pause_background",
+			"pause_back",
+			"PAUSE_EXIT",
+			"PAUSE_SETTINGS",
+			"PAUSE_SAVE",
+			"PAUSE_LOAD",
+			"PAUSE_CONTINUE",
+			"PAUSE",
+			"roof",
+			"Circle",
+			"Joy",
+			"JoyT",
+			"run",
+			"trigger_up",
+			"trigger_down",
+			"trigger_left",
+			"trigger_right",
+			"trigger_check",
+			"shadow"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"player_area",
+					"Camera",
+					"Player"
+				],
+				"subfolders": [],
+				"name": "Player"
+			},
+			{
+				"items": [
+					"check_fps",
+					"de_active_F",
+					"energy_back",
+					"energy_bar",
+					"Energy_text"
+				],
+				"subfolders": [],
+				"name": "Indicators"
+			},
+			{
+				"items": [
+					"check_F",
+					"hp_minus",
+					"hp_plus"
+				],
+				"subfolders": [],
+				"name": "MapObj"
+			},
+			{
+				"items": [
+					"Клавиатура",
+					"Мышь",
+					"Тач"
+				],
+				"subfolders": [],
+				"name": "Object_active"
+			},
+			{
+				"items": [
+					"background_loading",
+					"background_menu",
+					"logo_1",
+					"logo_2"
+				],
+				"subfolders": [],
+				"name": "Loading"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Menu"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"КартинкиМеняютЦвет",
+					"ТекстыМеняютЦвет"
+				],
+				"subfolders": [],
+				"name": "МеняютЦветПриНаведении"
+			},
+			{
+				"items": [
+					"ТекстыPLAY",
+					"КартинкиPLAY"
+				],
+				"subfolders": [],
+				"name": "PlayPanel"
+			},
+			{
+				"items": [
+					"КартинкиHELP",
+					"ТекстыHELP"
+				],
+				"subfolders": [],
+				"name": "HelpPanel"
+			},
+			{
+				"items": [
+					"КартинкиEXIT",
+					"ТекстыEXIT"
+				],
+				"subfolders": [],
+				"name": "ExitPanel"
+			},
+			{
+				"items": [
+					"КартинкиNEWS",
+					"ТекстыNEWS"
+				],
+				"subfolders": [],
+				"name": "NewsPanel"
+			},
+			{
+				"items": [
+					"СпискиCHARACTER",
+					"ТекстыCHARACTER",
+					"КартинкиCHARACTER"
+				],
+				"subfolders": [],
+				"name": "CharacterPanel"
+			},
+			{
+				"items": [
+					"ТекстыPAUSE"
+				],
+				"subfolders": [],
+				"name": "PausePanel"
+			}
+		]
+	},
+	"layouts": {
+		"items": [
+			"Game",
+			"Loading_Menu",
+			"Menu",
+			"Loading_Game"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Game",
+			"Loading_Menu",
+			"Loading_Game"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "08237.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 841787587179451,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Sound_54618100 1634324693.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 705957126344892,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "Иконка-16.png",
+					"type": "image/png",
+					"sid": 236166922316511,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-32.png",
+					"type": "image/png",
+					"sid": 256809919660420,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-64.png",
+					"type": "image/png",
+					"sid": 741532797215218,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-128.png",
+					"type": "image/png",
+					"sid": 765248804512512,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-256.png",
+					"type": "image/png",
+					"sid": 770988449210754,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Иконка-512.png",
+					"type": "image/png",
+					"sid": 930816386812107,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "Загрузка-логотипа.png",
+					"type": "image/png",
+					"sid": 763773277442439,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": true,
+		"fullscreenMode": "scale-inner",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": true,
+		"themeColor": [
+			0.2196078431372549,
+			0.47843137254901963,
+			0.28627450980392155,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "auto",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "none",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "https"
+	},
+	"viewportWidth": 2560,
+	"viewportHeight": 1440,
+	"firstLayout": "Loading_Menu"
+}

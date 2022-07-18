@@ -1,0 +1,14 @@
+{
+	"name": "СпискиCHARACTER",
+	"plugin-id": "List",
+	"sid": 685591199472578,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"members": [
+		"CHARACTER_HEAD_VALUE",
+		"CHARACTER_BOTTOM_VALUE",
+		"CHARACTER_SHOES_VALUE",
+		"CHARACTER_TOP_VALUE",
+		"CHARACTER_SEX_VALUE"
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"name": "ТекстыPAUSE",
+	"plugin-id": "Text",
+	"sid": 170583340128800,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"PAUSE_CONTINUE",
+		"PAUSE_EXIT",
+		"PAUSE_LOAD",
+		"PAUSE_SAVE",
+		"PAUSE_SETTINGS"
+	]
+}

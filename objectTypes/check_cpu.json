@@ -1,0 +1,9 @@
+{
+	"name": "check_cpu",
+	"plugin-id": "Text",
+	"sid": 786148764151126,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

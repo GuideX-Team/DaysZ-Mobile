@@ -1,0 +1,18 @@
+{
+	"name": "КартинкиPLAY",
+	"plugin-id": "Sprite",
+	"sid": 628429679438480,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"play_back",
+		"play_back3",
+		"PLAY_LEFT",
+		"PLAY_RIGHT",
+		"play_back2",
+		"character_back",
+		"character_back2",
+		"pause_back"
+	]
+}

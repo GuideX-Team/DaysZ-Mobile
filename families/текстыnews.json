@@ -1,0 +1,13 @@
+{
+	"name": "ТекстыNEWS",
+	"plugin-id": "Text",
+	"sid": 409474681943738,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"news_description",
+		"news_text",
+		"CLOSE_NEWS"
+	]
+}

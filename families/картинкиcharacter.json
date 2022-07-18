@@ -1,0 +1,12 @@
+{
+	"name": "КартинкиCHARACTER",
+	"plugin-id": "Sprite",
+	"sid": 694933393711388,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"character_back2",
+		"character_back"
+	]
+}

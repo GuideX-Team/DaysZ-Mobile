@@ -1,0 +1,29 @@
+{
+	"name": "pause_background",
+	"plugin-id": "TiledBg",
+	"sid": 587456240081094,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "blurvertical",
+			"name": "РазмытиеПоВертикали"
+		},
+		{
+			"effectId": "waterbg",
+			"name": "ВодныйФон"
+		}
+	],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 6104243,
+		"useCollisionPoly": true
+	}
+}

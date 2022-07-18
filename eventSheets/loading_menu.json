@@ -1,0 +1,1430 @@
+{
+	"name": "Loading_Menu",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "СТАРТ",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-loader-layout-complete",
+							"objectClass": "System",
+							"sid": 981684984711997
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 888415947465835,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 776189961631951,
+							"parameters": {
+								"layout": "Menu"
+							}
+						}
+					],
+					"sid": 637947340796366
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 783970709369828
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 738549039480451,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 548314818988106,
+							"parameters": {
+								"audio-file": "08237",
+								"loop": "looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "loading_bar",
+							"sid": 771355950279078,
+							"parameters": {
+								"width": "loadingprogress*1226"
+							}
+						}
+					],
+					"sid": 223991715601107
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 368417421095045
+						}
+					],
+					"actions": [
+						{
+							"id": "set-css-style",
+							"objectClass": "EXIT_YES",
+							"sid": 812021534157456,
+							"parameters": {
+								"property-name": "\"font-size\"",
+								"value": "\"14pt\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "EXIT_NO",
+							"sid": 911946732168958,
+							"parameters": {
+								"property-name": "\"font-size\"",
+								"value": "\"14pt\""
+							}
+						}
+					],
+					"sid": 185301663435629
+				}
+			],
+			"sid": 919493948991315
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ПРИ НАВЕДЕНИИ МЫШИ НА ОБЬЕКТ",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 684339509639451,
+							"parameters": {
+								"object": "КартинкиМеняютЦвет"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-default-color",
+							"objectClass": "КартинкиМеняютЦвет",
+							"sid": 455305349421485,
+							"parameters": {
+								"color": "rgbEx(23, 23, 23)"
+							}
+						}
+					],
+					"sid": 716951985913004
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 642708932770029,
+							"parameters": {
+								"object": "КартинкиМеняютЦвет"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-default-color",
+							"objectClass": "КартинкиМеняютЦвет",
+							"sid": 238171697122274,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
+							}
+						}
+					],
+					"sid": 254362017087252
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 257931212367848,
+							"parameters": {
+								"object": "ТекстыМеняютЦвет"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "ТекстыМеняютЦвет",
+							"sid": 362579039621133,
+							"parameters": {
+								"color": "rgbEx(23, 23, 23)"
+							}
+						}
+					],
+					"sid": 926406851821581
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 357704336376033,
+							"parameters": {
+								"object": "ТекстыМеняютЦвет"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-font-color",
+							"objectClass": "ТекстыМеняютЦвет",
+							"sid": 117425952003977,
+							"parameters": {
+								"color": "rgbEx(255, 255, 255)"
+							}
+						}
+					],
+					"sid": 813693623968840
+				}
+			],
+			"sid": 350694813027221
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "НАЖАТИЕ НА КНОПКУ",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 376322594398230,
+							"parameters": {
+								"object": "EXIT"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиEXIT",
+							"sid": 488756536659517,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыEXIT",
+							"sid": 973647248054590,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 946719579440323,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 559993392501048
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 447727189839190,
+							"parameters": {
+								"object": "HELP"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 438906060125857,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиHELP",
+							"sid": 510694095083280,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыHELP",
+							"sid": 341656371666645,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 258680683038085,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 740278315891220,
+							"parameters": {
+								"object": "EXIT_YES2"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "EXIT_YES2",
+							"sid": 985535648868910
+						}
+					],
+					"actions": [
+						{
+							"id": "close",
+							"objectClass": "Браузер",
+							"sid": 533463106745613
+						}
+					],
+					"sid": 654294141293861
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 402584606751733,
+							"parameters": {
+								"object": "donate_logo"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "donate_logo",
+							"sid": 599234408357999
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 556801347365057,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Браузер",
+							"sid": 991104893957485,
+							"parameters": {
+								"url": "\"https://www.donationalerts.com/r/daysmobile\"",
+								"tag": "\"NewWindow\""
+							}
+						}
+					],
+					"sid": 573541696875276
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 611228153271079,
+							"parameters": {
+								"object": "vk_logo"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "vk_logo",
+							"sid": 941763130838936
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 458245396977141,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "open-url-in-new-window",
+							"objectClass": "Браузер",
+							"sid": 817189074686190,
+							"parameters": {
+								"url": "\"https://vk.com/dayz4mobile\"",
+								"tag": "\"NewWindow\""
+							}
+						}
+					],
+					"sid": 874220191528040
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 880317528343977,
+							"parameters": {
+								"object": "PLAY"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "PLAY",
+							"sid": 511551877078564
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 426801232211235,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 278055018772445,
+							"parameters": {
+								"layout": "Loading_Game"
+							}
+						},
+						{
+							"id": "unload-audio",
+							"objectClass": "Аудио",
+							"sid": 997609154319515,
+							"parameters": {
+								"audio-file": "08237"
+							}
+						}
+					],
+					"sid": 237195557011269
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 519836049022881,
+							"parameters": {
+								"object": "EXIT_NO2"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "EXIT_NO2",
+							"sid": 423044989934335
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиEXIT",
+							"sid": 217024454326627,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыEXIT",
+							"sid": 619082407149039,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 214067235354811,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 784164553155671
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 466639987037764,
+							"parameters": {
+								"object": "CHARACTER"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 467375256708861,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиCHARACTER",
+							"sid": 137946785566642,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "СпискиCHARACTER",
+							"sid": 887502281732897,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыCHARACTER",
+							"sid": 821104128162048,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CHARACTER_NAME_VALUE",
+							"sid": 161067768803603,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 867992736536533
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 970724908893855,
+							"parameters": {
+								"object": "CLOSE_CHARACTER"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "CLOSE_CHARACTER",
+							"sid": 892916309044184
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 581286173556648,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиCHARACTER",
+							"sid": 464745943390723,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "СпискиCHARACTER",
+							"sid": 296361498781806,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыCHARACTER",
+							"sid": 506290726296529,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CHARACTER_NAME_VALUE",
+							"sid": 498409253045646,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 206223485588017
+				}
+			],
+			"sid": 787850847984324
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "НАЖАТИЕ ЕСЛИ ОТОБРАЖАЕТСЯ...",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 930708915006204,
+							"parameters": {
+								"object": "HELP"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиNEWS",
+							"sid": 641574272308652
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыNEWS",
+							"sid": 527070377161941
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиNEWS",
+							"sid": 207305243370944,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыNEWS",
+							"sid": 733630528575362,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 655120614069853
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 358444511697545,
+							"parameters": {
+								"object": "CLOSE_HELP"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "CLOSE_HELP",
+							"sid": 404167342663996
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиHELP",
+							"sid": 198213088690711,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыHELP",
+							"sid": 584689041439492,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 807500943798020,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 311657299141062
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 498241847319447,
+							"parameters": {
+								"object": "HELP"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиEXIT",
+							"sid": 412663264544337
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыEXIT",
+							"sid": 562708737708503
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиEXIT",
+							"sid": 411287804972302,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыEXIT",
+							"sid": 654628111710874,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 885961543819644
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 869409213010016,
+							"parameters": {
+								"object": "HELP"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "CHARACTER_NAME_VALUE",
+							"sid": 993391837218675
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиCHARACTER",
+							"sid": 851586280494851
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "СпискиCHARACTER",
+							"sid": 373529179837564
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыCHARACTER",
+							"sid": 846631828709268
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "CHARACTER_NAME_VALUE",
+							"sid": 777443899725118,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиCHARACTER",
+							"sid": 506992085785150,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "СпискиCHARACTER",
+							"sid": 874950241118008,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыCHARACTER",
+							"sid": 896357674497121,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 322078648259776
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 765552063748137,
+							"parameters": {
+								"object": "EXIT"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиNEWS",
+							"sid": 989161877627174
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыNEWS",
+							"sid": 948399529681476
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиNEWS",
+							"sid": 421323345515338,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыNEWS",
+							"sid": 122513880473984,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 803024939449559
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 799493565669237,
+							"parameters": {
+								"object": "EXIT"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыHELP",
+							"sid": 167219206879009
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиHELP",
+							"sid": 973896123079086
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиHELP",
+							"sid": 409296309423547,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыHELP",
+							"sid": 745468939379170,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 460880109685871
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 495356534924745,
+							"parameters": {
+								"object": "EXIT"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "CHARACTER_NAME_VALUE",
+							"sid": 942688678644924
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиCHARACTER",
+							"sid": 105824798835436
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "СпискиCHARACTER",
+							"sid": 116758338446556
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыCHARACTER",
+							"sid": 549346870472080
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "CHARACTER_NAME_VALUE",
+							"sid": 448429873616586,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиCHARACTER",
+							"sid": 112265454849437,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "СпискиCHARACTER",
+							"sid": 615247253732631,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыCHARACTER",
+							"sid": 989112974993073,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 302811807356838
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 497928595738853,
+							"parameters": {
+								"object": "NEWS"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыHELP",
+							"sid": 875217768069282
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиHELP",
+							"sid": 289750657408017
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиHELP",
+							"sid": 119376626992008,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыHELP",
+							"sid": 579553930800882,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 662794821974335
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 450246440103885,
+							"parameters": {
+								"object": "NEWS"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыEXIT",
+							"sid": 134652048209622
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиEXIT",
+							"sid": 976676761403562
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиEXIT",
+							"sid": 186583563717415,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыEXIT",
+							"sid": 833866861257799,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 545065709150249
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 712029914759849,
+							"parameters": {
+								"object": "NEWS"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыCHARACTER",
+							"sid": 547480715979563
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "СпискиCHARACTER",
+							"sid": 159625537299175
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиCHARACTER",
+							"sid": 166766752182381
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "CHARACTER_NAME_VALUE",
+							"sid": 643374184325991
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "CHARACTER_NAME_VALUE",
+							"sid": 141177999859305,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиCHARACTER",
+							"sid": 157900150416338,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "СпискиCHARACTER",
+							"sid": 642527585597519,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыCHARACTER",
+							"sid": 276255987040910,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 583874597412946
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 566782436295601,
+							"parameters": {
+								"object": "NEWS"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 847228754335760,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиNEWS",
+							"sid": 942643719487573,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыNEWS",
+							"sid": 813251009153554,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 519146338487106
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 708537144587483,
+							"parameters": {
+								"object": "CLOSE_NEWS"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "CLOSE_NEWS",
+							"sid": 796745350300659
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиNEWS",
+							"sid": 859880528482328,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыNEWS",
+							"sid": 144255757796926,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Аудио",
+							"sid": 827238398206116,
+							"parameters": {
+								"audio-file": "Sound_54618100 1634324693",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 400472184164300
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 756431076895234,
+							"parameters": {
+								"object": "CHARACTER"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиHELP",
+							"sid": 189804783173615
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыHELP",
+							"sid": 423132678281715
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиHELP",
+							"sid": 591146440427921,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыHELP",
+							"sid": 572987593859857,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 823580855356133
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 689347637494334,
+							"parameters": {
+								"object": "CHARACTER"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыEXIT",
+							"sid": 662887517802100
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиEXIT",
+							"sid": 945650092733814
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиEXIT",
+							"sid": 751056213877285,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыEXIT",
+							"sid": 396306706577961,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 783104978599161
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 355223123809763,
+							"parameters": {
+								"object": "CHARACTER"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ТекстыNEWS",
+							"sid": 339382456757309
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "КартинкиNEWS",
+							"sid": 431823575193094
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "КартинкиNEWS",
+							"sid": 686841307494646,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ТекстыNEWS",
+							"sid": 398306100790301,
+							"parameters": {
+								"visibility": "toggle"
+							}
+						}
+					],
+					"sid": 974546546321830
+				}
+			],
+			"sid": 962185451254594
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "РАЗНОЕ",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 834491730437541
+						}
+					],
+					"actions": [
+						{
+							"id": "set-css-style",
+							"objectClass": "СпискиCHARACTER",
+							"sid": 733290031340841,
+							"parameters": {
+								"property-name": "\"font-size\"",
+								"value": "\"15pt\""
+							}
+						},
+						{
+							"id": "set-css-style",
+							"objectClass": "CHARACTER_NAME_VALUE",
+							"sid": 362447550905677,
+							"parameters": {
+								"property-name": "\"font-size\"",
+								"value": "\"15pt\""
+							}
+						}
+					],
+					"sid": 160755387730807
+				}
+			],
+			"sid": 943792006591725
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 868143477582790
+				}
+			],
+			"actions": [],
+			"sid": 699962877938814
+		}
+	],
+	"sid": 258646124495647
+}

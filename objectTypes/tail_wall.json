@@ -1,0 +1,32 @@
+{
+	"name": "tail_wall",
+	"plugin-id": "Tilemap",
+	"sid": 605855114559714,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 693869539248392
+		},
+		{
+			"behaviorId": "shadowcaster",
+			"name": "Тень",
+			"sid": 164456765574276
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 64,
+		"height": 64,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8151712,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

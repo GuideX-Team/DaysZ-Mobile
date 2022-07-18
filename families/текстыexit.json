@@ -1,0 +1,13 @@
+{
+	"name": "ТекстыEXIT",
+	"plugin-id": "Text",
+	"sid": 164662467217643,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"exit_text",
+		"EXIT_NO2",
+		"EXIT_YES2"
+	]
+}
