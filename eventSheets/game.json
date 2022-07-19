@@ -1,5 +1,5 @@
 {
-	"name": "Game",
+	"name": "GAME",
 	"events": [
 		{
 			"eventType": "group",
@@ -808,14 +808,14 @@
 										{
 											"id": "else",
 											"objectClass": "System",
-											"sid": 158293608778954
+											"sid": 952931741484765
 										}
 									],
 									"actions": [
 										{
 											"id": "set-position",
 											"objectClass": "Joy",
-											"sid": 614326386839444,
+											"sid": 564306308083030,
 											"parameters": {
 												"x": "Circle.X+cos(angle(Circle.X, Circle.Y, JoyT.X, JoyT.Y))*(Circle.Width/2)",
 												"y": "Circle.Y+sin(angle(Circle.X, Circle.Y, JoyT.X, JoyT.Y))*(Circle.Width/2)"
@@ -824,14 +824,14 @@
 										{
 											"id": "set-position",
 											"objectClass": "JoyT",
-											"sid": 775169879451528,
+											"sid": 188657410592759,
 											"parameters": {
 												"x": "Circle.X+cos(angle(Circle.X, Circle.Y, JoyT.X, JoyT.Y))*(Circle.Width/2)",
 												"y": "Circle.Y+sin(angle(Circle.X, Circle.Y, JoyT.X, JoyT.Y))*(Circle.Width/2)"
 											}
 										}
 									],
-									"sid": 659585621037456
+									"sid": 409540548331325
 								}
 							]
 						},
@@ -1187,22 +1187,341 @@
 									"parameters": {
 										"max-speed": "250"
 									}
+								}
+							],
+							"sid": 260849541663303,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-hold-over-object",
+									"objectClass": "Тач",
+									"sid": 719820021573016,
+									"parameters": {
+										"object": "sit"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Player",
+									"sid": 923862921397667,
+									"behaviorType": "8Направлений",
+									"parameters": {
+										"max-speed": "50"
+									}
+								}
+							],
+							"sid": 758921278449488,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-touch-end",
+									"objectClass": "Тач",
+									"sid": 349488696220065
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Player",
+									"sid": 948808889597157,
+									"behaviorType": "8Направлений",
+									"parameters": {
+										"max-speed": "150"
+									}
+								}
+							],
+							"sid": 404474466816248
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-speed",
+									"objectClass": "Player",
+									"sid": 425647956247626,
+									"behaviorType": "8Направлений",
+									"parameters": {
+										"comparison": 0,
+										"speed": "250"
+									}
 								},
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 211234326978408
+								}
+							],
+							"actions": [
 								{
 									"id": "subtract-from-instvar",
 									"objectClass": "Player",
-									"sid": 194514410482627,
+									"sid": 464469976954380,
 									"parameters": {
 										"instance-variable": "energy",
 										"value": "0.1"
 									}
 								}
 							],
-							"sid": 260849541663303,
-							"isOrBlock": true
+							"sid": 785740466246444
 						}
 					],
 					"sid": 684569578439919
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "ДЖОСТИК НАВЕДЕНИЯ",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-dragging",
+									"objectClass": "JoyT2",
+									"sid": 698820769209650,
+									"behaviorType": "Перетаскивание"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle-toward-position",
+									"objectClass": "aim",
+									"sid": 415581694438908,
+									"parameters": {
+										"x": "Joy2.X",
+										"y": "Joy2.Y"
+									}
+								}
+							],
+							"sid": 854500463996090,
+							"disabled": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 202924161861320,
+											"parameters": {
+												"first-value": "distance(Circle2.X,Circle2.Y,JoyT2.X,JoyT2.Y)",
+												"comparison": 3,
+												"second-value": "Circle2.Width/2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "Joy2",
+											"sid": 824830514190131,
+											"parameters": {
+												"x": "JoyT2.X",
+												"y": "JoyT2.Y"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "JoyT2",
+											"sid": 993427852523925,
+											"parameters": {
+												"x": "JoyT2.X",
+												"y": "JoyT2.Y"
+											}
+										}
+									],
+									"sid": 514405901168564,
+									"disabled": true
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "else",
+											"objectClass": "System",
+											"sid": 513641997644420
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "Joy2",
+											"sid": 298782099513586,
+											"parameters": {
+												"x": "Circle2.X+cos(angle(Circle2.X, Circle2.Y, JoyT2.X, JoyT2.Y))*(Circle2.Width/2)",
+												"y": "Circle2.Y+sin(angle(Circle2.X, Circle2.Y, JoyT2.X, JoyT2.Y))*(Circle2.Width/2)"
+											}
+										},
+										{
+											"id": "set-position",
+											"objectClass": "JoyT2",
+											"sid": 238598383070159,
+											"parameters": {
+												"x": "Circle2.X+cos(angle(Circle2.X, Circle2.Y, JoyT2.X, JoyT2.Y))*(Circle2.Width/2)",
+												"y": "Circle2.Y+sin(angle(Circle2.X, Circle2.Y, JoyT2.X, JoyT2.Y))*(Circle2.Width/2)"
+											}
+										}
+									],
+									"sid": 260394196494137,
+									"disabled": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-dragging",
+									"objectClass": "JoyT2",
+									"sid": 177705482881050,
+									"behaviorType": "Перетаскивание",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Joy2",
+									"sid": 692716566089225,
+									"parameters": {
+										"x": "Circle2.X",
+										"y": "Circle2.Y"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "JoyT2",
+									"sid": 825270876335056,
+									"parameters": {
+										"x": "Circle2.X",
+										"y": "Circle2.Y"
+									}
+								}
+							],
+							"sid": 920868589935391,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 920742164581470
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Joy2",
+									"sid": 105505428979519,
+									"parameters": {
+										"x": "Circle2.X",
+										"y": "Circle2.Y"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "JoyT2",
+									"sid": 602982344458693,
+									"parameters": {
+										"x": "Circle2.X",
+										"y": "Circle2.Y"
+									}
+								}
+							],
+							"sid": 141501542042532,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 453520390491541
+								}
+							],
+							"actions": [
+								{
+									"id": "rotate-toward-angle",
+									"objectClass": "aim",
+									"sid": 536979349906473,
+									"parameters": {
+										"degrees": "angle(Circle2.X,Circle2.Y,Joy2.X,Joy2.Y)",
+										"angle": "2"
+									}
+								}
+							],
+							"sid": 708687561011369,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "trigger_check_atack",
+									"sid": 809235018223007,
+									"parameters": {
+										"object": "trigger_attack_left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "aim",
+									"sid": 921106629736030,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 568131961480379,
+							"disabled": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 474118041452129
+								}
+							],
+							"actions": [
+								{
+									"id": "pin-to-object-properties",
+									"objectClass": "aim",
+									"sid": 805815362723861,
+									"behaviorType": "Прикрепить",
+									"parameters": {
+										"pin-to": "Player",
+										"x": true,
+										"y": true,
+										"angle": true,
+										"width-type": "no",
+										"height-type": "no",
+										"z": false
+									}
+								}
+							],
+							"sid": 519274830143482,
+							"disabled": true
+						}
+					],
+					"sid": 290847299570309
 				}
 			],
 			"sid": 876388489013999
@@ -1372,9 +1691,9 @@
 						{
 							"id": "set-height",
 							"objectClass": "energy_bar",
-							"sid": 388889082439737,
+							"sid": 890424237043021,
 							"parameters": {
-								"height": "Player.energy*3.8"
+								"height": "Player.energy*5.55"
 							}
 						}
 					],

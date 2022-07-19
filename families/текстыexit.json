@@ -7,7 +7,7 @@
 	"effectTypes": [],
 	"members": [
 		"exit_text",
-		"EXIT_NO2",
-		"EXIT_YES2"
+		"EXIT_NO",
+		"EXIT_YES"
 	]
 }

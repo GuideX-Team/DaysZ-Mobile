@@ -1,0 +1,63 @@
+{
+	"name": "JoyT2",
+	"plugin-id": "Sprite",
+	"sid": 962743907920925,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "Перетаскивание",
+			"sid": 905569062700520
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 163,
+						"height": 163,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6166592,
+						"collisionPoly": {
+							"points": [
+								0.1516329547065134,
+								0.17412784223207584,
+								0.49999999999999994,
+								0.02046002146226889,
+								0.840176962481524,
+								0.17617283200712702,
+								0.9652149264006151,
+								0.49999999999999994,
+								0.8319970033813192,
+								0.827907023831217,
+								0.49999999999999994,
+								0.9693049059507168,
+								0.16594788313187137,
+								0.829952013606268,
+								0.0368199396626779,
+								0.49386503067484655
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 420954852057479,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

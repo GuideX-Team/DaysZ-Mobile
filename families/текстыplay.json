@@ -7,7 +7,7 @@
 	"effectTypes": [],
 	"members": [
 		"PLAY",
-		"CHANGE_SERVER",
+		"MULTIPLAYER",
 		"CHARACTER",
 		"distance_hit",
 		"distance_hit_value",

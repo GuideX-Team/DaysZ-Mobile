@@ -1,40 +1,11 @@
 {
-	"name": "Loading_Game",
+	"name": "LOAD_,MENU",
 	"layers": [
 		{
 			"name": "Слой 0",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
-				{
-					"type": "loading_back",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 41,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1325.021484375,
-						"y": 1353.5025634765625,
-						"width": 1226,
-						"height": 14,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "background_loading",
 					"properties": {
@@ -44,7 +15,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 55,
+					"uid": 28,
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -78,7 +49,7 @@
 					}
 				},
 				{
-					"type": "logo_1",
+					"type": "logo_load",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -86,7 +57,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 57,
+					"uid": 33,
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -98,8 +69,8 @@
 						}
 					},
 					"world": {
-						"x": 372.7574654194773,
-						"y": 209.74587781526967,
+						"x": 372.757465,
+						"y": 209.745878,
 						"width": 430.93665086509355,
 						"height": 155.04599078744107,
 						"originX": 0.5,
@@ -115,7 +86,7 @@
 					}
 				},
 				{
-					"type": "logo_2",
+					"type": "logo_load2",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -123,7 +94,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 58,
+					"uid": 35,
 					"instanceVariables": {},
 					"behaviors": {},
 					"effects": {
@@ -135,8 +106,8 @@
 						}
 					},
 					"world": {
-						"x": 372.1671275936205,
-						"y": 328.9748643376993,
+						"x": 372.167128,
+						"y": 328.974864,
 						"width": 426,
 						"height": 76,
 						"originX": 0.5,
@@ -150,38 +121,9 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "loading_bar",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 39,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1325,
-						"y": 1353.5,
-						"width": 1226,
-						"height": 14,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
-			"sid": 490473036677315,
+			"sid": 423800038313660,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -210,7 +152,7 @@
 			"global": false
 		}
 	],
-	"sid": 892786578804458,
+	"sid": 202542571182155,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 2560,
@@ -219,5 +161,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Loading_Game"
+	"eventSheet": "LOAD_MENU"
 }

@@ -1,5 +1,5 @@
 {
-	"name": "Loading_Menu",
+	"name": "LOAD_MENU",
 	"events": [
 		{
 			"eventType": "group",
@@ -31,7 +31,7 @@
 							"objectClass": "System",
 							"sid": 776189961631951,
 							"parameters": {
-								"layout": "Menu"
+								"layout": "MENU"
 							}
 						}
 					],
@@ -60,7 +60,7 @@
 							"objectClass": "Аудио",
 							"sid": 548314818988106,
 							"parameters": {
-								"audio-file": "08237",
+								"audio-file": "Клик",
 								"loop": "looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -86,26 +86,7 @@
 							"sid": 368417421095045
 						}
 					],
-					"actions": [
-						{
-							"id": "set-css-style",
-							"objectClass": "EXIT_YES",
-							"sid": 812021534157456,
-							"parameters": {
-								"property-name": "\"font-size\"",
-								"value": "\"14pt\""
-							}
-						},
-						{
-							"id": "set-css-style",
-							"objectClass": "EXIT_NO",
-							"sid": 911946732168958,
-							"parameters": {
-								"property-name": "\"font-size\"",
-								"value": "\"14pt\""
-							}
-						}
-					],
+					"actions": [],
 					"sid": 185301663435629
 				}
 			],
@@ -258,7 +239,7 @@
 							"objectClass": "Аудио",
 							"sid": 946719579440323,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -285,7 +266,7 @@
 							"objectClass": "Аудио",
 							"sid": 438906060125857,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -319,12 +300,12 @@
 							"objectClass": "Тач",
 							"sid": 740278315891220,
 							"parameters": {
-								"object": "EXIT_YES2"
+								"object": "EXIT_YES"
 							}
 						},
 						{
 							"id": "is-visible",
-							"objectClass": "EXIT_YES2",
+							"objectClass": "EXIT_YES",
 							"sid": 985535648868910
 						}
 					],
@@ -360,7 +341,7 @@
 							"objectClass": "Аудио",
 							"sid": 556801347365057,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -401,7 +382,7 @@
 							"objectClass": "Аудио",
 							"sid": 458245396977141,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -442,7 +423,7 @@
 							"objectClass": "Аудио",
 							"sid": 426801232211235,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -453,7 +434,7 @@
 							"objectClass": "System",
 							"sid": 278055018772445,
 							"parameters": {
-								"layout": "Loading_Game"
+								"layout": "LOAD_GAME"
 							}
 						},
 						{
@@ -461,7 +442,7 @@
 							"objectClass": "Аудио",
 							"sid": 997609154319515,
 							"parameters": {
-								"audio-file": "08237"
+								"audio-file": "Клик"
 							}
 						}
 					],
@@ -475,12 +456,12 @@
 							"objectClass": "Тач",
 							"sid": 519836049022881,
 							"parameters": {
-								"object": "EXIT_NO2"
+								"object": "EXIT_NO"
 							}
 						},
 						{
 							"id": "is-visible",
-							"objectClass": "EXIT_NO2",
+							"objectClass": "EXIT_NO",
 							"sid": 423044989934335
 						}
 					],
@@ -506,7 +487,7 @@
 							"objectClass": "Аудио",
 							"sid": 214067235354811,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -533,7 +514,7 @@
 							"objectClass": "Аудио",
 							"sid": 467375256708861,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -597,7 +578,7 @@
 							"objectClass": "Аудио",
 							"sid": 581286173556648,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -729,7 +710,7 @@
 							"objectClass": "Аудио",
 							"sid": 807500943798020,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -1170,7 +1151,7 @@
 							"objectClass": "Аудио",
 							"sid": 847228754335760,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""
@@ -1234,7 +1215,7 @@
 							"objectClass": "Аудио",
 							"sid": 827238398206116,
 							"parameters": {
-								"audio-file": "Sound_54618100 1634324693",
+								"audio-file": "Фон",
 								"loop": "not-looping",
 								"volume": "0",
 								"tag-optional": "\"\""

@@ -1,0 +1,59 @@
+{
+	"name": "line_indicators",
+	"plugin-id": "Sprite",
+	"sid": 281876571790757,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Timer",
+			"name": "Таймер",
+			"sid": 378469944292102
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 42,
+						"height": 42,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 592292,
+						"collisionPoly": {
+							"points": [
+								0.21182266009852216,
+								0,
+								0.723727422003284,
+								0,
+								0.7766830870279146,
+								0,
+								0.8825944170771759,
+								0.7169384057971013,
+								0.723727422003284,
+								0.8490338164251208,
+								0.10591133004926108,
+								0.7169384057971013
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 776627160171210,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

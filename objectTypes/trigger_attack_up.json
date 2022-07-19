@@ -1,7 +1,7 @@
 {
-	"name": "energy_bar",
+	"name": "trigger_attack_up",
 	"plugin-id": "Sprite",
-	"sid": 966111387842595,
+	"sid": 516704100092467,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -13,17 +13,17 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.512,
-						"originY": 1.012,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8033993,
+						"imageSpriteId": 9661333,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 758571861231925,
+				"sid": 200665277250039,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

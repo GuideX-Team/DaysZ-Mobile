@@ -1,5 +1,5 @@
 {
-	"name": "Menu",
+	"name": "MENU",
 	"layers": [
 		{
 			"name": "background",
@@ -1020,7 +1020,7 @@
 					}
 				},
 				{
-					"type": "CHANGE_SERVER",
+					"type": "MULTIPLAYER",
 					"properties": {
 						"text": "ВЫБРАТЬ СЕРВЕР",
 						"enable-bbcode": true,
@@ -1238,7 +1238,7 @@
 					}
 				},
 				{
-					"type": "EXIT_YES2",
+					"type": "EXIT_YES",
 					"properties": {
 						"text": "ДА",
 						"enable-bbcode": true,
@@ -1280,7 +1280,7 @@
 					}
 				},
 				{
-					"type": "EXIT_NO2",
+					"type": "EXIT_NO",
 					"properties": {
 						"text": "НЕТ",
 						"enable-bbcode": true,
@@ -2496,5 +2496,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Loading_Menu"
+	"eventSheet": "LOAD_MENU"
 }

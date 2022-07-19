@@ -1,8 +1,9 @@
 {
 	"name": "EXIT_YES",
-	"plugin-id": "Button",
-	"sid": 351603797004156,
+	"plugin-id": "Text",
+	"sid": 689403561461599,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": []
+	"behaviorTypes": [],
+	"effectTypes": []
 }

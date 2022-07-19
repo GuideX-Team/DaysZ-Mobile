@@ -24,48 +24,8 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Keyboard",
-			"name": "Клавиатура",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Mouse",
-			"name": "Мышь",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Touch",
-			"name": "Тач",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Audio",
-			"name": "Аудио",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Button",
-			"name": "Кнопка",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Browser",
-			"name": "Браузер",
+			"id": "List",
+			"name": "Список",
 			"author": "Scirra",
 			"version": "r302",
 			"bundled": false
@@ -74,14 +34,6 @@
 			"type": "plugin",
 			"id": "TextBox",
 			"name": "Ввод текста",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "List",
-			"name": "Список",
 			"author": "Scirra",
 			"version": "r302",
 			"bundled": false
@@ -106,6 +58,46 @@
 			"type": "plugin",
 			"id": "shadowlight",
 			"name": "Теневой свет",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Аудио",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Браузер",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Клавиатура",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Мышь",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Тач",
 			"author": "Scirra",
 			"version": "r302",
 			"bundled": false
@@ -144,6 +136,38 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Прикрепить",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Orbit",
+			"name": "Орбита",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Пуля",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Перетаскивание",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "shadowcaster",
 			"name": "Тень",
 			"author": "Scirra",
@@ -154,14 +178,6 @@
 			"type": "behavior",
 			"id": "Timer",
 			"name": "Таймер",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "DragnDrop",
-			"name": "Перетаскивание",
 			"author": "Scirra",
 			"version": "r302",
 			"bundled": false
@@ -210,161 +226,278 @@
 	"uniqueId": "ybl31iyy9xq",
 	"objectTypes": {
 		"items": [
+			"shadow",
 			"Аудио",
-			"version",
-			"logo_menu",
-			"logo_menu2",
-			"exit_back",
-			"exit_text",
-			"EXIT_YES",
-			"EXIT_NO",
-			"Control_menu",
 			"Браузер",
-			"help_back",
-			"help_text",
-			"donate_logo",
-			"donate_text",
-			"vk_logo",
-			"vk_text",
-			"CLOSE_HELP",
-			"SETTINGS",
-			"EXIT",
-			"play_back",
-			"play_back2",
-			"statistic",
-			"play_back3",
-			"PLAY",
-			"time_surv",
-			"kill_players",
-			"kill_zombie",
-			"travel_distance",
-			"distance_hit",
-			"time_surv_value",
-			"kill_players_value",
-			"kill_zombie_value",
-			"travel_distance_value",
-			"distance_hit_value",
-			"PLAY_RIGHT",
-			"PLAY_LEFT",
-			"CHARACTER",
-			"CHANGE_SERVER",
-			"HELP",
-			"NEWS",
-			"loading_bar",
-			"loading_back",
-			"news_back",
-			"news_text",
-			"news_description",
-			"CLOSE_NEWS",
-			"EXIT_YES2",
-			"EXIT_NO2",
-			"character_back",
-			"character_back2",
-			"character_head",
-			"create_character_text",
-			"character_shoes",
-			"character_top",
-			"character_bottom",
-			"character_sex",
-			"character_text",
-			"character_name",
-			"CHARACTER_NAME_VALUE",
-			"CHARACTER_SEX_VALUE",
-			"CHARACTER_HEAD_VALUE",
-			"CHARACTER_TOP_VALUE",
-			"CHARACTER_BOTTOM_VALUE",
-			"CHARACTER_SHOES_VALUE",
-			"CLOSE_CHARACTER",
-			"temp_back2",
-			"temp_bar",
-			"hungry_back2",
-			"hungry_bar2",
-			"blood_back",
-			"blood_bar",
-			"thirst_back2",
-			"thirst_bar2",
-			"health_back2",
-			"health_bar2",
-			"check_cpu",
-			"check_gpu",
-			"check_time",
-			"check_distance",
-			"check_objects",
-			"КартаТайлов",
-			"tail_wall",
-			"pause_background",
-			"pause_back",
-			"PAUSE_EXIT",
-			"PAUSE_SETTINGS",
-			"PAUSE_SAVE",
-			"PAUSE_LOAD",
-			"PAUSE_CONTINUE",
-			"PAUSE",
-			"roof",
-			"Circle",
-			"Joy",
-			"JoyT",
-			"run",
-			"trigger_up",
-			"trigger_down",
-			"trigger_left",
-			"trigger_right",
-			"trigger_check",
-			"shadow"
+			"Клавиатура",
+			"Мышь",
+			"Тач"
 		],
 		"subfolders": [
 			{
 				"items": [
 					"player_area",
 					"Camera",
-					"Player"
+					"Player",
+					"aim",
+					"bullet"
 				],
 				"subfolders": [],
-				"name": "Player"
-			},
-			{
-				"items": [
-					"check_fps",
-					"de_active_F",
-					"energy_back",
-					"energy_bar",
-					"Energy_text"
-				],
-				"subfolders": [],
-				"name": "Indicators"
-			},
-			{
-				"items": [
-					"check_F",
-					"hp_minus",
-					"hp_plus"
-				],
-				"subfolders": [],
-				"name": "MapObj"
-			},
-			{
-				"items": [
-					"Клавиатура",
-					"Мышь",
-					"Тач"
-				],
-				"subfolders": [],
-				"name": "Object_active"
+				"name": "Игрок"
 			},
 			{
 				"items": [
 					"background_loading",
-					"background_menu",
-					"logo_1",
-					"logo_2"
+					"logo_load",
+					"logo_load2",
+					"loading_back",
+					"loading_bar"
 				],
 				"subfolders": [],
-				"name": "Loading"
+				"name": "Загрузка"
+			},
+			{
+				"items": [
+					"Control_menu"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"CHARACTER",
+							"character_back",
+							"character_back2",
+							"character_bottom",
+							"CHARACTER_BOTTOM_VALUE",
+							"character_head",
+							"CHARACTER_HEAD_VALUE",
+							"character_name",
+							"CHARACTER_NAME_VALUE",
+							"character_sex",
+							"CHARACTER_SEX_VALUE",
+							"character_shoes",
+							"CHARACTER_SHOES_VALUE",
+							"character_text",
+							"character_top",
+							"CHARACTER_TOP_VALUE",
+							"CLOSE_CHARACTER",
+							"create_character_text"
+						],
+						"subfolders": [],
+						"name": "Персонаж"
+					},
+					{
+						"items": [
+							"EXIT",
+							"exit_back",
+							"EXIT_NO",
+							"exit_text",
+							"EXIT_YES"
+						],
+						"subfolders": [],
+						"name": "Выход"
+					},
+					{
+						"items": [
+							"donate_logo",
+							"donate_text",
+							"HELP",
+							"help_back",
+							"help_text",
+							"vk_logo",
+							"vk_text",
+							"CLOSE_HELP"
+						],
+						"subfolders": [],
+						"name": "Помощь"
+					},
+					{
+						"items": [
+							"CLOSE_NEWS",
+							"NEWS",
+							"news_back",
+							"news_description",
+							"news_text"
+						],
+						"subfolders": [],
+						"name": "Новости"
+					},
+					{
+						"items": [
+							"distance_hit",
+							"distance_hit_value",
+							"kill_players",
+							"kill_players_value",
+							"kill_zombie",
+							"kill_zombie_value",
+							"PLAY",
+							"play_back",
+							"play_back2",
+							"play_back3",
+							"PLAY_LEFT",
+							"PLAY_RIGHT",
+							"statistic",
+							"time_surv",
+							"time_surv_value",
+							"travel_distance",
+							"travel_distance_value"
+						],
+						"subfolders": [],
+						"name": "Играть"
+					},
+					{
+						"items": [
+							"logo_menu",
+							"logo_menu2",
+							"version",
+							"background_menu"
+						],
+						"subfolders": [],
+						"name": "Фон"
+					},
+					{
+						"items": [
+							"SETTINGS"
+						],
+						"subfolders": [],
+						"name": "Настройки"
+					},
+					{
+						"items": [
+							"MULTIPLAYER"
+						],
+						"subfolders": [],
+						"name": "Мультиплеер"
+					}
+				],
+				"name": "Меню"
 			},
 			{
 				"items": [],
-				"subfolders": [],
-				"name": "Menu"
+				"subfolders": [
+					{
+						"items": [
+							"Circle",
+							"Circle2",
+							"Joy",
+							"Joy2",
+							"JoyT",
+							"JoyT2"
+						],
+						"subfolders": [],
+						"name": "Джостик"
+					},
+					{
+						"items": [
+							"trigger_attack_down",
+							"trigger_attack_left",
+							"trigger_attack_right",
+							"trigger_attack_up",
+							"trigger_check",
+							"trigger_check_atack",
+							"trigger_down",
+							"trigger_left",
+							"trigger_right",
+							"trigger_up"
+						],
+						"subfolders": [],
+						"name": "Триггеры"
+					},
+					{
+						"items": [
+							"attack",
+							"run",
+							"sit"
+						],
+						"subfolders": [],
+						"name": "Кнопки"
+					}
+				],
+				"name": "Управление"
+			},
+			{
+				"items": [],
+				"subfolders": [
+					{
+						"items": [
+							"check_F",
+							"hp_minus",
+							"hp_plus"
+						],
+						"subfolders": [],
+						"name": "ОбьектыКарты"
+					},
+					{
+						"items": [
+							"Карта"
+						],
+						"subfolders": [],
+						"name": "Оформление"
+					},
+					{
+						"items": [
+							"roof",
+							"tail_wall"
+						],
+						"subfolders": [],
+						"name": "Барьеры"
+					}
+				],
+				"name": "Карта"
+			},
+			{
+				"items": [
+					"line_indicators",
+					"run_indicators"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"check_fps",
+							"de_active_F",
+							"energy_back",
+							"energy_bar",
+							"Energy_text",
+							"blood_back",
+							"blood_bar",
+							"health_back2",
+							"health_bar2",
+							"hungry_back2",
+							"hungry_bar2",
+							"temp_back2",
+							"temp_bar",
+							"thirst_back2",
+							"thirst_bar2"
+						],
+						"subfolders": [],
+						"name": "Индикаторы"
+					},
+					{
+						"items": [
+							"check_cpu",
+							"check_distance",
+							"check_gpu",
+							"check_objects",
+							"check_time"
+						],
+						"subfolders": [],
+						"name": "Откладка"
+					},
+					{
+						"items": [
+							"PAUSE",
+							"pause_back",
+							"pause_background",
+							"PAUSE_CONTINUE",
+							"PAUSE_EXIT",
+							"PAUSE_LOAD",
+							"PAUSE_SAVE",
+							"PAUSE_SETTINGS"
+						],
+						"subfolders": [],
+						"name": "Пауза"
+					}
+				],
+				"name": "ИнтерфейсИгры"
 			}
 		]
 	},
@@ -387,7 +520,7 @@
 					"КартинкиPLAY"
 				],
 				"subfolders": [],
-				"name": "PlayPanel"
+				"name": "Играть"
 			},
 			{
 				"items": [
@@ -395,7 +528,7 @@
 					"ТекстыHELP"
 				],
 				"subfolders": [],
-				"name": "HelpPanel"
+				"name": "Помощь"
 			},
 			{
 				"items": [
@@ -403,7 +536,7 @@
 					"ТекстыEXIT"
 				],
 				"subfolders": [],
-				"name": "ExitPanel"
+				"name": "Выход"
 			},
 			{
 				"items": [
@@ -411,7 +544,7 @@
 					"ТекстыNEWS"
 				],
 				"subfolders": [],
-				"name": "NewsPanel"
+				"name": "Новости"
 			},
 			{
 				"items": [
@@ -420,31 +553,31 @@
 					"КартинкиCHARACTER"
 				],
 				"subfolders": [],
-				"name": "CharacterPanel"
+				"name": "Персонаж"
 			},
 			{
 				"items": [
 					"ТекстыPAUSE"
 				],
 				"subfolders": [],
-				"name": "PausePanel"
+				"name": "Пауза"
 			}
 		]
 	},
 	"layouts": {
 		"items": [
-			"Game",
-			"Loading_Menu",
-			"Menu",
-			"Loading_Game"
+			"MENU",
+			"GAME",
+			"LOAD_,MENU",
+			"LOAD_GAME"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Game",
-			"Loading_Menu",
-			"Loading_Game"
+			"GAME",
+			"LOAD_MENU",
+			"LOAD_GAME"
 		],
 		"subfolders": []
 	},
@@ -456,7 +589,7 @@
 		"sound": {
 			"items": [
 				{
-					"name": "08237.webm",
+					"name": "Клик.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 841787587179451,
 					"file-info": {
@@ -464,7 +597,7 @@
 					}
 				},
 				{
-					"name": "Sound_54618100 1634324693.webm",
+					"name": "Фон.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 705957126344892,
 					"file-info": {
@@ -612,5 +745,5 @@
 	},
 	"viewportWidth": 2560,
 	"viewportHeight": 1440,
-	"firstLayout": "Loading_Menu"
+	"firstLayout": "LOAD_,MENU"
 }

@@ -1,10 +1,16 @@
 {
-	"name": "energy_bar",
+	"name": "bullet",
 	"plugin-id": "Sprite",
-	"sid": 966111387842595,
+	"sid": 732637882635318,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Пуля",
+			"sid": 144458848360243
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -13,17 +19,17 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.512,
-						"originY": 1.012,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 8033993,
+						"imageSpriteId": 5060679,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 758571861231925,
+				"sid": 323810551433093,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

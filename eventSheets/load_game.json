@@ -1,5 +1,5 @@
 {
-	"name": "Loading_Game",
+	"name": "LOAD_GAME",
 	"events": [
 		{
 			"eventType": "block",
@@ -32,7 +32,7 @@
 					"objectClass": "System",
 					"sid": 951078536817258,
 					"parameters": {
-						"layout": "Game"
+						"layout": "GAME"
 					}
 				}
 			],
