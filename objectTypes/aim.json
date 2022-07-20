@@ -9,11 +9,6 @@
 			"behaviorId": "Pin",
 			"name": "Прикрепить",
 			"sid": 933685924379786
-		},
-		{
-			"behaviorId": "Orbit",
-			"name": "Орбита",
-			"sid": 794918295858400
 		}
 	],
 	"effectTypes": [],
@@ -24,8 +19,8 @@
 					{
 						"width": 250,
 						"height": 250,
-						"originX": 0.5,
-						"originY": -0.004,
+						"originX": 0.004,
+						"originY": 0.472,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
@@ -34,8 +29,8 @@
 						"imagePoints": [
 							{
 								"name": "Точка спрайта 1",
-								"x": 0.5,
-								"y": 0.996
+								"x": 1,
+								"y": 0.496
 							}
 						],
 						"duration": 1

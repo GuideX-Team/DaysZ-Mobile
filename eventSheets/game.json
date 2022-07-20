@@ -1649,9 +1649,9 @@
 						{
 							"id": "set-height",
 							"objectClass": "health_bar2",
-							"sid": 189251932230112,
+							"sid": 813881143097881,
 							"parameters": {
-								"height": "Player.health*0.81"
+								"height": "Player.health*0.9"
 							}
 						},
 						{
@@ -1675,7 +1675,7 @@
 						{
 							"id": "set-height",
 							"objectClass": "hungry_bar2",
-							"sid": 315741458534511,
+							"sid": 922756646935193,
 							"parameters": {
 								"height": "Player.hungry*0.55"
 							}
@@ -1691,9 +1691,9 @@
 						{
 							"id": "set-height",
 							"objectClass": "energy_bar",
-							"sid": 890424237043021,
+							"sid": 407891901019030,
 							"parameters": {
-								"height": "Player.energy*5.55"
+								"height": "Player.energy*5.65"
 							}
 						}
 					],
@@ -2042,6 +2042,71 @@
 						}
 					],
 					"sid": 958292874242900
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 221700193615921,
+							"parameters": {
+								"interval-seconds": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-tweens-playback-rate",
+							"objectClass": "health_bar2",
+							"sid": 786461224754714,
+							"behaviorType": "Твинанимация",
+							"parameters": {
+								"tags": "\"1\"",
+								"rate": "1"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 557009686383525,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
+						{
+							"id": "stop-tweens",
+							"objectClass": "health_bar2",
+							"sid": 477570351923774,
+							"behaviorType": "Твинанимация",
+							"parameters": {
+								"tags": "\"1\""
+							}
+						}
+					],
+					"sid": 844078878005333
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 205180577352769
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-tweens",
+							"objectClass": "health_bar2",
+							"sid": 615133837282807,
+							"behaviorType": "Твинанимация",
+							"parameters": {
+								"tags": "\"1\""
+							}
+						}
+					],
+					"sid": 665596922094631
 				}
 			],
 			"sid": 679932943354726
@@ -2081,9 +2146,9 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "player_area",
-							"sid": 645509908127399,
+							"sid": 210995801358910,
 							"parameters": {
-								"object": "check_F"
+								"object": "door"
 							}
 						}
 					],
@@ -2091,7 +2156,7 @@
 						{
 							"id": "set-text",
 							"objectClass": "de_active_F",
-							"sid": 720035726492644,
+							"sid": 759947456196833,
 							"parameters": {
 								"text": "\"F - активен\""
 							}
@@ -2099,7 +2164,7 @@
 						{
 							"id": "set-font-color",
 							"objectClass": "de_active_F",
-							"sid": 568722304988876,
+							"sid": 569277782090642,
 							"parameters": {
 								"color": "rgbEx(0, 232, 0)"
 							}
@@ -2107,57 +2172,14 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Player",
-							"sid": 148515219922533,
+							"sid": 312496964433820,
 							"parameters": {
 								"instance-variable": "pickup",
 								"value": "1"
 							}
 						}
 					],
-					"sid": 860052704190682
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Клавиатура",
-							"sid": 396154997191953,
-							"parameters": {
-								"key": 70
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Player",
-							"sid": 796191261206245,
-							"parameters": {
-								"instance-variable": "pickup",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "check_F",
-							"sid": 516297575432009,
-							"parameters": {
-								"frame-number": "1"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 192188985925299,
-							"parameters": {
-								"instance-variable": "pickup",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 181102395429372
+					"sid": 717699174563883
 				},
 				{
 					"eventType": "block",
@@ -2165,9 +2187,9 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "player_area",
-							"sid": 684680380436490,
+							"sid": 981399280722074,
 							"parameters": {
-								"object": "check_F"
+								"object": "door"
 							},
 							"isInverted": true
 						}
@@ -2176,7 +2198,7 @@
 						{
 							"id": "set-text",
 							"objectClass": "de_active_F",
-							"sid": 489439404950076,
+							"sid": 698980947764285,
 							"parameters": {
 								"text": "\"F - не активен\""
 							}
@@ -2184,7 +2206,7 @@
 						{
 							"id": "set-font-color",
 							"objectClass": "de_active_F",
-							"sid": 384817693579525,
+							"sid": 149273590312852,
 							"parameters": {
 								"color": "rgbEx(232, 0, 0)"
 							}
@@ -2192,47 +2214,57 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "Player",
-							"sid": 731456060082722,
+							"sid": 472258673632450,
 							"parameters": {
 								"instance-variable": "pickup",
 								"value": "0"
 							}
 						}
 					],
-					"sid": 172271694215201
+					"sid": 237639371028350
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "compare-animation-frame",
-							"objectClass": "check_F",
-							"sid": 273131566338795,
+							"id": "on-tap-object",
+							"objectClass": "Тач",
+							"sid": 181249226653398,
 							"parameters": {
+								"object": "pickup"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 986550463671627,
+							"parameters": {
+								"instance-variable": "pickup",
 								"comparison": 0,
-								"number": "1"
+								"value": "1"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-text",
-							"objectClass": "de_active_F",
-							"sid": 656059492548827,
+							"id": "set-angle",
+							"objectClass": "door",
+							"sid": 151440279897957,
 							"parameters": {
-								"text": "\"F - не активен\""
+								"angle": "180"
 							}
 						},
 						{
-							"id": "set-font-color",
-							"objectClass": "de_active_F",
-							"sid": 370262525164860,
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 515978919982679,
 							"parameters": {
-								"color": "rgbEx(232, 0, 0)"
+								"instance-variable": "pickup",
+								"value": "0"
 							}
 						}
 					],
-					"sid": 593360605372018
+					"sid": 668095650789826
 				}
 			],
 			"sid": 740043935476088
@@ -2281,18 +2313,18 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "roof",
-							"sid": 713175026897598,
+							"objectClass": "Спрайт",
+							"sid": 667831885861866,
 							"parameters": {
-								"object": "player_area"
+								"object": "Player"
 							}
 						}
 					],
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "roof",
-							"sid": 794233433332730,
+							"objectClass": "Спрайт",
+							"sid": 117248692161681,
 							"parameters": {
 								"visibility": "invisible"
 							}
@@ -2305,10 +2337,10 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "roof",
-							"sid": 287181346270551,
+							"objectClass": "Спрайт",
+							"sid": 173957488138024,
 							"parameters": {
-								"object": "player_area"
+								"object": "Player"
 							},
 							"isInverted": true
 						}
@@ -2316,8 +2348,8 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "roof",
-							"sid": 435428839087214,
+							"objectClass": "Спрайт",
+							"sid": 172190923389413,
 							"parameters": {
 								"visibility": "visible"
 							}
@@ -2327,6 +2359,226 @@
 				}
 			],
 			"sid": 330165642208759
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "pick-nearestfurthest",
+					"objectClass": "enemy",
+					"sid": 885696973931806,
+					"parameters": {
+						"which": "nearest",
+						"x": "Player.X",
+						"y": "Player.Y"
+					}
+				},
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Player",
+					"sid": 351906523095861,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "enemy",
+						"image-point": "0"
+					}
+				},
+				{
+					"id": "is-visible",
+					"objectClass": "aim",
+					"sid": 539161790824144
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "aim",
+					"sid": 757906674287716,
+					"parameters": {
+						"x": "enemy.X",
+						"y": "enemy.Y"
+					}
+				}
+			],
+			"sid": 685008416362151
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Player",
+					"sid": 175961504612296,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "enemy",
+						"image-point": "0"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "aim",
+					"sid": 794090553967010,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 620726940701092
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 647475155073722
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "aim",
+					"sid": 523542106725842,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "Player",
+						"image-point": "0",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 733013407301602
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Player",
+					"sid": 376182494409849,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "enemy",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "aim",
+					"sid": 807230848094798,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				}
+			],
+			"sid": 576216220069656
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Тач",
+					"sid": 115472790476548,
+					"parameters": {
+						"object": "attack"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "aim",
+					"sid": 644392633167306,
+					"parameters": {
+						"object": "bullet",
+						"layer": "1",
+						"image-point": "1",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 582436267078441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each-ordered",
+					"objectClass": "System",
+					"sid": 680742158509787,
+					"parameters": {
+						"object": "sorter",
+						"expression": "sorter.Y",
+						"order": "ascending"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "sorter",
+					"sid": 168378558790587
+				}
+			],
+			"sid": 308511398829823
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 431670559216278
+				}
+			],
+			"actions": [],
+			"sid": 477373402588378,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "sorter",
+							"sid": 708724194784255,
+							"parameters": {
+								"comparison": 5,
+								"y-co-ordinate": "Player.Y"
+							}
+						},
+						{
+							"id": "pick-topbottom",
+							"objectClass": "sorter",
+							"sid": 248545987973044,
+							"parameters": {
+								"which": "bottom"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "move-to-object",
+							"objectClass": "Player",
+							"sid": 482705298719947,
+							"parameters": {
+								"where": "behind",
+								"object": "sorter"
+							}
+						}
+					],
+					"sid": 523289867854021
+				}
+			]
 		}
 	],
 	"sid": 206982985980515

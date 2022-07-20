@@ -1,0 +1,60 @@
+{
+	"name": "door",
+	"plugin-id": "Sprite",
+	"sid": 471636894426315,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 507455506842160
+		},
+		{
+			"behaviorId": "shadowcaster",
+			"name": "Тень",
+			"sid": 784784844980409
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 252,
+						"height": 53,
+						"originX": 0.9880952380952381,
+						"originY": 0.05660377358490566,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6995631,
+						"collisionPoly": {
+							"points": [
+								0.003968253968253968,
+								0,
+								0.996031746031746,
+								0,
+								0.996031746031746,
+								0.9811320754716981,
+								0.003968253968253968,
+								0.9811320754716981
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 570080770661212,
+				"name": "close",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

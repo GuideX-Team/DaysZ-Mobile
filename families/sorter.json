@@ -1,0 +1,12 @@
+{
+	"name": "sorter",
+	"plugin-id": "Sprite",
+	"sid": 247511926697307,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Player",
+		"Спрайт2"
+	]
+}

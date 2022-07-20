@@ -1,0 +1,16 @@
+{
+	"name": "ValerypopoffTouchPlus",
+	"plugin-id": "ValerypopoffTouchPlusPlugin",
+	"sid": 841133578735081,
+	"singleglobal-inst": {
+		"type": "ValerypopoffTouchPlus",
+		"properties": {
+			"dont-click-through-objects": false,
+			"dont-click-through-objects-on-other-layers": false,
+			"dont-click-through-layers": false,
+			"ignore-invisible-objects": true,
+			"ignore-invisible-layers": true
+		},
+		"uid": 11
+	}
+}
