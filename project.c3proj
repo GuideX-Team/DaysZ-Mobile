@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 30200,
-	"name": "DaysZ Mobile",
+	"name": "DaysM PC",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
@@ -103,14 +103,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "ValerypopoffTouchPlusPlugin",
-			"name": "[Valerypopoff Touch Plus]",
-			"author": "Valera Popov",
-			"version": "1.1.7",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "scrollto",
 			"name": "Следить за",
@@ -152,6 +144,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Orbit",
+			"name": "Орбита",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Пуля",
 			"author": "Scirra",
@@ -160,24 +160,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Anchor",
-			"name": "Якорь",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "DragnDrop",
 			"name": "Перетаскивание",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Persist",
-			"name": "Запечатлеть",
 			"author": "Scirra",
 			"version": "r302",
 			"bundled": false
@@ -194,14 +178,6 @@
 			"type": "behavior",
 			"id": "Timer",
 			"name": "Таймер",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Tween",
-			"name": "Твин-анимация",
 			"author": "Scirra",
 			"version": "r302",
 			"bundled": false
@@ -255,13 +231,7 @@
 			"Браузер",
 			"Клавиатура",
 			"Мышь",
-			"Тач",
-			"pickup",
-			"door",
-			"enemy",
-			"ValerypopoffTouchPlus",
-			"Спрайт",
-			"Спрайт2"
+			"Тач"
 		],
 		"subfolders": [
 			{
@@ -278,8 +248,6 @@
 			{
 				"items": [
 					"background_loading",
-					"logo_load",
-					"logo_load2",
 					"loading_back",
 					"loading_bar"
 				],
@@ -449,6 +417,7 @@
 				"subfolders": [
 					{
 						"items": [
+							"check_F",
 							"hp_minus",
 							"hp_plus"
 						],
@@ -465,7 +434,7 @@
 					{
 						"items": [
 							"roof",
-							"tail_wall2"
+							"tail_wall"
 						],
 						"subfolders": [],
 						"name": "Барьеры"
@@ -503,7 +472,6 @@
 					{
 						"items": [
 							"check_cpu",
-							"check_distance",
 							"check_gpu",
 							"check_objects",
 							"check_time"
@@ -533,9 +501,7 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [
-			"sorter"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -726,17 +692,17 @@
 		]
 	},
 	"properties": {
-		"description": "DaysZ Mobile - многопользовательская игра в жанре Top Down Survival с открытым миром",
-		"version": "0.0.7",
-		"author": "GuideX Team",
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
 		"authorEmail": "",
-		"authorWebsite": "https://vk.com/daysz4mobile",
-		"appId": "guidexteam.daysz",
+		"authorWebsite": "",
+		"appId": "",
 		"pixelRounding": true,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
 		"useLoaderLayout": true,
-		"fullscreenMode": "scale-outer",
+		"fullscreenMode": "scale-inner",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
 		"backgroundColor": [
@@ -766,7 +732,7 @@
 		"compositingMode": "standard",
 		"sampling": "nearest",
 		"downscaling": "medium",
-		"renderingMode": "2d",
+		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
 		"loaderStyle": "none",

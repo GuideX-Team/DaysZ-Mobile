@@ -4,27 +4,21 @@
 	"sid": 940806500232885,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Anchor",
-			"name": "Якорь",
-			"sid": 843375422388450
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 39,
-						"height": 39,
+						"width": 156,
+						"height": 156,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 123516,
+						"imageSpriteId": 9885008,
 						"collisionPoly": {
 							"points": [
 								0.15384615384615385,

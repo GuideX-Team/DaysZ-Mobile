@@ -9,11 +9,6 @@
 			"behaviorId": "DragnDrop",
 			"name": "Перетаскивание",
 			"sid": 759726738321536
-		},
-		{
-			"behaviorId": "Anchor",
-			"name": "Якорь",
-			"sid": 708024020573115
 		}
 	],
 	"effectTypes": [],

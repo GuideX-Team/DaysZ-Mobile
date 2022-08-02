@@ -4,18 +4,7 @@
 	"sid": 662693362752674,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Persist",
-			"name": "Запечатлеть",
-			"sid": 927874806012164
-		},
-		{
-			"behaviorId": "Anchor",
-			"name": "Якорь",
-			"sid": 933286206136615
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [

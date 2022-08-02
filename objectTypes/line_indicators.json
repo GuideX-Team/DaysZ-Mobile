@@ -9,11 +9,6 @@
 			"behaviorId": "Timer",
 			"name": "Таймер",
 			"sid": 378469944292102
-		},
-		{
-			"behaviorId": "Anchor",
-			"name": "Якорь",
-			"sid": 313240281225217
 		}
 	],
 	"effectTypes": [],
@@ -29,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 42327,
+						"imageSpriteId": 592292,
 						"collisionPoly": {
 							"points": [
 								0.21182266009852216,
