@@ -231,16 +231,17 @@
 			"Браузер",
 			"Клавиатура",
 			"Мышь",
-			"Тач"
+			"Тач",
+			"Текст"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"player_area",
 					"Camera",
-					"Player",
+					"Player_movement",
 					"aim",
-					"bullet"
+					"bullet",
+					"Player_rotate"
 				],
 				"subfolders": [],
 				"name": "Игрок"
@@ -375,30 +376,14 @@
 					{
 						"items": [
 							"Circle",
-							"Circle2",
 							"Joy",
-							"Joy2",
 							"JoyT",
+							"Circle2",
+							"Joy2",
 							"JoyT2"
 						],
 						"subfolders": [],
 						"name": "Джостик"
-					},
-					{
-						"items": [
-							"trigger_attack_down",
-							"trigger_attack_left",
-							"trigger_attack_right",
-							"trigger_attack_up",
-							"trigger_check",
-							"trigger_check_atack",
-							"trigger_down",
-							"trigger_left",
-							"trigger_right",
-							"trigger_up"
-						],
-						"subfolders": [],
-						"name": "Триггеры"
 					},
 					{
 						"items": [
@@ -416,11 +401,7 @@
 				"items": [],
 				"subfolders": [
 					{
-						"items": [
-							"check_F",
-							"hp_minus",
-							"hp_plus"
-						],
+						"items": [],
 						"subfolders": [],
 						"name": "ОбьектыКарты"
 					},
@@ -451,20 +432,14 @@
 					{
 						"items": [
 							"check_fps",
-							"de_active_F",
 							"energy_back",
 							"energy_bar",
 							"Energy_text",
-							"blood_back",
-							"blood_bar",
-							"health_back2",
-							"health_bar2",
-							"hungry_back2",
-							"hungry_bar2",
-							"temp_back2",
-							"temp_bar",
-							"thirst_back2",
-							"thirst_bar2"
+							"Blood",
+							"Health",
+							"Hungry",
+							"Temp",
+							"Thirst"
 						],
 						"subfolders": [],
 						"name": "Индикаторы"
@@ -501,7 +476,9 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"Откладка"
+		],
 		"subfolders": [
 			{
 				"items": [

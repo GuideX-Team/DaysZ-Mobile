@@ -3,725 +3,6 @@
 	"events": [
 		{
 			"eventType": "group",
-			"disabled": true,
-			"title": "PC",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "group",
-					"disabled": true,
-					"title": "Управление игроком",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "group",
-							"disabled": true,
-							"title": "Хождение",
-							"description": "",
-							"isActiveOnStart": true,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 789513371474550,
-											"parameters": {
-												"key": 87
-											}
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 539144768357321,
-											"parameters": {
-												"key": 65
-											},
-											"isInverted": true
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 413139500928465,
-											"parameters": {
-												"key": 68
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 689164052298768,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "up"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 929246368520530,
-											"parameters": {
-												"animation": "\"walk_up\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 688984703541679,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 776511153879329,
-											"parameters": {
-												"key": 65
-											}
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 238927924101520,
-											"parameters": {
-												"key": 87
-											},
-											"isInverted": true
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 551350554805840,
-											"parameters": {
-												"key": 83
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 604384129971537,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "left"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 722535587529057,
-											"parameters": {
-												"animation": "\"walk_side\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "set-mirrored",
-											"objectClass": "Player",
-											"sid": 359864394366602,
-											"parameters": {
-												"state": "mirrored"
-											}
-										}
-									],
-									"sid": 968970266039580,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 633432847221013,
-											"parameters": {
-												"key": 83
-											}
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 685789730393599,
-											"parameters": {
-												"key": 65
-											},
-											"isInverted": true
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 870488665661668,
-											"parameters": {
-												"key": 68
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 567750226172407,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "down"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 575146641359391,
-											"parameters": {
-												"animation": "\"walk_down\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 808844911751111,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 476121638831178,
-											"parameters": {
-												"key": 68
-											}
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 379088930461092,
-											"parameters": {
-												"key": 87
-											},
-											"isInverted": true
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 725773406641181,
-											"parameters": {
-												"key": 83
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 470504743478649,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "right"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 285623052510898,
-											"parameters": {
-												"animation": "\"walk_side\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "set-mirrored",
-											"objectClass": "Player",
-											"sid": 930372827092824,
-											"parameters": {
-												"state": "not-mirrored"
-											}
-										}
-									],
-									"sid": 793343388953793,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-key-released",
-											"objectClass": "Клавиатура",
-											"sid": 392824812874221,
-											"parameters": {
-												"key": 87
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 941510701205933,
-											"parameters": {
-												"animation": "\"idle_up\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 690872420038208,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-key-released",
-											"objectClass": "Клавиатура",
-											"sid": 265824732168545,
-											"parameters": {
-												"key": 65
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 909451728339175,
-											"parameters": {
-												"animation": "\"idle_side\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 667497160467327,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-key-released",
-											"objectClass": "Клавиатура",
-											"sid": 745787795744325,
-											"parameters": {
-												"key": 83
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 423219881312314,
-											"parameters": {
-												"animation": "\"idle_down\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "set-mirrored",
-											"objectClass": "Player",
-											"sid": 776306887363670,
-											"parameters": {
-												"state": "mirrored"
-											}
-										}
-									],
-									"sid": 876521503747155,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-key-released",
-											"objectClass": "Клавиатура",
-											"sid": 581935122272091,
-											"parameters": {
-												"key": 68
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 571123690801746,
-											"parameters": {
-												"animation": "\"idle_side\"",
-												"from": "beginning"
-											}
-										},
-										{
-											"id": "set-mirrored",
-											"objectClass": "Player",
-											"sid": 750721878213182,
-											"parameters": {
-												"state": "not-mirrored"
-											}
-										}
-									],
-									"sid": 509441437020874,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 358773791439188,
-											"parameters": {
-												"key": 87
-											}
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 869127344121950,
-											"parameters": {
-												"key": 65
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 984247315878003,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "up"
-											}
-										},
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 523868980438658,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "left"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 241780087109012,
-											"parameters": {
-												"animation": "\"walk_up\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 634928939483498,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 932423378372745,
-											"parameters": {
-												"key": 87
-											}
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 531600581609656,
-											"parameters": {
-												"key": 68
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 148677123792582,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "up"
-											}
-										},
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 627358463301295,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "right"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 822909651371139,
-											"parameters": {
-												"animation": "\"walk_up\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 999556270230711,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 271567364268918,
-											"parameters": {
-												"key": 83
-											}
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 126103668862561,
-											"parameters": {
-												"key": 65
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 359490468223534,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "down"
-											}
-										},
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 489987700983496,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "left"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 578020142441825,
-											"parameters": {
-												"animation": "\"walk_down\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 837316538384410,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 388596781173907,
-											"parameters": {
-												"key": 83
-											}
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 509474843865304,
-											"parameters": {
-												"key": 68
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 313412843754486,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "down"
-											}
-										},
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 965596182567861,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"control": "right"
-											}
-										},
-										{
-											"id": "set-animation",
-											"objectClass": "Player",
-											"sid": 270086909201489,
-											"parameters": {
-												"animation": "\"walk_down\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 730868136288245,
-									"disabled": true
-								}
-							],
-							"sid": 784473829548790
-						},
-						{
-							"eventType": "group",
-							"disabled": true,
-							"title": "Бег",
-							"description": "",
-							"isActiveOnStart": true,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 330680211205714,
-											"parameters": {
-												"key": 16
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-max-speed",
-											"objectClass": "Player",
-											"sid": 257381990394680,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"max-speed": "250"
-											}
-										},
-										{
-											"id": "subtract-from-instvar",
-											"objectClass": "Player",
-											"sid": 128779573371051,
-											"parameters": {
-												"instance-variable": "energy",
-												"value": "0.1"
-											}
-										}
-									],
-									"sid": 410976120068925,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-key-released",
-											"objectClass": "Клавиатура",
-											"sid": 829837279087503,
-											"parameters": {
-												"key": 16
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-max-speed",
-											"objectClass": "Player",
-											"sid": 659193319360546,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"max-speed": "150"
-											}
-										}
-									],
-									"sid": 274308396769861,
-									"disabled": true
-								}
-							],
-							"sid": 215256854584897
-						},
-						{
-							"eventType": "group",
-							"disabled": true,
-							"title": "Красться",
-							"description": "",
-							"isActiveOnStart": true,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Клавиатура",
-											"sid": 536923974947072,
-											"parameters": {
-												"key": 17
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-max-speed",
-											"objectClass": "Player",
-											"sid": 638595720061207,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"max-speed": "50"
-											}
-										}
-									],
-									"sid": 503427131236136,
-									"disabled": true
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-key-released",
-											"objectClass": "Клавиатура",
-											"sid": 719773031095508,
-											"parameters": {
-												"key": 17
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-max-speed",
-											"objectClass": "Player",
-											"sid": 860425298808917,
-											"behaviorType": "8Направлений",
-											"parameters": {
-												"max-speed": "150"
-											}
-										}
-									],
-									"sid": 537794090246245,
-									"disabled": true
-								}
-							],
-							"sid": 846037538905057
-						}
-					],
-					"sid": 361507428365457
-				}
-			],
-			"sid": 733525608142042
-		},
-		{
-			"eventType": "group",
 			"disabled": false,
 			"title": "Mobile",
 			"description": "",
@@ -747,7 +28,7 @@
 							"actions": [
 								{
 									"id": "set-vector-x",
-									"objectClass": "Player",
+									"objectClass": "Player_movement",
 									"sid": 123375602004137,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -756,7 +37,7 @@
 								},
 								{
 									"id": "set-vector-y",
-									"objectClass": "Player",
+									"objectClass": "Player_movement",
 									"sid": 568537306345864,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -903,273 +184,6 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "trigger_check",
-									"sid": 161481147509618,
-									"parameters": {
-										"object": "trigger_up"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 981824603853218,
-									"parameters": {
-										"animation": "\"walk_up\"",
-										"from": "beginning"
-									}
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "Player",
-									"sid": 260253712287997,
-									"parameters": {
-										"instance-variable": "trigger",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 268945770594043
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "trigger_check",
-									"sid": 327288513404183,
-									"parameters": {
-										"object": "trigger_up"
-									},
-									"isInverted": true
-								},
-								{
-									"id": "is-animation-playing",
-									"objectClass": "Player",
-									"sid": 634046573378229,
-									"parameters": {
-										"animation": "\"walk_up\""
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 770596026101592,
-									"parameters": {
-										"animation": "\"idle_up\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 630128028640569
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "trigger_check",
-									"sid": 150231840684943,
-									"parameters": {
-										"object": "trigger_left"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 676682153413727,
-									"parameters": {
-										"animation": "\"walk_left\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 989355149404995
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-animation-playing",
-									"objectClass": "Player",
-									"sid": 571926613218846,
-									"parameters": {
-										"animation": "\"walk_left\""
-									}
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "trigger_check",
-									"sid": 236651487072781,
-									"parameters": {
-										"object": "trigger_left"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 943788405627123,
-									"parameters": {
-										"animation": "\"idle_left\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 700018315607885
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "trigger_check",
-									"sid": 238005791103123,
-									"parameters": {
-										"object": "trigger_down"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 284146299246316,
-									"parameters": {
-										"animation": "\"walk_down\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 883090494432078
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-animation-playing",
-									"objectClass": "Player",
-									"sid": 491008714485308,
-									"parameters": {
-										"animation": "\"walk_down\""
-									}
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "trigger_check",
-									"sid": 402500257515255,
-									"parameters": {
-										"object": "trigger_down"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 399195363242094,
-									"parameters": {
-										"animation": "\"idle_down\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 922539589752353
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "trigger_check",
-									"sid": 126432256014373,
-									"parameters": {
-										"object": "trigger_right"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 280410693183939,
-									"parameters": {
-										"animation": "\"walk_right\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 968715818964339
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-animation-playing",
-									"objectClass": "Player",
-									"sid": 997775147067281,
-									"parameters": {
-										"animation": "\"walk_right\""
-									}
-								},
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "trigger_check",
-									"sid": 882856272724176,
-									"parameters": {
-										"object": "trigger_right"
-									},
-									"isInverted": true
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 719455353489586,
-									"parameters": {
-										"animation": "\"idle_right\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 589983711872540
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 220753755717576
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "trigger_check",
-									"sid": 622341584437782,
-									"parameters": {
-										"x": "Joy.X",
-										"y": "Joy.Y"
-									}
-								}
-							],
-							"sid": 582696616059164
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
 									"id": "on-hold-over-object",
 									"objectClass": "Тач",
 									"sid": 563866512664705,
@@ -1181,7 +195,7 @@
 							"actions": [
 								{
 									"id": "set-max-speed",
-									"objectClass": "Player",
+									"objectClass": "Player_movement",
 									"sid": 691077032098606,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -1207,7 +221,7 @@
 							"actions": [
 								{
 									"id": "set-max-speed",
-									"objectClass": "Player",
+									"objectClass": "Player_movement",
 									"sid": 923862921397667,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -1230,7 +244,7 @@
 							"actions": [
 								{
 									"id": "set-max-speed",
-									"objectClass": "Player",
+									"objectClass": "Player_movement",
 									"sid": 948808889597157,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -1245,7 +259,7 @@
 							"conditions": [
 								{
 									"id": "compare-speed",
-									"objectClass": "Player",
+									"objectClass": "Player_movement",
 									"sid": 425647956247626,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -1262,7 +276,7 @@
 							"actions": [
 								{
 									"id": "subtract-from-instvar",
-									"objectClass": "Player",
+									"objectClass": "Player_movement",
 									"sid": 464469976954380,
 									"parameters": {
 										"instance-variable": "energy",
@@ -1278,7 +292,7 @@
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "ДЖОСТИК НАВЕДЕНИЯ",
+					"title": "Наведение",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
@@ -1288,23 +302,22 @@
 								{
 									"id": "is-dragging",
 									"objectClass": "JoyT2",
-									"sid": 698820769209650,
+									"sid": 232533851287412,
 									"behaviorType": "Перетаскивание"
 								}
 							],
 							"actions": [
 								{
-									"id": "set-angle-toward-position",
-									"objectClass": "aim",
-									"sid": 415581694438908,
+									"id": "rotate-toward-angle",
+									"objectClass": "Player_rotate",
+									"sid": 111216243333178,
 									"parameters": {
-										"x": "Joy2.X",
-										"y": "Joy2.Y"
+										"degrees": "10",
+										"angle": "angle(Circle2.X, Circle2.Y, JoyT2.X, JoyT2.Y)"
 									}
 								}
 							],
-							"sid": 854500463996090,
-							"disabled": true,
+							"sid": 792442846799358,
 							"children": [
 								{
 									"eventType": "block",
@@ -1312,7 +325,7 @@
 										{
 											"id": "compare-two-values",
 											"objectClass": "System",
-											"sid": 202924161861320,
+											"sid": 549690796724404,
 											"parameters": {
 												"first-value": "distance(Circle2.X,Circle2.Y,JoyT2.X,JoyT2.Y)",
 												"comparison": 3,
@@ -1324,7 +337,7 @@
 										{
 											"id": "set-position",
 											"objectClass": "Joy2",
-											"sid": 824830514190131,
+											"sid": 535335568119938,
 											"parameters": {
 												"x": "JoyT2.X",
 												"y": "JoyT2.Y"
@@ -1333,15 +346,14 @@
 										{
 											"id": "set-position",
 											"objectClass": "JoyT2",
-											"sid": 993427852523925,
+											"sid": 403684361498355,
 											"parameters": {
 												"x": "JoyT2.X",
 												"y": "JoyT2.Y"
 											}
 										}
 									],
-									"sid": 514405901168564,
-									"disabled": true
+									"sid": 392118671890341
 								},
 								{
 									"eventType": "block",
@@ -1349,14 +361,14 @@
 										{
 											"id": "else",
 											"objectClass": "System",
-											"sid": 513641997644420
+											"sid": 517785346369893
 										}
 									],
 									"actions": [
 										{
 											"id": "set-position",
 											"objectClass": "Joy2",
-											"sid": 298782099513586,
+											"sid": 431808237446664,
 											"parameters": {
 												"x": "Circle2.X+cos(angle(Circle2.X, Circle2.Y, JoyT2.X, JoyT2.Y))*(Circle2.Width/2)",
 												"y": "Circle2.Y+sin(angle(Circle2.X, Circle2.Y, JoyT2.X, JoyT2.Y))*(Circle2.Width/2)"
@@ -1365,15 +377,14 @@
 										{
 											"id": "set-position",
 											"objectClass": "JoyT2",
-											"sid": 238598383070159,
+											"sid": 612748073827412,
 											"parameters": {
 												"x": "Circle2.X+cos(angle(Circle2.X, Circle2.Y, JoyT2.X, JoyT2.Y))*(Circle2.Width/2)",
 												"y": "Circle2.Y+sin(angle(Circle2.X, Circle2.Y, JoyT2.X, JoyT2.Y))*(Circle2.Width/2)"
 											}
 										}
 									],
-									"sid": 260394196494137,
-									"disabled": true
+									"sid": 982446209157505
 								}
 							]
 						},
@@ -1383,7 +394,7 @@
 								{
 									"id": "is-dragging",
 									"objectClass": "JoyT2",
-									"sid": 177705482881050,
+									"sid": 479117073601033,
 									"behaviorType": "Перетаскивание",
 									"isInverted": true
 								}
@@ -1392,7 +403,7 @@
 								{
 									"id": "set-position",
 									"objectClass": "Joy2",
-									"sid": 692716566089225,
+									"sid": 958254186201835,
 									"parameters": {
 										"x": "Circle2.X",
 										"y": "Circle2.Y"
@@ -1401,15 +412,14 @@
 								{
 									"id": "set-position",
 									"objectClass": "JoyT2",
-									"sid": 825270876335056,
+									"sid": 991805602444494,
 									"parameters": {
 										"x": "Circle2.X",
 										"y": "Circle2.Y"
 									}
 								}
 							],
-							"sid": 920868589935391,
-							"disabled": true
+							"sid": 343561778842420
 						},
 						{
 							"eventType": "block",
@@ -1417,14 +427,14 @@
 								{
 									"id": "trigger-once-while-true",
 									"objectClass": "System",
-									"sid": 920742164581470
+									"sid": 942275710855861
 								}
 							],
 							"actions": [
 								{
 									"id": "set-position",
 									"objectClass": "Joy2",
-									"sid": 105505428979519,
+									"sid": 102622434202123,
 									"parameters": {
 										"x": "Circle2.X",
 										"y": "Circle2.Y"
@@ -1433,95 +443,17 @@
 								{
 									"id": "set-position",
 									"objectClass": "JoyT2",
-									"sid": 602982344458693,
+									"sid": 602662986699802,
 									"parameters": {
 										"x": "Circle2.X",
 										"y": "Circle2.Y"
 									}
 								}
 							],
-							"sid": 141501542042532,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "every-tick",
-									"objectClass": "System",
-									"sid": 453520390491541
-								}
-							],
-							"actions": [
-								{
-									"id": "rotate-toward-angle",
-									"objectClass": "aim",
-									"sid": 536979349906473,
-									"parameters": {
-										"degrees": "angle(Circle2.X,Circle2.Y,Joy2.X,Joy2.Y)",
-										"angle": "2"
-									}
-								}
-							],
-							"sid": 708687561011369,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "trigger_check_atack",
-									"sid": 809235018223007,
-									"parameters": {
-										"object": "trigger_attack_left"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-mirrored",
-									"objectClass": "aim",
-									"sid": 921106629736030,
-									"parameters": {
-										"state": "mirrored"
-									}
-								}
-							],
-							"sid": 568131961480379,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-start-of-layout",
-									"objectClass": "System",
-									"sid": 474118041452129
-								}
-							],
-							"actions": [
-								{
-									"id": "pin-to-object-properties",
-									"objectClass": "aim",
-									"sid": 805815362723861,
-									"behaviorType": "Прикрепить",
-									"parameters": {
-										"pin-to": "Player",
-										"x": true,
-										"y": true,
-										"angle": true,
-										"width-type": "no",
-										"height-type": "no",
-										"z": false
-									}
-								}
-							],
-							"sid": 519274830143482,
-							"disabled": true
+							"sid": 367100259997960
 						}
 					],
-					"sid": 290847299570309
+					"sid": 323708793425840
 				}
 			],
 			"sid": 876388489013999
@@ -1548,7 +480,7 @@
 							"objectClass": "shadow",
 							"sid": 766944681379946,
 							"parameters": {
-								"object": "Player",
+								"object": "Player_movement",
 								"image-point-optional": "0"
 							}
 						}
@@ -1559,6 +491,36 @@
 			"sid": 787559254720989
 		},
 		{
+			"eventType": "variable",
+			"name": "Minutes",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 756967472531277
+		},
+		{
+			"eventType": "variable",
+			"name": "Seconds",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 587191074712440
+		},
+		{
+			"eventType": "variable",
+			"name": "Hours",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 732283109558150
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Интерфейс",
@@ -1566,57 +528,191 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "block",
-					"conditions": [
+					"eventType": "group",
+					"disabled": false,
+					"title": "Откладка",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "every-tick",
-							"objectClass": "System",
-							"sid": 748446857493892
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 930351805346632
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "check_fps",
+									"sid": 692783966875706,
+									"parameters": {
+										"text": "\"FPS: \" & fps"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "check_cpu",
+									"sid": 626007520908808,
+									"parameters": {
+										"text": "\"CPU: \" & roundToDp(cpuutilisation, 2)"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "check_gpu",
+									"sid": 463537765672520,
+									"parameters": {
+										"text": "\"GPU: \" & roundToDp(gpuutilisation, 2)"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "check_objects",
+									"sid": 264935664427304,
+									"parameters": {
+										"text": "\"Кол-во обьектов: \" & objectcount"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "check_time",
+									"sid": 796390869701826,
+									"parameters": {
+										"text": "\"В игре: \" &zeropad(Minutes, 2) &\" : \"& zeropad(Seconds, 2)"
+									}
+								}
+							],
+							"sid": 480148517510581
 						}
 					],
-					"actions": [
+					"sid": 727082121619197
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "TimeForward",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"id": "set-text",
-							"objectClass": "check_fps",
-							"sid": 502011307048959,
-							"parameters": {
-								"text": "\"FPS: \" & fps"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-x-seconds",
+									"objectClass": "System",
+									"sid": 117355978002923,
+									"parameters": {
+										"interval-seconds": "1.0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 880866153368747,
+									"parameters": {
+										"variable": "Seconds",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 421994962448394
 						},
 						{
-							"id": "set-text",
-							"objectClass": "check_cpu",
-							"sid": 659100723791586,
-							"parameters": {
-								"text": "\"CPU: \" & roundToDp(cpuutilisation, 2)"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 644092452598088,
+									"parameters": {
+										"variable": "Seconds",
+										"comparison": 0,
+										"value": "60"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 797410685602099,
+									"parameters": {
+										"variable": "Minutes",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 234497149419163,
+									"parameters": {
+										"variable": "Seconds",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 835155536682261
 						},
 						{
-							"id": "set-text",
-							"objectClass": "check_gpu",
-							"sid": 244532688795030,
-							"parameters": {
-								"text": "\"GPU: \" & roundToDp(gpuutilisation, 2)"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "check_time",
-							"sid": 160613073879649,
-							"parameters": {
-								"text": "\"Время в игре:\" & zeropad(Hours, 2) &\" : \"& zeropad(Minutes, 2) &\" : \"& zeropad(Seconds, 2)"
-							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "check_objects",
-							"sid": 561097570319640,
-							"parameters": {
-								"text": "\"Кол-во обьектов: \" & objectcount"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 983549579444306,
+									"parameters": {
+										"variable": "Hours",
+										"comparison": 0,
+										"value": "60"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-text",
+									"objectClass": "check_time",
+									"sid": 331755946094329,
+									"parameters": {
+										"text": "\"В игре: \" &zeropad(Hours, 2) &\" : \"& zeropad(Minutes, 2) &\" : \"& zeropad(Seconds, 2)"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 129296966396251,
+									"parameters": {
+										"variable": "Minutes",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 912907402739754,
+									"parameters": {
+										"variable": "Seconds",
+										"value": "0"
+									}
+								},
+								{
+									"id": "add-to-eventvar",
+									"objectClass": "System",
+									"sid": 663811462403997,
+									"parameters": {
+										"variable": "Hours",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 342147650667663
 						}
 					],
-					"sid": 642457081698388
+					"sid": 285072379719685
 				}
 			],
 			"sid": 801167090473797
@@ -1640,52 +736,10 @@
 					"actions": [
 						{
 							"id": "set-height",
-							"objectClass": "health_bar2",
-							"sid": 189251932230112,
-							"parameters": {
-								"height": "Player.health*0.81"
-							}
-						},
-						{
-							"id": "set-height",
-							"objectClass": "blood_bar",
-							"sid": 424816045586799,
-							"disabled": true,
-							"parameters": {
-								"height": "Player.health*0.73"
-							}
-						},
-						{
-							"id": "set-height",
-							"objectClass": "temp_bar",
-							"sid": 430028617476187,
-							"disabled": true,
-							"parameters": {
-								"height": "Player.health*0.81"
-							}
-						},
-						{
-							"id": "set-height",
-							"objectClass": "hungry_bar2",
-							"sid": 315741458534511,
-							"parameters": {
-								"height": "Player.hungry*0.55"
-							}
-						},
-						{
-							"id": "set-height",
-							"objectClass": "thirst_bar2",
-							"sid": 834121881359927,
-							"parameters": {
-								"height": "Player.thirst*0.70"
-							}
-						},
-						{
-							"id": "set-height",
 							"objectClass": "energy_bar",
 							"sid": 890424237043021,
 							"parameters": {
-								"height": "Player.energy*5.55"
+								"height": "Player_movement.energy*5.55"
 							}
 						}
 					],
@@ -1695,263 +749,8 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Player",
-							"sid": 659898436384068,
-							"parameters": {
-								"object": "hp_minus"
-							}
-						},
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 484383055851415,
-							"parameters": {
-								"interval-seconds": "5"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "subtract-from-instvar",
-							"objectClass": "Player",
-							"sid": 439751390382845,
-							"parameters": {
-								"instance-variable": "health",
-								"value": "5"
-							}
-						}
-					],
-					"sid": 849766753657788
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "Player",
-							"sid": 494248057125239,
-							"parameters": {
-								"object": "hp_plus"
-							}
-						},
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 953009959053291,
-							"parameters": {
-								"interval-seconds": "5"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-instvar",
-							"objectClass": "Player",
-							"sid": 519507464406580,
-							"parameters": {
-								"instance-variable": "health",
-								"value": "5"
-							}
-						}
-					],
-					"sid": 676762493448039
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "compare-instance-variable",
-							"objectClass": "Player",
-							"sid": 534828930862878,
-							"parameters": {
-								"instance-variable": "health",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [],
-					"sid": 867041943419271
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Player",
-							"sid": 158147482060789,
-							"parameters": {
-								"instance-variable": "health",
-								"comparison": 0,
-								"value": "100"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "hp_plus",
-							"sid": 321616169604802,
-							"parameters": {
-								"collisions": "disabled"
-							}
-						}
-					],
-					"sid": 252205581055728
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Player",
-							"sid": 123527096908489,
-							"parameters": {
-								"instance-variable": "health",
-								"comparison": 1,
-								"value": "100"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-collisions-enabled",
-							"objectClass": "hp_plus",
-							"sid": 150938000025786,
-							"parameters": {
-								"collisions": "enabled"
-							}
-						}
-					],
-					"sid": 507701686814458
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 206912215001730,
-							"parameters": {
-								"interval-seconds": "5"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "subtract-from-instvar",
-							"objectClass": "Player",
-							"sid": 582659694966877,
-							"parameters": {
-								"instance-variable": "hungry",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 403613512206720
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 311604635547757,
-							"parameters": {
-								"interval-seconds": "10"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "subtract-from-instvar",
-							"objectClass": "Player",
-							"sid": 876335962059738,
-							"parameters": {
-								"instance-variable": "thirst",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 173448225887707
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Player",
-							"sid": 565901206424279,
-							"parameters": {
-								"instance-variable": "hungry",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 178947343117744,
-							"parameters": {
-								"seconds": "2"
-							}
-						},
-						{
-							"id": "subtract-from-instvar",
-							"objectClass": "Player",
-							"sid": 532795762603263,
-							"parameters": {
-								"instance-variable": "health",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 827801314330083
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Player",
-							"sid": 129301571571610,
-							"parameters": {
-								"instance-variable": "thirst",
-								"comparison": 0,
-								"value": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 271242223025891,
-							"parameters": {
-								"seconds": "2"
-							}
-						},
-						{
-							"id": "subtract-from-instvar",
-							"objectClass": "Player",
-							"sid": 257060461333586,
-							"parameters": {
-								"instance-variable": "health",
-								"value": "2"
-							}
-						}
-					],
-					"sid": 219406949929482
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Player",
+							"objectClass": "Player_movement",
 							"sid": 798194199617014,
 							"parameters": {
 								"instance-variable": "energy",
@@ -1986,7 +785,7 @@
 						},
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "Player",
+							"objectClass": "Player_movement",
 							"sid": 669463438191713,
 							"parameters": {
 								"instance-variable": "energy",
@@ -1998,7 +797,7 @@
 					"actions": [
 						{
 							"id": "add-to-instvar",
-							"objectClass": "Player",
+							"objectClass": "Player_movement",
 							"sid": 211656219872334,
 							"parameters": {
 								"instance-variable": "energy",
@@ -2013,7 +812,7 @@
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "Player",
+							"objectClass": "Player_movement",
 							"sid": 493646459096135,
 							"parameters": {
 								"instance-variable": "energy",
@@ -2041,197 +840,6 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Открытие ящика",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-visible",
-							"objectClass": "Player",
-							"sid": 678894236372906
-						}
-					],
-					"actions": [
-						{
-							"id": "set-position",
-							"objectClass": "player_area",
-							"sid": 683820644413283,
-							"parameters": {
-								"x": "Player.X",
-								"y": "Player.Y"
-							}
-						}
-					],
-					"sid": 150289302012787
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "player_area",
-							"sid": 645509908127399,
-							"parameters": {
-								"object": "check_F"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "de_active_F",
-							"sid": 720035726492644,
-							"parameters": {
-								"text": "\"F - активен\""
-							}
-						},
-						{
-							"id": "set-font-color",
-							"objectClass": "de_active_F",
-							"sid": 568722304988876,
-							"parameters": {
-								"color": "rgbEx(0, 232, 0)"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 148515219922533,
-							"parameters": {
-								"instance-variable": "pickup",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 860052704190682
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Клавиатура",
-							"sid": 396154997191953,
-							"parameters": {
-								"key": 70
-							}
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "Player",
-							"sid": 796191261206245,
-							"parameters": {
-								"instance-variable": "pickup",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation-frame",
-							"objectClass": "check_F",
-							"sid": 516297575432009,
-							"parameters": {
-								"frame-number": "1"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 192188985925299,
-							"parameters": {
-								"instance-variable": "pickup",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 181102395429372
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "player_area",
-							"sid": 684680380436490,
-							"parameters": {
-								"object": "check_F"
-							},
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "de_active_F",
-							"sid": 489439404950076,
-							"parameters": {
-								"text": "\"F - не активен\""
-							}
-						},
-						{
-							"id": "set-font-color",
-							"objectClass": "de_active_F",
-							"sid": 384817693579525,
-							"parameters": {
-								"color": "rgbEx(232, 0, 0)"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 731456060082722,
-							"parameters": {
-								"instance-variable": "pickup",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 172271694215201
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-animation-frame",
-							"objectClass": "check_F",
-							"sid": 273131566338795,
-							"parameters": {
-								"comparison": 0,
-								"number": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-text",
-							"objectClass": "de_active_F",
-							"sid": 656059492548827,
-							"parameters": {
-								"text": "\"F - не активен\""
-							}
-						},
-						{
-							"id": "set-font-color",
-							"objectClass": "de_active_F",
-							"sid": 370262525164860,
-							"parameters": {
-								"color": "rgbEx(232, 0, 0)"
-							}
-						}
-					],
-					"sid": 593360605372018
-				}
-			],
-			"sid": 740043935476088
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
 			"title": "Камера",
 			"description": "",
 			"isActiveOnStart": true,
@@ -2251,8 +859,8 @@
 							"objectClass": "Camera",
 							"sid": 769601290492787,
 							"parameters": {
-								"x": "Camera.X+(Camera.Speed*(Player.X-Camera.X)/100)",
-								"y": "Camera.Y+(Camera.Speed*(Player.Y-Camera.Y)/100)"
+								"x": "Camera.X+(Camera.Speed*(Player_movement.X-Camera.X)/100)",
+								"y": "Camera.Y+(Camera.Speed*(Player_movement.Y-Camera.Y)/100)"
 							}
 						}
 					],
@@ -2273,10 +881,10 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "roof",
-							"sid": 713175026897598,
+							"objectClass": "Player_movement",
+							"sid": 661689720575794,
 							"parameters": {
-								"object": "player_area"
+								"object": "roof"
 							}
 						}
 					],
@@ -2297,10 +905,10 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "roof",
-							"sid": 287181346270551,
+							"objectClass": "Player_movement",
+							"sid": 915590560196888,
 							"parameters": {
-								"object": "player_area"
+								"object": "roof"
 							},
 							"isInverted": true
 						}
@@ -2321,150 +929,95 @@
 			"sid": 330165642208759
 		},
 		{
-			"eventType": "variable",
-			"name": "Minutes",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 882379523731327
-		},
-		{
-			"eventType": "variable",
-			"name": "Seconds",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 105977850859975
-		},
-		{
-			"eventType": "variable",
-			"name": "Hours",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 772556422220822
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "TimeForward",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
+			"eventType": "block",
+			"conditions": [
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 586799480796465,
-							"parameters": {
-								"interval-seconds": "1.0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 587079326035433,
-							"parameters": {
-								"variable": "Seconds",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 703696205457939
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 643898573184811,
-							"parameters": {
-								"variable": "Seconds",
-								"comparison": 0,
-								"value": "60"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 478805507558303,
-							"parameters": {
-								"variable": "Minutes",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 861472391813688,
-							"parameters": {
-								"variable": "Seconds",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 109014094275133
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 366525133697281,
-							"parameters": {
-								"variable": "Hours",
-								"comparison": 0,
-								"value": "60"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 869643328330262,
-							"parameters": {
-								"variable": "Minutes",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 148198361678222,
-							"parameters": {
-								"variable": "Seconds",
-								"value": "0"
-							}
-						},
-						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 804605449189011,
-							"parameters": {
-								"variable": "Hours",
-								"value": "1"
-							}
-						}
-					],
-					"sid": 304230919610134
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 983477258654765,
+					"parameters": {
+						"interval-seconds": "1"
+					}
 				}
 			],
-			"sid": 239522860965009
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Health",
+					"sid": 482598929226326,
+					"parameters": {
+						"frame-number": "Health.AnimationFrame+1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Hungry",
+					"sid": 468185837068780,
+					"parameters": {
+						"frame-number": "Hungry.AnimationFrame+1"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Thirst",
+					"sid": 255304308037847,
+					"parameters": {
+						"frame-number": "Thirst.AnimationFrame+1"
+					}
+				}
+			],
+			"sid": 529636253199450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 851771299283707
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Player_rotate",
+					"sid": 335006131353362,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "Player_movement",
+						"image-point": "0",
+						"angle": false,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 528774379553573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Тач",
+					"sid": 658422822294495,
+					"parameters": {
+						"object": "Текст"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Откладка",
+					"sid": 753027889245586,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				}
+			],
+			"sid": 704987700458596
 		}
 	],
 	"sid": 206982985980515

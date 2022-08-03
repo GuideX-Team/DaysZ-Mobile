@@ -1,0 +1,15 @@
+{
+	"name": "Откладка",
+	"plugin-id": "Text",
+	"sid": 366495568492302,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"check_cpu",
+		"check_gpu",
+		"check_objects",
+		"check_time",
+		"check_fps"
+	]
+}

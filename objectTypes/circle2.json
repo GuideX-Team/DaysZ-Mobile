@@ -1,7 +1,7 @@
 {
 	"name": "Circle2",
 	"plugin-id": "Sprite",
-	"sid": 302226604592347,
+	"sid": 186380978490740,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,14 +11,14 @@
 			{
 				"frames": [
 					{
-						"width": 34,
-						"height": 34,
+						"width": 160,
+						"height": 160,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6950556,
+						"imageSpriteId": 4877300,
 						"collisionPoly": {
 							"points": [
 								0.16176470588235295,
@@ -43,7 +43,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 165896970514675,
+				"sid": 966096674322285,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

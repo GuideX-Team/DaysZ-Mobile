@@ -34,15 +34,6 @@
 					"parameters": {
 						"layout": "GAME"
 					}
-				},
-				{
-					"id": "set-group-active",
-					"objectClass": "System",
-					"sid": 473926595829355,
-					"parameters": {
-						"group-name": "\"\"",
-						"state": "activated"
-					}
 				}
 			],
 			"sid": 680277016235906

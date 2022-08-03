@@ -1,0 +1,107 @@
+{
+	"name": "Player_movement",
+	"plugin-id": "Sprite",
+	"sid": 215983403885361,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "health",
+			"type": "number",
+			"desc": "",
+			"sid": 269149299206630
+		},
+		{
+			"name": "hungry",
+			"type": "number",
+			"desc": "",
+			"sid": 315355736378497
+		},
+		{
+			"name": "thirst",
+			"type": "number",
+			"desc": "",
+			"sid": 987134036996817
+		},
+		{
+			"name": "energy",
+			"type": "number",
+			"desc": "",
+			"sid": 530138680307364
+		},
+		{
+			"name": "walk_energy",
+			"type": "number",
+			"desc": "",
+			"sid": 691692784787002
+		},
+		{
+			"name": "pickup",
+			"type": "number",
+			"desc": "",
+			"sid": 343542509275699
+		},
+		{
+			"name": "combat",
+			"type": "number",
+			"desc": "",
+			"sid": 354303752032431
+		},
+		{
+			"name": "trigger",
+			"type": "number",
+			"desc": "",
+			"sid": 727538484690522
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Направлений",
+			"sid": 805151380355370
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "СледитьЗа",
+			"sid": 506064938340912
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "ПолеЗрения",
+			"sid": 237602277657463
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 546972707879383
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 66,
+						"height": 66,
+						"originX": 0.48484848484848486,
+						"originY": 0.48484848484848486,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6624680,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 510178967899588,
+				"name": "0",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

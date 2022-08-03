@@ -1,0 +1,62 @@
+{
+	"name": "Player_rotate",
+	"plugin-id": "Sprite",
+	"sid": 754733142928529,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Прикрепить",
+			"sid": 510609396560670
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 66,
+						"height": 66,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 669105,
+						"collisionPoly": {
+							"points": [
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.9696969696969697,
+								"y": 0.4696969696969697
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 378505246655001,
+				"name": "1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
