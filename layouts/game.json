@@ -7,42 +7,26 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Карта",
+					"type": "Grass",
 					"properties": {
 						"initially-visible": true,
-						"tile-width": 64,
-						"tile-height": 64,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
 					},
 					"uid": 7,
 					"instanceVariables": {},
 					"behaviors": {},
-					"ownData": {
-						"tilemapData": {
-							"width": 79,
-							"height": 79,
-							"max-width": 711,
-							"max-height": 435,
-							"data": "38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,14x1,53v,23x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,19x1,53v,18x1,71hv,69hd,69hvd,71hv,36x1,357x0,19x1,53v,18x1,71hv,69hd,69hvd,71hv,36x1,357x0,16x1,2x53v,20x1,71hv,69hd,69hvd,71hv,36x1,357x0,12x1,53v,4x1,53v,2x1,4x53v,14x1,71hv,69hd,69hvd,71hv,36x1,357x0,38x1,71hv,69hd,69hvd,71hv,36x1,357x0,6x1,54vd,58vd,2x72,4x52h,4x72,58vd,2x72,2x52h,72,52h,72,52x71,357x0,6x1,52hvd,72,58vd,72,58vd,4x72,58vd,9x72,13x69,4x71,36x69,357x0,4x1,53v,1,52hvd,6x72,58vd,3x72,58vd,72,58vd,2x72,2x58vd,2x72,12x69h,4x71,36x69h,357x0,6x1,54hvd,52,72,58vd,72,7x52,3x72,58vd,5x72,51x71,357x0,10x1,3x1h,2x53v,10x1h,13x1,71hd,69hd,69hvd,71hvd,21x1,72hvd,58hv,72hvd,72hv,11x1,357x0,9x1,3x53v,1h,53v,10x1h,34hd,11x41hd,34hvd,1,71hd,69hd,69hvd,71hvd,21x1,3x72hvd,72hv,11x1,357x0,23x1,53v,26hvd,11x12hvd,26hd,1,71hd,69hd,69hvd,71hvd,21x1,3x72hvd,72hv,11x1,357x0,16x1,53v,7x1,26hvd,11x12hvd,26hd,1,71hd,69hd,69hvd,71hvd,7x1,34hd,9x41hd,34hvd,3x1,58hv,2x72hvd,72hv,11x1,357x0,18x1,53v,5x1,26hvd,11x12hvd,26hd,1,71hd,69hd,69hvd,71hvd,7x1,26hvd,9x12hvd,26d,3x1,3x72hvd,72hv,11x1,357x0,24x1,26hvd,11x12hvd,22hd,1,71hd,69hd,69hvd,71hvd,7x1,26hvd,9x12hvd,26d,3x1,2x72hvd,2x72hv,11x1,357x0,24x1,26hvd,12x12hvd,1,71hd,69hd,69hvd,71hvd,7x1,26hvd,9x12hvd,22hd,3x1,52hvd,2x72hvd,72hv,11x1,357x0,24x1,26hvd,12x12hvd,1,71hd,69hd,69hvd,71hvd,7x1,26hvd,10x12hvd,3x1,2x72hvd,58hv,72hv,11x1,357x0,24x1,26hvd,11x12hvd,22d,1,71hd,69hd,69hvd,71hvd,7x1,26hvd,10x12hvd,3x1,3x72hvd,72hv,11x1,357x0,24x1,26hvd,11x12hvd,26hd,1,71hd,69hd,69hvd,71hvd,7x1,26hvd,9x12hvd,22d,1,53v,1,3x72hvd,53hd,11x1,357x0,24x1,26hvd,11x12hvd,26hd,1,71hd,69hd,69hvd,71hvd,7x1,26hvd,9x12hvd,26d,3x1,3x72hvd,72hv,11x1,357x0,24x1,26hvd,11x12hvd,26hd,1,71hd,69hd,69hvd,71hvd,7x1,26hvd,9x12hvd,26d,3x1,58hv,2x72hvd,1hv,11x1,357x0,24x1,34d,11x41d,34vd,1,71hd,69hd,69hvd,71hvd,7x1,34d,9x41d,34vd,3x1,3x72hvd,72hv,11x1,357x0,38x1,71hd,69hd,69hvd,71hvd,21x1,3x72hvd,72hv,11x1,357x0,38x1,71hd,69hd,69hvd,71hvd,21x1,2x72hvd,58hv,72hv,11x1,357x0,38x1,71hd,69hd,69hvd,71hvd,21x1,3x72hvd,53hd,11x1,357x0,25x1,53v,12x1,71hd,69hd,69hvd,71hvd,21x1,52hvd,72hv,72hvd,72hv,11x1,357x0,19x1,53v,6x1,53v,2x1,53v,8x1,71hd,69hd,69hvd,71hvd,21x1,52hvd,2x72hvd,72hv,11x1,357x0,19x1,53v,18x1,71hd,69hd,69hvd,71hvd,22x1,2x72hvd,72hv,2x1,53v,8x1,357x0,18x1,53v,4x1,53v,1,53v,2x1,53v,9x1,71hd,69hd,69hvd,71hvd,20x1,1hv,2x72hvd,2x72hv,11x1,357x0,22x1,52vd,58hd,3x72hvd,2x71hvd,52hv,12x71hvd,12x1,52vd,2x72hv,2x52hv,5x72hv,3x72hvd,11x1,357x0,22x1,52vd,6x72hvd,9x69,4x71hvd,12x1,72hv,2x72d,72hv,2x72d,58d,2x72d,72hvd,58hv,72hvd,52d,11x1,357x0,22x1,52vd,3x72hvd,58hd,72hvd,10x69h,4x71hvd,12x1,72hv,58h,72d,72hv,72d,58d,3x72d,3x72hvd,52d,11x1,357x0,22x1,6x72hvd,52,9x71h,4x71hvd,12x1,9x72hv,3x72hvd,54v,11x1,357x0,22x1,2x72hvd,58hv,72hvd,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,52vd,2x72d,72hv,10x1hv,10x1,357x0,22x1,3x72hvd,52d,2x1,2x53v,3x1,53v,1,53v,2x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,52vd,2x72d,52d,9x1hv,53v,10x1,357x0,22x1,3x72hvd,52d,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,52vd,2x72d,52d,3x1hv,53v,6x1hv,10x1,357x0,19x1,53v,2x1,4x72hvd,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,72hv,58h,72d,52d,10x1hv,10x1,357x0,22x1,4x72hvd,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,72hv,2x72d,72hv,10x1hv,10x1,357x0,19x1,53v,2x1,4x72hvd,12x1,71hd,69hd,69hvd,71hvd,9x1,53v,2x1hv,72hv,2x72d,72hv,1hv,53v,8x1hv,10x1,357x0,22x1,72hvd,58hv,2x72hvd,12x1,71hd,69hd,69hvd,71hvd,9x1,53v,2x1hv,72hv,2x72d,72hv,10x1hv,10x1,357x0,22x1,52vd,3x72hvd,3x1,53v,8x1,71hd,69hd,69hvd,71hvd,9x1,53v,2x1hv,72hv,58h,72d,72hv,10x1hv,10x1,357x0,18x1,53v,3x1,52vd,2x72hvd,58hv,4x1,53v,7x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,72hv,2x72d,72hv,10x1hv,10x1,357x0,18x1,53v,3x1,52vd,3x72hvd,4x1,53v,7x1,71hd,69hd,69hvd,71hvd,9x1,53v,2x1hv,72hv,2x72d,72hv,10x1hv,10x1,357x0,22x1,52vd,2x72hvd,52d,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,72hv,2x72d,72hv,10x1hv,10x1,357x0,20x1,53v,1,52vd,2x72hvd,52d,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,72hv,2x72d,72hv,10x1hv,10x1,357x0,22x1,3x72hvd,52d,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,72hv,2x72d,58h,10x1hv,10x1,357x0,22x1,72hvd,58hv,72hvd,52d,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,72hv,2x72d,72hv,10x1hv,10x1,357x0,22x1,4x72hvd,2x1,53v,9x1,71hd,69hd,69hvd,71hvd,8x1,53v,3x1hv,72hv,2x72d,72hv,10x1hv,10x1,357x0,22x1,3x72hvd,58hv,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,52vd,2x72d,72hv,10x1hv,10x1,357x0,19x1,53v,2x1,4x72hvd,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,72hv,72d,58h,72hv,2x1hv,2x53v,6x1hv,10x1,357x0,22x1,4x72hvd,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,72hv,2x72d,72hv,10x1hv,10x1,357x0,19x1,53v,2x1,72hvd,58hv,2x72hvd,3x1,53v,8x1,71hd,69hd,69hvd,71hvd,9x1,1hv,53v,1hv,72hv,2x72d,52d,10x1hv,10x1,357x0,20x1,53v,1,3x72hvd,58hv,12x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,52vd,2x72d,72hv,10x1hv,10x1,357x0,22x1,52vd,3x72hvd,2x1,53v,9x1,71hd,69hd,69hvd,71hvd,9x1,3x1hv,52vd,58h,72d,72hv,10x1hv,10x1,275712x0"
-						},
-						"tile-width": 64,
-						"tile-height": 64,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
 					"world": {
-						"x": 0,
-						"y": 0,
-						"width": 5074,
-						"height": 5058,
+						"x": -46,
+						"y": -64,
+						"width": 5115,
+						"height": 5123,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -51,6 +35,7 @@
 							1,
 							1
 						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -131,7 +116,7 @@
 				1,
 				1,
 				1,
-				0.5
+				0.2
 			],
 			"backgroundColor": [
 				0.3686274509803922,
@@ -155,7 +140,74 @@
 			"name": "AREAS",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "TempZoneMinus",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 39,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 37,
+						"y": 2609,
+						"width": 978,
+						"height": 449,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TempZonePlus",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 57,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 37,
+						"y": 2154,
+						"width": 978,
+						"height": 449,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 133335210415599,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -213,7 +265,7 @@
 						"8Направлений": {
 							"properties": {
 								"max-speed": 150,
-								"acceleration": 350,
+								"acceleration": 1000,
 								"deceleration": 500,
 								"directions": "dir-8",
 								"set-angle": "smooth",
@@ -336,6 +388,54 @@
 					}
 				},
 				{
+					"type": "КартаТайлов",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 64,
+						"tile-height": 64,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 78,
+							"height": 78,
+							"max-width": 156,
+							"max-height": 156,
+							"data": "206x0,2x2,154x0,2x2,153x0,20x1,136x0,1,5x0,1,6x0,1,5x0,1,136x0,1,5x0,1,6x0,1,5x0,1,136x0,1,5x0,1,6x0,1,5x0,1,136x0,2x1,2x0,4x1,2x0,5x1,2x0,3x1,136x0,1,18x0,1,136x0,1,18x0,1,136x0,1,18x0,1,136x0,14x1,2x0,4x1,147x0,1,7x0,1,155x0,1,0,6x4,148x0,1,0,4,4x0,4,140x0,1,7x0,1,0,4,2x0,4,0,4,140x0,1,7x0,1,0,2x4,0,3x4,140x0,1,7x0,1,4x0,4,136x0,2x2,4x0,6x1,2x0,1,132x0,2x2,7x0,2x2,4x0,1,7x0,1,0,6x4,125x0,2x2,13x0,1,7x0,1,6x0,4,140x0,1,7x0,1,6x0,4,140x0,1,7x0,1,0,6x4,140x0,1,7x0,1,147x0,9x1,0,4,4x0,4,143x0,2x2,5x0,6x4,129x0,2,13x0,2x2,5x0,4,4x0,4,143x0,2x2,151x0,8x1,2x0,6x4,140x0,1,6x0,1,2x0,4,4x0,4,147x0,1,3x0,4x4,148x0,1,148x0,1,6x0,1,2x0,6x4,140x0,1,6x0,1,2x0,4,2x0,4,0,4,140x0,1,6x0,1,148x0,1,6x0,1,2x0,4,4x0,4,132x0,2,7x0,8x1,3x0,4,2x0,4,144x0,2x2,7x0,2x4,125x0,2x2,18x0,2x2,6x0,4,2x0,4,124x0,2x2,15x0,8x1,2x0,4,4x0,4,123x0,2x2,15x0,1,6x0,1,131x0,2x2,15x0,1,138x0,2x2,15x0,1,138x0,2x2,15x0,1,6x0,1,2x0,4,128x0,2x2,15x0,1,6x0,1,2x0,4,145x0,1,6x0,1,2x0,6x4,140x0,1,6x0,1,2x0,4,145x0,1,6x0,1,2x0,4,145x0,1,6x0,1,135x0,3x2,8x0,4x1,2x0,4x1,2x0,6x4,127x0,3x2,8x0,1,8x0,1,2x0,4,2x0,4,0,4,127x0,3x2,8x0,1,8x0,1,2x0,4,2x0,4,0,4,138x0,1,8x0,1,146x0,1,8x0,1,4x0,4x4,138x0,1,8x0,1,2x0,2x4,0,4,140x0,1,8x0,1,4x0,4x4,138x0,1,8x0,1,146x0,1,8x0,1,4x0,4x4,138x0,1,8x0,1,2x0,2x4,142x0,1,8x0,1,4x0,2x4,149x0,1,2x0,2x4,124x0,10x2,17x0,1,4x0,4x4,120x0,10x2,8x0,1,8x0,1,146x0,10x1,147x0,2x2,154x0,2x2,154x0,2x2,130x0,7x1,2x0,2x1,3x0,3x1,2x0,3x1,2x0,2x2,130x0,1,9x0,1,3x2,1,6x0,1,4x2,130x0,1,9x0,1,3x2,1,6x0,1,4x2,130x0,1,9x0,1,3x0,1,6x0,1,134x0,1,9x0,1,3x0,1,6x0,1,134x0,1,9x0,1,3x0,1,6x0,1,134x0,1,9x0,1,3x0,1,6x0,1,134x0,1,9x0,1,3x0,1,6x0,1,134x0,1,9x0,1,3x0,1,6x0,1,134x0,11x1,3x0,8x1,134x0,2x2,12287x0"
+						},
+						"tile-width": 64,
+						"tile-height": 64,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 0,
+						"y": 0,
+						"width": 5000,
+						"height": 5000,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Camera",
 					"properties": {
 						"initially-visible": false,
@@ -443,7 +543,7 @@
 							"height": 79,
 							"max-width": 120,
 							"max-height": 102,
-							"data": "78x1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,23x0,13x1hd,40x0,1hvd,24x0,1hvd,23x0,1hd,11x0,1hd,40x0,1hvd,24x0,1hvd,23x0,1hd,11x0,1hd,12x0,11x1hvd,17x0,1hvd,24x0,1hvd,23x0,1hd,11x0,1hd,12x0,1hvd,9x0,1hvd,17x0,1hvd,24x0,1hvd,23x0,1hd,11x0,1hd,12x0,1hvd,9x0,1hvd,17x0,1hvd,24x0,1hvd,23x0,1hd,24x0,1hvd,9x0,1hvd,17x0,1hvd,24x0,1hvd,23x0,1hd,24x0,1hvd,27x0,1hvd,24x0,1hvd,23x0,1hd,11x0,1hd,12x0,1hvd,27x0,1hvd,24x0,1hvd,23x0,1hd,11x0,1hd,12x0,1hvd,9x0,1hvd,17x0,1hvd,24x0,1hvd,23x0,1hd,11x0,1hd,12x0,1hvd,9x0,1hvd,17x0,1hvd,24x0,1hvd,23x0,1hd,11x0,1hd,12x0,1hvd,9x0,1hvd,17x0,1hvd,24x0,1hvd,23x0,13x1hd,12x0,11x1hvd,17x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,1hvd,76x0,1hvd,24x0,78x1hvd,72x0,3x1hvd,4131x0"
+							"data": "78x1hvd,24x0,1hvd,49x0,2x1,25x0,1hvd,24x0,1hvd,49x0,2x1,25x0,1hvd,24x0,1hvd,48x0,20x1,8x0,1hvd,24x0,1hvd,48x0,1,5x0,1,6x0,1,5x0,1,8x0,1hvd,24x0,1hvd,48x0,1,5x0,1,6x0,1,5x0,1,8x0,1hvd,24x0,1hvd,48x0,1,5x0,1,6x0,1,5x0,1,8x0,1hvd,24x0,1hvd,48x0,2x1,2x0,4x1,2x0,5x1,2x0,3x1,8x0,1hvd,24x0,1hvd,48x0,1,18x0,1,8x0,1hvd,24x0,1hvd,48x0,1,18x0,1,8x0,1hvd,24x0,1hvd,48x0,1,18x0,1,8x0,1hvd,24x0,1hvd,48x0,14x1,2x0,4x1,8x0,1hvd,24x0,1hvd,59x0,1,7x0,1,8x0,1hvd,24x0,1hvd,67x0,1,8x0,1hvd,24x0,1hvd,67x0,1,8x0,1hvd,24x0,1hvd,59x0,1,7x0,1,8x0,1hvd,24x0,1hvd,59x0,1,7x0,1,8x0,1hvd,24x0,1hvd,59x0,1,7x0,1,8x0,1hvd,24x0,1hvd,53x0,2x1,4x0,6x1,2x0,1,8x0,1hvd,24x0,1hvd,44x0,2x1,7x0,2x1,4x0,1,7x0,1,8x0,1hvd,24x0,1hvd,44x0,2x1,13x0,1,7x0,1,8x0,1hvd,24x0,1hvd,59x0,1,7x0,1,8x0,1hvd,24x0,1hvd,59x0,1,7x0,1,8x0,1hvd,24x0,1hvd,59x0,1,7x0,1,8x0,1hvd,24x0,1hvd,59x0,9x1,8x0,1hvd,24x0,1hvd,62x0,2x1,12x0,1hvd,24x0,1hvd,48x0,1,13x0,2x1,12x0,1hvd,24x0,1hvd,62x0,2x1,12x0,1hvd,24x0,1hvd,59x0,8x1,9x0,1hvd,24x0,1hvd,59x0,1,6x0,1,9x0,1hvd,24x0,1hvd,66x0,1,9x0,1hvd,24x0,1hvd,66x0,1,9x0,1hvd,24x0,1hvd,59x0,1,6x0,1,9x0,1hvd,24x0,1hvd,59x0,1,6x0,1,9x0,1hvd,24x0,1hvd,59x0,1,6x0,1,9x0,1hvd,24x0,1hvd,59x0,1,6x0,1,9x0,1hvd,24x0,1hvd,51x0,1,7x0,8x1,9x0,1hvd,24x0,1hvd,62x0,2x1,12x0,1hvd,24x0,1hvd,42x0,2x1,18x0,2x1,12x0,1hvd,24x0,1hvd,42x0,2x1,15x0,8x1,9x0,1hvd,24x0,1hvd,42x0,2x1,15x0,1,6x0,1,9x0,1hvd,24x0,1hvd,42x0,2x1,15x0,1,16x0,1hvd,24x0,1hvd,42x0,2x1,15x0,1,16x0,1hvd,24x0,1hvd,42x0,2x1,15x0,1,6x0,1,9x0,1hvd,24x0,1hvd,42x0,2x1,15x0,1,6x0,1,9x0,1hvd,24x0,1hvd,59x0,1,6x0,1,9x0,1hvd,24x0,1hvd,59x0,1,6x0,1,9x0,1hvd,24x0,1hvd,59x0,1,6x0,1,9x0,1hvd,24x0,1hvd,59x0,1,6x0,1,9x0,1hvd,24x0,1hvd,46x0,3x1,8x0,4x1,2x0,4x1,9x0,1hvd,24x0,1hvd,46x0,3x1,8x0,1,8x0,1,9x0,1hvd,24x0,1hvd,46x0,3x1,8x0,1,8x0,1,9x0,1hvd,24x0,1hvd,57x0,1,8x0,1,9x0,1hvd,24x0,1hvd,57x0,1,8x0,1,9x0,1hvd,24x0,1hvd,57x0,1,8x0,1,9x0,1hvd,24x0,1hvd,57x0,1,8x0,1,9x0,1hvd,24x0,1hvd,57x0,1,8x0,1,9x0,1hvd,24x0,1hvd,57x0,1,8x0,1,9x0,1hvd,24x0,1hvd,57x0,1,8x0,1,9x0,1hvd,24x0,1hvd,57x0,1,8x0,1,9x0,1hvd,24x0,1hvd,66x0,1,9x0,1hvd,24x0,1hvd,39x0,10x1,17x0,1,9x0,1hvd,24x0,1hvd,39x0,10x1,8x0,1,7x0,2x1,9x0,1hvd,24x0,1hvd,57x0,10x1,9x0,1hvd,24x0,1hvd,58x0,2x1,16x0,1hvd,24x0,1hvd,58x0,2x1,16x0,1hvd,24x0,1hvd,58x0,2x1,16x0,1hvd,24x0,1hvd,34x0,7x1,2x0,2x1,3x0,3x1,2x0,3x1,2x0,2x1,16x0,1hvd,24x0,1hvd,34x0,1,9x0,5x1,6x0,5x1,16x0,1hvd,24x0,1hvd,34x0,1,9x0,5x1,6x0,5x1,16x0,1hvd,24x0,1hvd,34x0,1,9x0,1,3x0,1,6x0,1,20x0,1hvd,24x0,1hvd,34x0,1,9x0,1,3x0,1,6x0,1,20x0,1hvd,24x0,1hvd,34x0,1,9x0,1,3x0,1,6x0,1,20x0,1hvd,24x0,1hvd,34x0,1,9x0,1,3x0,1,6x0,1,20x0,1hvd,24x0,1hvd,34x0,1,9x0,1,3x0,1,6x0,1,20x0,1hvd,24x0,1hvd,34x0,1,9x0,1,3x0,1,6x0,1,20x0,1hvd,24x0,1hvd,34x0,11x1,3x0,8x1,20x0,1hvd,24x0,1hvd,34x0,2x1,40x0,1hvd,24x0,78x1hvd,72x0,3x1hvd,4131x0"
 						},
 						"tile-width": 64,
 						"tile-height": 64,
@@ -511,12 +611,12 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 20,
+					"uid": 21,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2624,
-						"y": 3488,
+						"x": 4608,
+						"y": 2592,
 						"width": 640,
 						"height": 704,
 						"originX": 0.5,
@@ -540,14 +640,159 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 21,
+					"uid": 20,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 2560,
-						"y": 1952,
-						"width": 768,
-						"height": 832,
+						"x": 4608,
+						"y": 3392,
+						"width": 640,
+						"height": 512,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roof",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 23,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 3616,
+						"y": 4032,
+						"width": 960,
+						"height": 640,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roof",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 24,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2848,
+						"y": 4096,
+						"width": 704,
+						"height": 512,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roof",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 25,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2080,
+						"y": 4096,
+						"width": 576,
+						"height": 512,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roof",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1152,
+						"y": 4128,
+						"width": 896,
+						"height": 576,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "roof",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 27,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 480,
+						"y": 3776,
+						"width": 576,
+						"height": 1280,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -650,9 +895,9 @@
 					"behaviors": {},
 					"world": {
 						"x": 26.898090664438143,
-						"y": 587.2839085453768,
+						"y": 587.6976210462301,
 						"width": 12.9982642403983,
-						"height": 553.8274250017067,
+						"height": 553,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -741,7 +986,7 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
-						"initial-frame": 0,
+						"initial-frame": 12,
 						"enable-collisions": true,
 						"live-preview": false
 					},
@@ -749,17 +994,17 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 117.04292644948666,
-						"y": 622.1505441192703,
-						"width": 43.76203936468612,
-						"height": 104.21769497416062,
-						"originX": 0.7068965517241379,
-						"originY": 0.8913043478260869,
+						"x": 102,
+						"y": 551,
+						"width": 45,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0.9
+							0.8
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -778,17 +1023,17 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 111,
-						"y": 703,
-						"width": 88.05810747698754,
-						"height": 91.93122422183745,
+						"x": 104,
+						"y": 672,
+						"width": 100,
+						"height": 100,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.49264705882352944,
 						"color": [
 							1,
 							1,
 							1,
-							0.9
+							0.8
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -807,17 +1052,17 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 122.04292644948666,
-						"y": 479.15054411927025,
-						"width": 69.3806186465913,
-						"height": 106.45681653539805,
-						"originX": 0.7068965517241379,
-						"originY": 0.8913043478260869,
+						"x": 101,
+						"y": 427,
+						"width": 65,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0.9
+							0.8
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -836,17 +1081,17 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 110,
-						"y": 815,
-						"width": 30.515069613128208,
-						"height": 96.33754261041175,
+						"x": 105,
+						"y": 806,
+						"width": 45,
+						"height": 100,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0.9
+							0.8
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -865,17 +1110,17 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 108,
-						"y": 317,
-						"width": 119.33523913976468,
-						"height": 119.68770972400726,
+						"x": 101,
+						"y": 310,
+						"width": 100,
+						"height": 100,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							0.9
+							0.8
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1064,8 +1309,8 @@
 					"world": {
 						"x": 301.59452034543057,
 						"y": 1176.5535132880605,
-						"width": 480,
-						"height": 480,
+						"width": 380,
+						"height": 380,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1131,8 +1376,8 @@
 						}
 					},
 					"world": {
-						"x": 112.04292644948666,
-						"y": 511.15054411927025,
+						"x": 101,
+						"y": 491,
 						"width": 112.0532480251601,
 						"height": 7.355988730399305,
 						"originX": 0.5,
@@ -1141,7 +1386,7 @@
 							1,
 							1,
 							1,
-							0.9
+							0.8
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -1160,8 +1405,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 30.788439060216675,
-						"y": 283.57155633387646,
+						"x": 29,
+						"y": 287,
 						"width": 48,
 						"height": 48,
 						"originX": 0.5,
@@ -1191,8 +1436,8 @@
 					"world": {
 						"x": 2053,
 						"y": 1176,
-						"width": 480,
-						"height": 480,
+						"width": 380,
+						"height": 380,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1206,7 +1451,7 @@
 					}
 				},
 				{
-					"type": "Текст",
+					"type": "Debug",
 					"properties": {
 						"text": "ОТКЛАДКА",
 						"enable-bbcode": true,

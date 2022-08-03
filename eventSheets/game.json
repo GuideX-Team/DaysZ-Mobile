@@ -792,9 +792,26 @@
 								"comparison": 2,
 								"value": "100"
 							}
+						},
+						{
+							"id": "is-touching-object",
+							"objectClass": "Тач",
+							"sid": 904141037145431,
+							"parameters": {
+								"object": "run"
+							},
+							"isInverted": true
 						}
 					],
 					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 876142486883720,
+							"parameters": {
+								"seconds": "5"
+							}
+						},
 						{
 							"id": "add-to-instvar",
 							"objectClass": "Player_movement",
@@ -813,11 +830,11 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "Player_movement",
-							"sid": 493646459096135,
+							"sid": 902428447297560,
 							"parameters": {
 								"instance-variable": "energy",
 								"comparison": 4,
-								"value": "10"
+								"value": "0"
 							}
 						}
 					],
@@ -934,29 +951,13 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 983477258654765,
+					"sid": 803090373439977,
 					"parameters": {
-						"interval-seconds": "1"
+						"interval-seconds": "10"
 					}
 				}
 			],
 			"actions": [
-				{
-					"id": "set-animation-frame",
-					"objectClass": "Health",
-					"sid": 482598929226326,
-					"parameters": {
-						"frame-number": "Health.AnimationFrame+1"
-					}
-				},
-				{
-					"id": "set-animation-frame",
-					"objectClass": "Hungry",
-					"sid": 468185837068780,
-					"parameters": {
-						"frame-number": "Hungry.AnimationFrame+1"
-					}
-				},
 				{
 					"id": "set-animation-frame",
 					"objectClass": "Thirst",
@@ -967,6 +968,96 @@
 				}
 			],
 			"sid": 529636253199450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 545203082020355,
+					"parameters": {
+						"interval-seconds": "15"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Hungry",
+					"sid": 849477584738085,
+					"parameters": {
+						"frame-number": "Hungry.AnimationFrame+1"
+					}
+				}
+			],
+			"sid": 975834671753877
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 135585877728929,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Hungry",
+					"sid": 311964303364711,
+					"parameters": {
+						"comparison": 0,
+						"number": "18"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Health",
+					"sid": 377931615951142,
+					"parameters": {
+						"frame-number": "Health.AnimationFrame+1"
+					}
+				}
+			],
+			"sid": 764697084316446
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 497475421766776,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Thirst",
+					"sid": 895145869069960,
+					"parameters": {
+						"comparison": 0,
+						"number": "21"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Health",
+					"sid": 562972681377131,
+					"parameters": {
+						"frame-number": "Health.AnimationFrame+1"
+					}
+				}
+			],
+			"sid": 901421903896428
 		},
 		{
 			"eventType": "block",
@@ -1003,7 +1094,7 @@
 					"objectClass": "Тач",
 					"sid": 658422822294495,
 					"parameters": {
-						"object": "Текст"
+						"object": "Debug"
 					}
 				}
 			],
@@ -1018,6 +1109,110 @@
 				}
 			],
 			"sid": 704987700458596
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player_rotate",
+					"sid": 399889267521486,
+					"parameters": {
+						"object": "TempZoneMinus"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 535285864916515,
+					"parameters": {
+						"interval-seconds": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 854347960916470,
+					"parameters": {
+						"seconds": "10"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Temp",
+					"sid": 749427366648347,
+					"parameters": {
+						"frame-number": "Temp.AnimationFrame+1"
+					}
+				}
+			],
+			"sid": 553808477357998
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player_rotate",
+					"sid": 157133801095579,
+					"parameters": {
+						"object": "TempZonePlus"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 824217165056085,
+					"parameters": {
+						"interval-seconds": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 327853124756955,
+					"parameters": {
+						"seconds": "10"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Temp",
+					"sid": 420897492745414,
+					"parameters": {
+						"frame-number": "Temp.AnimationFrame-1"
+					}
+				}
+			],
+			"sid": 930081725375732
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Тач",
+					"sid": 113041531978975,
+					"parameters": {
+						"object": "PAUSE"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 231325817187366,
+					"parameters": {
+						"time-scale": "timescale=0/1"
+					}
+				}
+			],
+			"sid": 213826934559195
 		}
 	],
 	"sid": 206982985980515
