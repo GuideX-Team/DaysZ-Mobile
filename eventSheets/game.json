@@ -28,7 +28,7 @@
 							"actions": [
 								{
 									"id": "set-vector-x",
-									"objectClass": "Player_movement",
+									"objectClass": "Player",
 									"sid": 123375602004137,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -37,7 +37,7 @@
 								},
 								{
 									"id": "set-vector-y",
-									"objectClass": "Player_movement",
+									"objectClass": "Player",
 									"sid": 568537306345864,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -195,7 +195,7 @@
 							"actions": [
 								{
 									"id": "set-max-speed",
-									"objectClass": "Player_movement",
+									"objectClass": "Player",
 									"sid": 691077032098606,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -221,7 +221,7 @@
 							"actions": [
 								{
 									"id": "set-max-speed",
-									"objectClass": "Player_movement",
+									"objectClass": "Player",
 									"sid": 923862921397667,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -244,7 +244,7 @@
 							"actions": [
 								{
 									"id": "set-max-speed",
-									"objectClass": "Player_movement",
+									"objectClass": "Player",
 									"sid": 948808889597157,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -259,7 +259,7 @@
 							"conditions": [
 								{
 									"id": "compare-speed",
-									"objectClass": "Player_movement",
+									"objectClass": "Player",
 									"sid": 425647956247626,
 									"behaviorType": "8Направлений",
 									"parameters": {
@@ -276,7 +276,7 @@
 							"actions": [
 								{
 									"id": "subtract-from-instvar",
-									"objectClass": "Player_movement",
+									"objectClass": "Player",
 									"sid": 464469976954380,
 									"parameters": {
 										"instance-variable": "energy",
@@ -309,8 +309,8 @@
 							"actions": [
 								{
 									"id": "rotate-toward-angle",
-									"objectClass": "Player_rotate",
-									"sid": 111216243333178,
+									"objectClass": "Player",
+									"sid": 582928741239429,
 									"parameters": {
 										"degrees": "10",
 										"angle": "angle(Circle2.X, Circle2.Y, JoyT2.X, JoyT2.Y)"
@@ -480,7 +480,7 @@
 							"objectClass": "shadow",
 							"sid": 766944681379946,
 							"parameters": {
-								"object": "Player_movement",
+								"object": "Player",
 								"image-point-optional": "0"
 							}
 						}
@@ -739,7 +739,7 @@
 							"objectClass": "energy_bar",
 							"sid": 890424237043021,
 							"parameters": {
-								"height": "Player_movement.energy*5.55"
+								"height": "Player.energy*5.55"
 							}
 						}
 					],
@@ -750,7 +750,7 @@
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "Player_movement",
+							"objectClass": "Player",
 							"sid": 798194199617014,
 							"parameters": {
 								"instance-variable": "energy",
@@ -785,7 +785,7 @@
 						},
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "Player_movement",
+							"objectClass": "Player",
 							"sid": 669463438191713,
 							"parameters": {
 								"instance-variable": "energy",
@@ -814,7 +814,7 @@
 						},
 						{
 							"id": "add-to-instvar",
-							"objectClass": "Player_movement",
+							"objectClass": "Player",
 							"sid": 211656219872334,
 							"parameters": {
 								"instance-variable": "energy",
@@ -829,7 +829,7 @@
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "Player_movement",
+							"objectClass": "Player",
 							"sid": 902428447297560,
 							"parameters": {
 								"instance-variable": "energy",
@@ -876,8 +876,8 @@
 							"objectClass": "Camera",
 							"sid": 769601290492787,
 							"parameters": {
-								"x": "Camera.X+(Camera.Speed*(Player_movement.X-Camera.X)/100)",
-								"y": "Camera.Y+(Camera.Speed*(Player_movement.Y-Camera.Y)/100)"
+								"x": "Camera.X+(Camera.Speed*(Player.X-Camera.X)/100)",
+								"y": "Camera.Y+(Camera.Speed*(Player.Y-Camera.Y)/100)"
 							}
 						}
 					],
@@ -898,7 +898,7 @@
 					"conditions": [
 						{
 							"id": "on-collision-with-another-object",
-							"objectClass": "Player_movement",
+							"objectClass": "Player",
 							"sid": 661689720575794,
 							"parameters": {
 								"object": "roof"
@@ -922,7 +922,7 @@
 					"conditions": [
 						{
 							"id": "is-overlapping-another-object",
-							"objectClass": "Player_movement",
+							"objectClass": "Player",
 							"sid": 915590560196888,
 							"parameters": {
 								"object": "roof"
@@ -1063,33 +1063,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 851771299283707
-				}
-			],
-			"actions": [
-				{
-					"id": "pin-to-object-imagepoint",
-					"objectClass": "Player_rotate",
-					"sid": 335006131353362,
-					"behaviorType": "Прикрепить",
-					"parameters": {
-						"pin-to": "Player_movement",
-						"image-point": "0",
-						"angle": false,
-						"width-type": "no",
-						"height-type": "no",
-						"z": false
-					}
-				}
-			],
-			"sid": 528774379553573
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-touched-object",
 					"objectClass": "Тач",
 					"sid": 658422822294495,
@@ -1113,14 +1086,6 @@
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Player_rotate",
-					"sid": 399889267521486,
-					"parameters": {
-						"object": "TempZoneMinus"
-					}
-				},
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
@@ -1153,14 +1118,6 @@
 		{
 			"eventType": "block",
 			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Player_rotate",
-					"sid": 157133801095579,
-					"parameters": {
-						"object": "TempZonePlus"
-					}
-				},
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
@@ -1204,15 +1161,316 @@
 			],
 			"actions": [
 				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 202099346031059,
+					"parameters": {
+						"layer": "7",
+						"visibility": "visible"
+					}
+				},
+				{
 					"id": "set-time-scale",
 					"objectClass": "System",
-					"sid": 231325817187366,
+					"sid": 364417737031139,
+					"parameters": {
+						"time-scale": "timescale=0/1"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 390392429442316,
+					"parameters": {
+						"group-name": "\"Наведение\"",
+						"state": "toggle-active"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 223671257051833,
+					"parameters": {
+						"group-name": "\"Управление персонажем\"",
+						"state": "toggle-active"
+					}
+				}
+			],
+			"sid": 213826934559195
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Тач",
+					"sid": 846100865189613,
+					"parameters": {
+						"object": "PAUSE_CONTINUE"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 725877717847461,
+					"parameters": {
+						"layer": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 953293928541228,
+					"parameters": {
+						"group-name": "\"Наведение\"",
+						"state": "toggle-active"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 242472094405613,
+					"parameters": {
+						"group-name": "\"Управление персонажем\"",
+						"state": "toggle-active"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 827202244455691,
+					"parameters": {
+						"time-scale": "timescale=0/1"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 700856345248376,
+					"parameters": {
+						"layer": "7",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 273358630299385
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Тач",
+					"sid": 882760862448985,
+					"parameters": {
+						"object": "PAUSE_EXIT"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 814250152289546,
+					"parameters": {
+						"layer": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 913923868329060,
+					"parameters": {
+						"group-name": "\"Наведение\"",
+						"state": "toggle-active"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 839300448413591,
+					"parameters": {
+						"group-name": "\"Управление персонажем\"",
+						"state": "toggle-active"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 241644016113756,
+					"parameters": {
+						"layout": "MENU"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 382632229340884,
+					"parameters": {
+						"layer": "7",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 320000126850814,
 					"parameters": {
 						"time-scale": "timescale=0/1"
 					}
 				}
 			],
-			"sid": 213826934559195
+			"sid": 598338144944127
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Тач",
+					"sid": 172300049538247,
+					"parameters": {
+						"object": "attack"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player",
+					"sid": 766379755934186,
+					"parameters": {
+						"object": "Спрайт",
+						"layer": "3",
+						"image-point": "1",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 552065517481189,
+					"parameters": {
+						"seconds": "0.2"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Спрайт",
+					"sid": 623139136466489
+				}
+			],
+			"sid": 732732517388427
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Авто-наводка",
+			"description": "",
+			"isActiveOnStart": false,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "has-los-to-object",
+							"objectClass": "Player",
+							"sid": 841373487830365,
+							"behaviorType": "ПолеЗрения",
+							"parameters": {
+								"object": "Zombie",
+								"image-point": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-toward-position",
+							"objectClass": "Player",
+							"sid": 818843308194615,
+							"parameters": {
+								"x": "Zombie.X",
+								"y": "Zombie.Y"
+							}
+						}
+					],
+					"sid": 466791107897575
+				}
+			],
+			"sid": 258457398300397
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Тач",
+					"sid": 445488744764566,
+					"parameters": {
+						"object": "tipoff"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 271738525752265,
+					"parameters": {
+						"layer": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 586240531268848,
+					"parameters": {
+						"group-name": "\"Авто-наводка\"",
+						"state": "toggle-active"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 157194425978418,
+					"parameters": {
+						"group-name": "\"Наведение\"",
+						"state": "toggle-active"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Наведение",
+					"sid": 277207355877246,
+					"parameters": {
+						"visibility": "toggle"
+					}
+				}
+			],
+			"sid": 207886520511018
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Спрайт",
+					"sid": 988912167958161,
+					"parameters": {
+						"object": "Zombie"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Zombie",
+					"sid": 697590920857121
+				}
+			],
+			"sid": 723256592435450
 		}
 	],
 	"sid": 206982985980515

@@ -1,0 +1,13 @@
+{
+	"name": "Наведение",
+	"plugin-id": "Sprite",
+	"sid": 922991233295878,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Circle2",
+		"Joy2",
+		"JoyT2"
+	]
+}

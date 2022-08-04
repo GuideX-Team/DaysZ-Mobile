@@ -3,8 +3,21 @@
 	"plugin-id": "Sprite",
 	"sid": 632506086028192,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "attack",
+			"type": "number",
+			"desc": "",
+			"sid": 340188515096856
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Якорь",
+			"sid": 583815423123875
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

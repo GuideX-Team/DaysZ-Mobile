@@ -152,8 +152,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Bullet",
-			"name": "Пуля",
+			"id": "Anchor",
+			"name": "Якорь",
 			"author": "Scirra",
 			"version": "r302",
 			"bundled": false
@@ -176,8 +176,24 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Поиск пути",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Timer",
 			"name": "Таймер",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Пуля",
 			"author": "Scirra",
 			"version": "r302",
 			"bundled": false
@@ -213,14 +229,6 @@
 			"author": "Scirra",
 			"version": "r302",
 			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "waterbg",
-			"name": "Водный фон",
-			"author": "Viktor Korsun",
-			"version": "r302",
-			"bundled": false
 		}
 	],
 	"uniqueId": "ybl31iyy9xq",
@@ -236,16 +244,17 @@
 			"Grass",
 			"КартаТайлов",
 			"TempZoneMinus",
-			"TempZonePlus"
+			"TempZonePlus",
+			"Zombie",
+			"Спрайт",
+			"tipoff"
 		],
 		"subfolders": [
 			{
 				"items": [
 					"Camera",
-					"Player_movement",
-					"aim",
-					"bullet",
-					"Player_rotate"
+					"Player",
+					"aim"
 				],
 				"subfolders": [],
 				"name": "Игрок"
@@ -479,7 +488,8 @@
 	"containers": [],
 	"families": {
 		"items": [
-			"Откладка"
+			"Откладка",
+			"Наведение"
 		],
 		"subfolders": [
 			{
@@ -543,17 +553,14 @@
 	"layouts": {
 		"items": [
 			"MENU",
-			"GAME",
-			"LOAD_,MENU",
-			"LOAD_GAME"
+			"GAME"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"GAME",
-			"LOAD_MENU",
-			"LOAD_GAME"
+			"MENU"
 		],
 		"subfolders": []
 	},
@@ -680,7 +687,7 @@
 		"pixelRounding": true,
 		"zAxisScale": "normalized",
 		"fov": 0.7853981633974483,
-		"useLoaderLayout": true,
+		"useLoaderLayout": false,
 		"fullscreenMode": "scale-inner",
 		"fullscreenQuality": "high",
 		"viewportFit": "auto",
@@ -714,12 +721,12 @@
 		"renderingMode": "auto",
 		"anisotropicFiltering": "auto",
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "none",
+		"loaderStyle": "percent",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https"
 	},
 	"viewportWidth": 2560,
 	"viewportHeight": 1440,
-	"firstLayout": "LOAD_,MENU"
+	"firstLayout": "MENU"
 }

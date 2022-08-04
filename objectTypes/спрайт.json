@@ -1,29 +1,35 @@
 {
 	"name": "Спрайт",
 	"plugin-id": "Sprite",
-	"sid": 369892873114913,
+	"sid": 422390404679615,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Пуля",
+			"sid": 690914087765139
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 172,
-						"height": 156,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1971733,
+						"imageSpriteId": 8323628,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 152866147302012,
+				"sid": 897645639991474,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -4,6 +4,12 @@
 	"sid": 355264084189492,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Якорь",
+			"sid": 732070088761249
+		}
+	],
 	"effectTypes": []
 }

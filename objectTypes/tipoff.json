@@ -1,14 +1,14 @@
 {
-	"name": "PAUSE_LOAD",
+	"name": "tipoff",
 	"plugin-id": "Text",
-	"sid": 765623211188075,
+	"sid": 472937072481365,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Anchor",
 			"name": "Якорь",
-			"sid": 301413447455607
+			"sid": 575264405528571
 		}
 	],
 	"effectTypes": []

@@ -6,9 +6,9 @@
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Timer",
-			"name": "Таймер",
-			"sid": 378469944292102
+			"behaviorId": "Anchor",
+			"name": "Якорь",
+			"sid": 468434350113321
 		}
 	],
 	"effectTypes": [],

@@ -9,10 +9,6 @@
 		{
 			"effectId": "blurvertical",
 			"name": "РазмытиеПоВертикали"
-		},
-		{
-			"effectId": "waterbg",
-			"name": "ВодныйФон"
 		}
 	],
 	"image": {

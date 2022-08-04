@@ -1,14 +1,36 @@
 {
-	"name": "Player_rotate",
+	"name": "Zombie",
 	"plugin-id": "Sprite",
-	"sid": 754733142928529,
+	"sid": 988360820823400,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Agr",
+			"type": "number",
+			"desc": "",
+			"sid": 513094646113675
+		}
+	],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Pin",
-			"name": "Прикрепить",
-			"sid": 510609396560670
+			"behaviorId": "solid",
+			"name": "Твердый",
+			"sid": 794490427829586
+		},
+		{
+			"behaviorId": "Pathfinding",
+			"name": "ПоискПути",
+			"sid": 789594322767102
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "ПолеЗрения",
+			"sid": 879507163261144
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Таймер",
+			"sid": 903208344521762
 		}
 	],
 	"effectTypes": [],
@@ -24,7 +46,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 669105,
+						"imageSpriteId": 8064380,
 						"collisionPoly": {
 							"points": [
 								0.16666666666666666,
@@ -56,7 +78,7 @@
 						"duration": 1
 					}
 				],
-				"sid": 378505246655001,
+				"sid": 937750236421638,
 				"name": "1",
 				"isLooping": true,
 				"isPingPong": false,
