@@ -1,11 +1,16 @@
 {
-	"name": "ТайловыйФон",
+	"name": "pause_background2",
 	"plugin-id": "TiledBg",
-	"sid": 615181098081584,
+	"sid": 126788039032418,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "blurvertical",
+			"name": "РазмытиеПоВертикали"
+		}
+	],
 	"image": {
 		"width": 250,
 		"height": 250,
@@ -14,7 +19,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 7488246,
+		"imageSpriteId": 1247303,
 		"useCollisionPoly": true
 	}
 }

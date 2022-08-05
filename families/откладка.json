@@ -10,6 +10,7 @@
 		"check_gpu",
 		"check_objects",
 		"check_time",
-		"check_fps"
+		"check_fps",
+		"check_blood"
 	]
 }

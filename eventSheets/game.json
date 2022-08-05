@@ -583,6 +583,14 @@
 									"parameters": {
 										"text": "\"В игре: \" &zeropad(Minutes, 2) &\" : \"& zeropad(Seconds, 2)"
 									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "check_blood",
+									"sid": 912380337522659,
+									"parameters": {
+										"text": "Blood.blood"
+									}
 								}
 							],
 							"sid": 480148517510581
@@ -1770,6 +1778,177 @@
 				}
 			],
 			"sid": 450286074683099
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 113296892151707,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				},
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Zombie",
+					"sid": 453787074298551,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "Player",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Zombie",
+					"sid": 456022433078783,
+					"parameters": {
+						"object": "bullet2",
+						"layer": "3",
+						"image-point": "1",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 254016320074827,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "bullet2",
+					"sid": 668758486186662
+				}
+			],
+			"sid": 783154704104934
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "bullet2",
+					"sid": 180964956056065,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Health",
+					"sid": 803446797268803,
+					"parameters": {
+						"frame-number": "Health.AnimationFrame+2"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Blood",
+					"sid": 284895681114396,
+					"parameters": {
+						"frame-number": "Blood.AnimationFrame+1"
+					}
+				}
+			],
+			"sid": 561689842740647
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "bullet2",
+					"sid": 211447459916926,
+					"parameters": {
+						"object": "Player"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Blood",
+					"sid": 383215481596845,
+					"parameters": {
+						"instance-variable": "blood",
+						"comparison": 5,
+						"value": "5"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Blood",
+					"sid": 185764952272676,
+					"parameters": {
+						"instance-variable": "blood",
+						"value": "random(1,3)"
+					}
+				}
+			],
+			"sid": 811932729178013
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Blood",
+					"sid": 441262434926575,
+					"parameters": {
+						"instance-variable": "blood",
+						"comparison": 5,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Blood",
+					"sid": 666455368858391,
+					"parameters": {
+						"speed": "0.5"
+					}
+				}
+			],
+			"sid": 280833386240908
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Health",
+					"sid": 825098159031809,
+					"parameters": {
+						"comparison": 5,
+						"number": "21"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 156081934166166,
+					"parameters": {
+						"layer": "8",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 835678710446562,
+			"isOrBlock": true
 		}
 	],
 	"sid": 206982985980515

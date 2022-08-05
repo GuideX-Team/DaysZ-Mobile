@@ -256,7 +256,10 @@
 			"Zombie",
 			"bullet",
 			"tipoff",
-			"bullet2"
+			"bullet2",
+			"check_blood",
+			"faint_text",
+			"ТайловыйФон"
 		],
 		"subfolders": [
 			{
