@@ -184,8 +184,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Timer",
-			"name": "Таймер",
+			"id": "MoveTo",
+			"name": "Движение К",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "custom",
+			"name": "Настраиваемое движение",
 			"author": "Scirra",
 			"version": "r302",
 			"bundled": false
@@ -246,8 +254,9 @@
 			"TempZoneMinus",
 			"TempZonePlus",
 			"Zombie",
-			"Спрайт",
-			"tipoff"
+			"bullet",
+			"tipoff",
+			"bullet2"
 		],
 		"subfolders": [
 			{
@@ -489,7 +498,8 @@
 	"families": {
 		"items": [
 			"Откладка",
-			"Наведение"
+			"Наведение",
+			"Семья1"
 		],
 		"subfolders": [
 			{

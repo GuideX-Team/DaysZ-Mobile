@@ -1,14 +1,14 @@
 {
 	"name": "bullet",
 	"plugin-id": "Sprite",
-	"sid": 732637882635318,
+	"sid": 422390404679615,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Bullet",
 			"name": "Пуля",
-			"sid": 144458848360243
+			"sid": 690914087765139
 		}
 	],
 	"effectTypes": [],
@@ -24,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 5060679,
+						"imageSpriteId": 8323628,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 323810551433093,
+				"sid": 897645639991474,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -268,11 +268,6 @@
 								"enabled": true
 							}
 						},
-						"СледитьЗа": {
-							"properties": {
-								"enabled": false
-							}
-						},
 						"ПолеЗрения": {
 							"properties": {
 								"obstacles": "solids",
@@ -362,26 +357,26 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 58,
+					"uid": 28,
 					"instanceVariables": {
 						"Agr": 0
 					},
 					"behaviors": {
-						"Твердый": {
+						"Solid": {
 							"properties": {
-								"enabled": false,
-								"tags": ""
+								"enabled": true,
+								"tags": "zombie"
 							}
 						},
 						"ПоискПути": {
 							"properties": {
-								"cell-size": 16,
+								"cell-size": 30,
 								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
+								"obstacles": "custom",
+								"max-speed": 100,
 								"acceleration": 1000,
 								"deceleration": 2000,
-								"rotate-speed": 135,
+								"rotate-speed": 500,
 								"rotate-object": true,
 								"diagonals": true,
 								"enabled": true
@@ -389,19 +384,34 @@
 						},
 						"ПолеЗрения": {
 							"properties": {
-								"obstacles": "solids",
+								"obstacles": "custom",
 								"range": 500,
 								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
 						},
-						"Таймер": {
-							"properties": {}
+						"ДвижениеК": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"НастраиваемоеДвижение": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
 						}
 					},
 					"world": {
-						"x": 2511,
-						"y": 2173,
+						"x": 2143,
+						"y": 2014,
 						"width": 72.89101400145032,
 						"height": 72.89101400145032,
 						"originX": 0.5,
@@ -421,369 +431,385 @@
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 33,
+					"instanceVariables": {
+						"Agr": 0
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "zombie"
+							}
+						},
+						"ПоискПути": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": -1,
+								"obstacles": "custom",
+								"max-speed": 100,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 500,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"ПолеЗрения": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"ДвижениеК": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"НастраиваемоеДвижение": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1773,
+						"y": 2227,
+						"width": 72.89101400145032,
+						"height": 72.89101400145032,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Zombie",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 35,
+					"instanceVariables": {
+						"Agr": 0
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "zombie"
+							}
+						},
+						"ПоискПути": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": -1,
+								"obstacles": "custom",
+								"max-speed": 100,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 500,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"ПолеЗрения": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"ДвижениеК": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"НастраиваемоеДвижение": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2450,
+						"y": 2190,
+						"width": 72.89101400145032,
+						"height": 72.89101400145032,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Zombie",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"instanceVariables": {
+						"Agr": 0
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "zombie"
+							}
+						},
+						"ПоискПути": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": -1,
+								"obstacles": "custom",
+								"max-speed": 100,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 500,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"ПолеЗрения": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"ДвижениеК": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"НастраиваемоеДвижение": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2528,
+						"y": 1910,
+						"width": 72.89101400145032,
+						"height": 72.89101400145032,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Zombie",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 55,
+					"instanceVariables": {
+						"Agr": 0
+					},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": "zombie"
+							}
+						},
+						"ПоискПути": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": -1,
+								"obstacles": "custom",
+								"max-speed": 100,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 500,
+								"rotate-object": true,
+								"diagonals": true,
+								"enabled": true
+							}
+						},
+						"ПолеЗрения": {
+							"properties": {
+								"obstacles": "custom",
+								"range": 500,
+								"cone-of-view": 360,
+								"use-collision-cells": true
+							}
+						},
+						"ДвижениеК": {
+							"properties": {
+								"max-speed": 100,
+								"acceleration": 600,
+								"deceleration": 600,
+								"rotate-speed": 0,
+								"set-angle": true,
+								"stop-on-solids": true,
+								"enabled": true
+							}
+						},
+						"НастраиваемоеДвижение": {
+							"properties": {
+								"stepping-mode": "none",
+								"pixels-per-step": 5,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1796,
+						"y": 1942,
+						"width": 72.89101400145032,
+						"height": 72.89101400145032,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bullet",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 58,
+					"instanceVariables": {},
+					"behaviors": {
+						"Пуля": {
+							"properties": {
+								"speed": 500,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 2129,
+						"y": -112,
+						"width": 17,
+						"height": 9,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "bullet2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 119,
-					"instanceVariables": {
-						"Agr": 0
-					},
+					"instanceVariables": {},
 					"behaviors": {
-						"Твердый": {
+						"Пуля": {
 							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						},
-						"ПоискПути": {
-							"properties": {
-								"cell-size": 16,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 135,
-								"rotate-object": true,
-								"diagonals": true,
+								"speed": 400,
+								"acceleration": 0,
+								"gravity": 0,
+								"bounce-off-solids": false,
+								"set-angle": true,
+								"step": false,
 								"enabled": true
 							}
-						},
-						"ПолеЗрения": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 500,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"Таймер": {
-							"properties": {}
 						}
 					},
 					"world": {
-						"x": 929,
-						"y": 1974,
-						"width": 72.89101400145032,
-						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Zombie",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 120,
-					"instanceVariables": {
-						"Agr": 0
-					},
-					"behaviors": {
-						"Твердый": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						},
-						"ПоискПути": {
-							"properties": {
-								"cell-size": 16,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 135,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"ПолеЗрения": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 500,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"Таймер": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 2408,
-						"y": 3064,
-						"width": 72.89101400145032,
-						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Zombie",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 121,
-					"instanceVariables": {
-						"Agr": 0
-					},
-					"behaviors": {
-						"Твердый": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						},
-						"ПоискПути": {
-							"properties": {
-								"cell-size": 16,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 135,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"ПолеЗрения": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 500,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"Таймер": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 1043,
-						"y": 3680,
-						"width": 72.89101400145032,
-						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Zombie",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 122,
-					"instanceVariables": {
-						"Agr": 0
-					},
-					"behaviors": {
-						"Твердый": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						},
-						"ПоискПути": {
-							"properties": {
-								"cell-size": 16,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 135,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"ПолеЗрения": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 500,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"Таймер": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 3457,
-						"y": 2888,
-						"width": 72.89101400145032,
-						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Zombie",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 124,
-					"instanceVariables": {
-						"Agr": 0
-					},
-					"behaviors": {
-						"Твердый": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						},
-						"ПоискПути": {
-							"properties": {
-								"cell-size": 16,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 135,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"ПолеЗрения": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 500,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"Таймер": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 1882,
-						"y": 2173,
-						"width": 72.89101400145032,
-						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Zombie",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 125,
-					"instanceVariables": {
-						"Agr": 0
-					},
-					"behaviors": {
-						"Твердый": {
-							"properties": {
-								"enabled": false,
-								"tags": ""
-							}
-						},
-						"ПоискПути": {
-							"properties": {
-								"cell-size": 16,
-								"cell-border": -1,
-								"obstacles": "solids",
-								"max-speed": 200,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 135,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"ПолеЗрения": {
-							"properties": {
-								"obstacles": "solids",
-								"range": 500,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"Таймер": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 2027,
-						"y": 2207,
-						"width": 72.89101400145032,
-						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 2069,
+						"y": -106,
+						"width": 14,
+						"height": 5,
+						"originX": 0.492,
+						"originY": 0.996,
 						"color": [
 							1,
 							1,
@@ -2264,7 +2290,7 @@
 					}
 				},
 				{
-					"type": "Спрайт",
+					"type": "bullet",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

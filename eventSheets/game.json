@@ -1093,6 +1093,14 @@
 					"parameters": {
 						"interval-seconds": "7"
 					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 923058505100960,
+					"parameters": {
+						"object": "TempZoneMinus"
+					}
 				}
 			],
 			"actions": [
@@ -1124,6 +1132,14 @@
 					"sid": 824217165056085,
 					"parameters": {
 						"interval-seconds": "7"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 206394169516461,
+					"parameters": {
+						"object": "TempZonePlus"
 					}
 				}
 			],
@@ -1342,7 +1358,7 @@
 					"objectClass": "Player",
 					"sid": 766379755934186,
 					"parameters": {
-						"object": "Спрайт",
+						"object": "bullet",
 						"layer": "3",
 						"image-point": "1",
 						"create-hierarchy": false
@@ -1358,7 +1374,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "Спрайт",
+					"objectClass": "bullet",
 					"sid": 623139136466489
 				}
 			],
@@ -1456,7 +1472,7 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Спрайт",
+					"objectClass": "bullet",
 					"sid": 988912167958161,
 					"parameters": {
 						"object": "Zombie"
@@ -1471,6 +1487,289 @@
 				}
 			],
 			"sid": 723256592435450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Zombie",
+					"sid": 192528927553557,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "Player",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Zombie",
+					"sid": 845452523860894,
+					"parameters": {
+						"instance-variable": "Agr",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 672601913324720
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Zombie",
+					"sid": 546748462584026,
+					"behaviorType": "ПолеЗрения",
+					"parameters": {
+						"object": "Player",
+						"image-point": "0"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Zombie",
+					"sid": 895748016456174,
+					"parameters": {
+						"instance-variable": "Agr",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 574561442093680
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Zombie",
+					"sid": 565561594372185,
+					"parameters": {
+						"instance-variable": "Agr",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "Zombie",
+					"sid": 981664621997589,
+					"behaviorType": "ПоискПути",
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.Y"
+					}
+				}
+			],
+			"sid": 632655158435386
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 403367294270185,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Zombie",
+					"sid": 667692991100740,
+					"parameters": {
+						"instance-variable": "Agr",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "Zombie",
+					"sid": 187590937562218,
+					"behaviorType": "ПоискПути",
+					"parameters": {
+						"x": "random(0,LayoutWidth+1)",
+						"y": "random(0,LayoutHeight+1)"
+					}
+				}
+			],
+			"sid": 805299386974120
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-failed-to-find-path",
+					"objectClass": "Zombie",
+					"sid": 445367583013621,
+					"behaviorType": "ПоискПути"
+				}
+			],
+			"actions": [
+				{
+					"id": "find-path",
+					"objectClass": "Zombie",
+					"sid": 985034584968033,
+					"behaviorType": "ПоискПути",
+					"parameters": {
+						"x": "random(0,LayoutWidth+1)",
+						"y": "random(0,LayoutHeight+1)"
+					}
+				}
+			],
+			"sid": 757876037064180
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 188268999339839,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 258432704977380,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-calculating-path",
+							"objectClass": "Zombie",
+							"sid": 816315272146569,
+							"behaviorType": "ПоискПути"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "Zombie",
+							"sid": 762517878422458,
+							"behaviorType": "ПоискПути"
+						}
+					],
+					"sid": 509969861605926
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Zombie",
+					"sid": 538117211907515,
+					"parameters": {
+						"object": "Player"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 856144205865621,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Zombie",
+					"sid": 122796207420142,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Zombie",
+					"sid": 522977774190714,
+					"parameters": {
+						"object": "Zombie"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "push-out-solid",
+					"objectClass": "Zombie",
+					"sid": 853017987551341,
+					"behaviorType": "НастраиваемоеДвижение",
+					"parameters": {
+						"direction": "nearest"
+					}
+				}
+			],
+			"sid": 713029769881336,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 734408395139279,
+					"parameters": {
+						"object": "Zombie"
+					}
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 893816111962884,
+					"behaviorType": "8Направлений"
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "Zombie",
+					"sid": 568558253672124,
+					"parameters": {
+						"angle": "Player.8Направлений.MovingAngle=1",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 267438407095770
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 770087813977177
+				}
+			],
+			"actions": [
+				{
+					"id": "add-obstacle",
+					"objectClass": "Zombie",
+					"sid": 240267200353823,
+					"behaviorType": "ПоискПути",
+					"parameters": {
+						"obstacle": "tail_wall"
+					}
+				}
+			],
+			"sid": 450286074683099
 		}
 	],
 	"sid": 206982985980515

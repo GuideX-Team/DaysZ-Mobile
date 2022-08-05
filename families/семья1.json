@@ -1,0 +1,17 @@
+{
+	"name": "Семья1",
+	"plugin-id": "Sprite",
+	"sid": 856644265233458,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 465581297275054
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Zombie"
+	]
+}
