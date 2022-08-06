@@ -272,7 +272,7 @@
 							"properties": {
 								"obstacles": "solids",
 								"range": 300,
-								"cone-of-view": 360,
+								"cone-of-view": 160,
 								"use-collision-cells": true
 							}
 						},
@@ -357,87 +357,10 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 28,
-					"instanceVariables": {
-						"Agr": 0
-					},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": "zombie"
-							}
-						},
-						"ПоискПути": {
-							"properties": {
-								"cell-size": 30,
-								"cell-border": -1,
-								"obstacles": "custom",
-								"max-speed": 100,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 500,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"ПолеЗрения": {
-							"properties": {
-								"obstacles": "custom",
-								"range": 500,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"ДвижениеК": {
-							"properties": {
-								"max-speed": 100,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": true,
-								"enabled": true
-							}
-						},
-						"НастраиваемоеДвижение": {
-							"properties": {
-								"stepping-mode": "none",
-								"pixels-per-step": 5,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 2143,
-						"y": 2014,
-						"width": 72.89101400145032,
-						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Zombie",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 33,
 					"instanceVariables": {
-						"Agr": 0
+						"Agr": 0,
+						"damage": 0
 					},
 					"behaviors": {
 						"Solid": {
@@ -464,7 +387,7 @@
 							"properties": {
 								"obstacles": "custom",
 								"range": 500,
-								"cone-of-view": 360,
+								"cone-of-view": 160,
 								"use-collision-cells": true
 							}
 						},
@@ -513,87 +436,10 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 35,
-					"instanceVariables": {
-						"Agr": 0
-					},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": "zombie"
-							}
-						},
-						"ПоискПути": {
-							"properties": {
-								"cell-size": 30,
-								"cell-border": -1,
-								"obstacles": "custom",
-								"max-speed": 100,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 500,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"ПолеЗрения": {
-							"properties": {
-								"obstacles": "custom",
-								"range": 500,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"ДвижениеК": {
-							"properties": {
-								"max-speed": 100,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": true,
-								"enabled": true
-							}
-						},
-						"НастраиваемоеДвижение": {
-							"properties": {
-								"stepping-mode": "none",
-								"pixels-per-step": 5,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 2450,
-						"y": 2190,
-						"width": 72.89101400145032,
-						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Zombie",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 41,
 					"instanceVariables": {
-						"Agr": 0
+						"Agr": 0,
+						"damage": 0
 					},
 					"behaviors": {
 						"Solid": {
@@ -620,7 +466,7 @@
 							"properties": {
 								"obstacles": "custom",
 								"range": 500,
-								"cone-of-view": 360,
+								"cone-of-view": 160,
 								"use-collision-cells": true
 							}
 						},
@@ -646,84 +492,6 @@
 					"world": {
 						"x": 2528,
 						"y": 1910,
-						"width": 72.89101400145032,
-						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Zombie",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 55,
-					"instanceVariables": {
-						"Agr": 0
-					},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": "zombie"
-							}
-						},
-						"ПоискПути": {
-							"properties": {
-								"cell-size": 30,
-								"cell-border": -1,
-								"obstacles": "custom",
-								"max-speed": 100,
-								"acceleration": 1000,
-								"deceleration": 2000,
-								"rotate-speed": 500,
-								"rotate-object": true,
-								"diagonals": true,
-								"enabled": true
-							}
-						},
-						"ПолеЗрения": {
-							"properties": {
-								"obstacles": "custom",
-								"range": 500,
-								"cone-of-view": 360,
-								"use-collision-cells": true
-							}
-						},
-						"ДвижениеК": {
-							"properties": {
-								"max-speed": 100,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": true,
-								"enabled": true
-							}
-						},
-						"НастраиваемоеДвижение": {
-							"properties": {
-								"stepping-mode": "none",
-								"pixels-per-step": 5,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 1796,
-						"y": 1942,
 						"width": 72.89101400145032,
 						"height": 72.89101400145032,
 						"originX": 0.5,
@@ -1495,7 +1263,8 @@
 					},
 					"uid": 107,
 					"instanceVariables": {
-						"blood": 0
+						"blood": 0,
+						"damage": 0
 					},
 					"behaviors": {
 						"Якорь": {
@@ -1574,7 +1343,9 @@
 						"live-preview": false
 					},
 					"uid": 111,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"damage": 0
+					},
 					"behaviors": {
 						"Якорь": {
 							"properties": {
@@ -2822,7 +2593,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "ТайловыйФон",
+					"type": "faint_background",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -2837,18 +2608,26 @@
 					"uid": 121,
 					"instanceVariables": {},
 					"behaviors": {},
+					"effects": {
+						"РазмытиеПоВертикали": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						}
+					},
 					"world": {
-						"x": -76,
-						"y": -66,
-						"width": 2718,
-						"height": 1556,
+						"x": -157,
+						"y": -143,
+						"width": 2747,
+						"height": 1633,
 						"originX": 0,
 						"originY": 0,
 						"color": [
 							1,
 							1,
 							1,
-							1
+							0.8699999999999999
 						],
 						"angle": 0,
 						"zElevation": 0
@@ -2893,19 +2672,19 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 1
+						"zElevation": 0
 					}
 				}
 			],
-			"sid": 918668665402807,
+			"sid": 540395918650383,
 			"effectTypes": [],
 			"isInitiallyVisible": false,
-			"isInitiallyInteractive": true,
+			"isInitiallyInteractive": false,
 			"color": [
 				1,
 				1,
 				1,
-				0.7169999999999997
+				1
 			],
 			"backgroundColor": [
 				0.3686274509803922,
@@ -2914,8 +2693,209 @@
 				1
 			],
 			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "died",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "died_background",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0
+					},
+					"uid": 28,
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"РазмытиеПоВертикали": {
+							"isEnabled": true,
+							"parameters": {
+								"intensity": 1
+							}
+						}
+					},
+					"world": {
+						"x": -88,
+						"y": -127,
+						"width": 2747,
+						"height": 1633,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "died_text",
+					"properties": {
+						"text": "ВЫ УМЕРЛИ",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 54,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 35,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 709,
+						"y": 513,
+						"width": 1096,
+						"height": 121,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "died_menu",
+					"properties": {
+						"text": "В МЕНЮ",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 39,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 129,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 841,
+						"y": 764,
+						"width": 335.98809502718996,
+						"height": 121,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "died_restart",
+					"properties": {
+						"text": "ВОЗРАДИТЬСЯ",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 39,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 130,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1292,
+						"y": 762,
+						"width": 411.98809502718996,
+						"height": 121,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 566699612773841,
+			"effectTypes": [],
+			"isInitiallyVisible": false,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",

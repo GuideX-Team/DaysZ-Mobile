@@ -259,7 +259,11 @@
 			"bullet2",
 			"check_blood",
 			"faint_text",
-			"ТайловыйФон"
+			"faint_background",
+			"died_background",
+			"died_text",
+			"died_menu",
+			"died_restart"
 		],
 		"subfolders": [
 			{
@@ -566,14 +570,16 @@
 	"layouts": {
 		"items": [
 			"MENU",
-			"GAME"
+			"GAME",
+			"DIED"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"GAME",
-			"MENU"
+			"MENU",
+			"DIED"
 		],
 		"subfolders": []
 	},

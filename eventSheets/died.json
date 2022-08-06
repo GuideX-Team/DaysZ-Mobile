@@ -1,0 +1,51 @@
+{
+	"name": "DIED",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Тач",
+					"sid": 379055065102743,
+					"parameters": {
+						"object": "died_menu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 695585000779192,
+					"parameters": {
+						"layout": "MENU"
+					}
+				}
+			],
+			"sid": 624888982029289
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Тач",
+					"sid": 186822385416346,
+					"parameters": {
+						"object": "died_restart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 967466921182977
+				}
+			],
+			"sid": 703476182855361
+		}
+	],
+	"sid": 109717233167128
+}

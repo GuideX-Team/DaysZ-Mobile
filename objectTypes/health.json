@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 701115145133869,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "damage",
+			"type": "number",
+			"desc": "",
+			"sid": 505887099707498
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Anchor",

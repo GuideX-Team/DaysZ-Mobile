@@ -1489,12 +1489,39 @@
 			],
 			"actions": [
 				{
-					"id": "destroy",
+					"id": "add-to-instvar",
 					"objectClass": "Zombie",
-					"sid": 697590920857121
+					"sid": 613083018995246,
+					"parameters": {
+						"instance-variable": "damage",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 723256592435450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Zombie",
+					"sid": 346689614670905,
+					"parameters": {
+						"instance-variable": "damage",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Zombie",
+					"sid": 640150503310336
+				}
+			],
+			"sid": 259791474904339
 		},
 		{
 			"eventType": "block",
@@ -1835,7 +1862,7 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "bullet2",
-					"sid": 180964956056065,
+					"sid": 743336230865425,
 					"parameters": {
 						"object": "Player"
 					}
@@ -1843,23 +1870,25 @@
 			],
 			"actions": [
 				{
-					"id": "set-animation-frame",
+					"id": "set-instvar-value",
 					"objectClass": "Health",
-					"sid": 803446797268803,
+					"sid": 151508099153958,
 					"parameters": {
-						"frame-number": "Health.AnimationFrame+2"
+						"instance-variable": "damage",
+						"value": "1"
 					}
 				},
 				{
-					"id": "set-animation-frame",
+					"id": "set-instvar-value",
 					"objectClass": "Blood",
-					"sid": 284895681114396,
+					"sid": 465864685187390,
 					"parameters": {
-						"frame-number": "Blood.AnimationFrame+1"
+						"instance-variable": "damage",
+						"value": "1"
 					}
 				}
 			],
-			"sid": 561689842740647
+			"sid": 550753319565422
 		},
 		{
 			"eventType": "block",
@@ -1909,15 +1938,23 @@
 						"comparison": 5,
 						"value": "5"
 					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 447605822267899,
+					"parameters": {
+						"interval-seconds": "5"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-animation-speed",
+					"id": "set-animation-frame",
 					"objectClass": "Blood",
-					"sid": 666455368858391,
+					"sid": 596724758651193,
 					"parameters": {
-						"speed": "0.5"
+						"frame-number": "Blood.AnimationFrame+1"
 					}
 				}
 			],
@@ -1928,11 +1965,75 @@
 			"conditions": [
 				{
 					"id": "compare-animation-frame",
+					"objectClass": "Blood",
+					"sid": 769408244094131,
+					"parameters": {
+						"comparison": 0,
+						"number": "16"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Player",
+					"sid": 941985964013273,
+					"behaviorType": "8Направлений"
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 515387995646653,
+					"parameters": {
+						"layer": "8",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 731497572621754
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
 					"objectClass": "Health",
-					"sid": 825098159031809,
+					"sid": 437253157000431,
 					"parameters": {
 						"comparison": 5,
-						"number": "21"
+						"number": "19"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Player",
+					"sid": 970301713188187,
+					"behaviorType": "8Направлений"
+				}
+			],
+			"sid": 806619955972091
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Health",
+					"sid": 626624347159551,
+					"parameters": {
+						"comparison": 5,
+						"number": "25"
+					}
+				},
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Blood",
+					"sid": 756519695720209,
+					"parameters": {
+						"comparison": 5,
+						"number": "20"
 					}
 				}
 			],
@@ -1940,15 +2041,396 @@
 				{
 					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 156081934166166,
+					"sid": 426402403683021,
 					"parameters": {
-						"layer": "8",
+						"layer": "9",
 						"visibility": "visible"
 					}
 				}
 			],
-			"sid": 835678710446562,
+			"sid": 389709359976026,
 			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Тач",
+					"sid": 148808982894147,
+					"parameters": {
+						"object": "died_menu"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 253759517875301,
+					"parameters": {
+						"layer": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 355900985126347,
+					"parameters": {
+						"layout": "MENU"
+					}
+				}
+			],
+			"sid": 228141842882559
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "Тач",
+					"sid": 592220695826994,
+					"parameters": {
+						"object": "died_restart"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 985673905139144,
+					"parameters": {
+						"layer": "9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 519388619795045
+				},
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 592935059071473,
+					"parameters": {
+						"time-scale": "0"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 144355073908366,
+					"parameters": {
+						"layer": "9",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 980258734958960
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 819650074116553,
+					"parameters": {
+						"layer": "9"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 133347504652577,
+					"parameters": {
+						"layer": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 118321478201720,
+					"parameters": {
+						"layer": "8",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 600751061781450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 989063099719900
+				}
+			],
+			"actions": [
+				{
+					"id": "set-time-scale",
+					"objectClass": "System",
+					"sid": 215665603168919,
+					"parameters": {
+						"time-scale": "1"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 573934804299485,
+					"parameters": {
+						"layer": "9",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 628905497623367
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Health",
+					"sid": 367735476285355,
+					"parameters": {
+						"instance-variable": "damage",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 802594690110032,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Health",
+					"sid": 103288252190717,
+					"parameters": {
+						"frame-number": "Health.AnimationFrame+1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Health",
+					"sid": 449539328090311,
+					"parameters": {
+						"instance-variable": "damage",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 781244852553858
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Blood",
+					"sid": 414823766499748,
+					"parameters": {
+						"instance-variable": "damage",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 143235558340217,
+					"parameters": {
+						"interval-seconds": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Blood",
+					"sid": 279049054021825,
+					"parameters": {
+						"frame-number": "Blood.AnimationFrame+1"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Blood",
+					"sid": 102287411812082,
+					"parameters": {
+						"instance-variable": "damage",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 528769745498963
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Health",
+					"sid": 691257604659318,
+					"parameters": {
+						"comparison": 3,
+						"number": "18"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 539058043836930,
+					"parameters": {
+						"layer": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 228220355868978,
+					"parameters": {
+						"seconds": "7"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 309131879457443,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 986169894877956,
+					"parameters": {
+						"layer": "8",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 209081713670882
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-animation-frame",
+					"objectClass": "Health",
+					"sid": 427698308216477,
+					"parameters": {
+						"comparison": 4,
+						"number": "18"
+					}
+				},
+				{
+					"id": "layer-is-visible",
+					"objectClass": "System",
+					"sid": 224664435326288,
+					"parameters": {
+						"layer": "8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 851925491179446,
+					"parameters": {
+						"seconds": "15"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Player",
+					"sid": 556794894318506,
+					"behaviorType": "8Направлений",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 808681547331995,
+					"parameters": {
+						"layer": "8",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 931082039174725
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Blood",
+					"sid": 881651639539609,
+					"parameters": {
+						"instance-variable": "damage",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Blood",
+					"sid": 604460671092644,
+					"parameters": {
+						"instance-variable": "blood",
+						"comparison": 5,
+						"value": "5"
+					}
+				},
+				{
+					"id": "is-moving",
+					"objectClass": "Player",
+					"sid": 892299179165341,
+					"behaviorType": "8Направлений",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 713866834105981,
+					"parameters": {
+						"seconds": "15"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "Blood",
+					"sid": 488225874514514,
+					"parameters": {
+						"instance-variable": "blood",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 892899375111058
 		}
 	],
 	"sid": 206982985980515
