@@ -28,7 +28,7 @@
 						},
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 548314818988106,
 							"parameters": {
 								"audio-file": "Клик",
@@ -75,7 +75,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 684339509639451,
 							"parameters": {
 								"object": "КартинкиМеняютЦвет"
@@ -99,7 +99,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 642708932770029,
 							"parameters": {
 								"object": "КартинкиМеняютЦвет"
@@ -123,7 +123,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 257931212367848,
 							"parameters": {
 								"object": "ТекстыМеняютЦвет"
@@ -147,7 +147,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 357704336376033,
 							"parameters": {
 								"object": "ТекстыМеняютЦвет"
@@ -181,7 +181,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 376322594398230,
 							"parameters": {
 								"object": "EXIT"
@@ -207,7 +207,7 @@
 						},
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 946719579440323,
 							"parameters": {
 								"audio-file": "Фон",
@@ -224,7 +224,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 447727189839190,
 							"parameters": {
 								"object": "HELP"
@@ -234,7 +234,7 @@
 					"actions": [
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 438906060125857,
 							"parameters": {
 								"audio-file": "Фон",
@@ -268,7 +268,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 740278315891220,
 							"parameters": {
 								"object": "EXIT_YES"
@@ -294,7 +294,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 402584606751733,
 							"parameters": {
 								"object": "donate_logo"
@@ -309,7 +309,7 @@
 					"actions": [
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 556801347365057,
 							"parameters": {
 								"audio-file": "Фон",
@@ -335,7 +335,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 611228153271079,
 							"parameters": {
 								"object": "vk_logo"
@@ -350,7 +350,7 @@
 					"actions": [
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 458245396977141,
 							"parameters": {
 								"audio-file": "Фон",
@@ -376,7 +376,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 880317528343977,
 							"parameters": {
 								"object": "PLAY"
@@ -391,7 +391,7 @@
 					"actions": [
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 426801232211235,
 							"parameters": {
 								"audio-file": "Фон",
@@ -410,7 +410,7 @@
 						},
 						{
 							"id": "unload-audio",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 997609154319515,
 							"parameters": {
 								"audio-file": "Клик"
@@ -424,7 +424,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 519836049022881,
 							"parameters": {
 								"object": "EXIT_NO"
@@ -455,7 +455,7 @@
 						},
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 214067235354811,
 							"parameters": {
 								"audio-file": "Фон",
@@ -472,7 +472,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 466639987037764,
 							"parameters": {
 								"object": "CHARACTER"
@@ -482,7 +482,7 @@
 					"actions": [
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 467375256708861,
 							"parameters": {
 								"audio-file": "Фон",
@@ -531,7 +531,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 970724908893855,
 							"parameters": {
 								"object": "CLOSE_CHARACTER"
@@ -546,7 +546,7 @@
 					"actions": [
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 581286173556648,
 							"parameters": {
 								"audio-file": "Фон",
@@ -605,7 +605,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 930708915006204,
 							"parameters": {
 								"object": "HELP"
@@ -647,7 +647,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 358444511697545,
 							"parameters": {
 								"object": "CLOSE_HELP"
@@ -678,7 +678,7 @@
 						},
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 807500943798020,
 							"parameters": {
 								"audio-file": "Фон",
@@ -695,7 +695,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 498241847319447,
 							"parameters": {
 								"object": "HELP"
@@ -737,7 +737,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 869409213010016,
 							"parameters": {
 								"object": "HELP"
@@ -805,7 +805,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 765552063748137,
 							"parameters": {
 								"object": "EXIT"
@@ -847,7 +847,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 799493565669237,
 							"parameters": {
 								"object": "EXIT"
@@ -889,7 +889,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 495356534924745,
 							"parameters": {
 								"object": "EXIT"
@@ -957,7 +957,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 497928595738853,
 							"parameters": {
 								"object": "NEWS"
@@ -999,7 +999,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 450246440103885,
 							"parameters": {
 								"object": "NEWS"
@@ -1041,7 +1041,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 712029914759849,
 							"parameters": {
 								"object": "NEWS"
@@ -1109,7 +1109,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 566782436295601,
 							"parameters": {
 								"object": "NEWS"
@@ -1119,7 +1119,7 @@
 					"actions": [
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 847228754335760,
 							"parameters": {
 								"audio-file": "Фон",
@@ -1152,7 +1152,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 708537144587483,
 							"parameters": {
 								"object": "CLOSE_NEWS"
@@ -1183,7 +1183,7 @@
 						},
 						{
 							"id": "play",
-							"objectClass": "Аудио",
+							"objectClass": "Audio",
 							"sid": 827238398206116,
 							"parameters": {
 								"audio-file": "Фон",
@@ -1200,7 +1200,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 756431076895234,
 							"parameters": {
 								"object": "CHARACTER"
@@ -1242,7 +1242,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 689347637494334,
 							"parameters": {
 								"object": "CHARACTER"
@@ -1284,7 +1284,7 @@
 					"conditions": [
 						{
 							"id": "on-tap-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 355223123809763,
 							"parameters": {
 								"object": "CHARACTER"

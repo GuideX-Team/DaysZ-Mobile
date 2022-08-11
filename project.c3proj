@@ -103,6 +103,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Локальное хранилище",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Rex_Nickname",
+			"name": "[Nickname]",
+			"author": "Rex.Rainbow",
+			"version": "0.1.0.0",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "scrollto",
 			"name": "Следить за",
@@ -207,6 +223,22 @@
 			"bundled": false
 		},
 		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Угасание",
+			"author": "Scirra",
+			"version": "r302",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rex_bNickname",
+			"name": "[Nickname]",
+			"author": "Rex.Rainbow",
+			"version": "1.0.0.0",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "radialblur",
 			"name": "Радиальное размытие",
@@ -243,11 +275,11 @@
 	"objectTypes": {
 		"items": [
 			"shadow",
-			"Аудио",
+			"Audio",
 			"Браузер",
-			"Клавиатура",
-			"Мышь",
-			"Тач",
+			"Keyboard",
+			"Mouse",
+			"Touch",
 			"Debug",
 			"Grass",
 			"КартаТайлов",
@@ -263,7 +295,21 @@
 			"died_background",
 			"died_text",
 			"died_menu",
-			"died_restart"
+			"died_restart",
+			"temp_chevron",
+			"Text",
+			"Text_Preview",
+			"Ramka",
+			"Food",
+			"Res",
+			"Hand",
+			"Head",
+			"Tors",
+			"Leg",
+			"Shoes",
+			"Weapon",
+			"LocalStorage",
+			"Nickname"
 		],
 		"subfolders": [
 			{
@@ -497,6 +543,11 @@
 					}
 				],
 				"name": "ИнтерфейсИгры"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "inventory"
 			}
 		]
 	},
@@ -564,6 +615,13 @@
 				],
 				"subfolders": [],
 				"name": "Пауза"
+			},
+			{
+				"items": [
+					"Object"
+				],
+				"subfolders": [],
+				"name": "inventory"
 			}
 		]
 	},
@@ -571,15 +629,14 @@
 		"items": [
 			"MENU",
 			"GAME",
-			"DIED"
+			"Storage"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"GAME",
-			"MENU",
-			"DIED"
+			"MENU"
 		],
 		"subfolders": []
 	},
@@ -610,7 +667,56 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "button.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 602591595648965,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "chest.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 248325968754608,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "crunch.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 317193908714323,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "done.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 926414502164701,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "equip.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 482007688705456,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "hit.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 865922783445287,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

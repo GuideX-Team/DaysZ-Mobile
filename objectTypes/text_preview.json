@@ -1,0 +1,22 @@
+{
+	"name": "Text_Preview",
+	"plugin-id": "Text",
+	"sid": 994147451604096,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "isButton",
+			"type": "boolean",
+			"desc": "",
+			"sid": 433924273613293
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 128755353677252
+		}
+	],
+	"effectTypes": []
+}

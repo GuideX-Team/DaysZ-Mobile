@@ -185,7 +185,7 @@
 							"conditions": [
 								{
 									"id": "on-hold-over-object",
-									"objectClass": "Тач",
+									"objectClass": "Touch",
 									"sid": 563866512664705,
 									"parameters": {
 										"object": "run"
@@ -211,7 +211,7 @@
 							"conditions": [
 								{
 									"id": "on-hold-over-object",
-									"objectClass": "Тач",
+									"objectClass": "Touch",
 									"sid": 719820021573016,
 									"parameters": {
 										"object": "sit"
@@ -237,7 +237,7 @@
 							"conditions": [
 								{
 									"id": "on-any-touch-end",
-									"objectClass": "Тач",
+									"objectClass": "Touch",
 									"sid": 349488696220065
 								}
 							],
@@ -803,7 +803,7 @@
 						},
 						{
 							"id": "is-touching-object",
-							"objectClass": "Тач",
+							"objectClass": "Touch",
 							"sid": 904141037145431,
 							"parameters": {
 								"object": "run"
@@ -1072,7 +1072,7 @@
 			"conditions": [
 				{
 					"id": "on-touched-object",
-					"objectClass": "Тач",
+					"objectClass": "Touch",
 					"sid": 658422822294495,
 					"parameters": {
 						"object": "Debug"
@@ -1176,7 +1176,7 @@
 			"conditions": [
 				{
 					"id": "on-touched-object",
-					"objectClass": "Тач",
+					"objectClass": "Touch",
 					"sid": 113041531978975,
 					"parameters": {
 						"object": "PAUSE"
@@ -1227,7 +1227,7 @@
 			"conditions": [
 				{
 					"id": "on-touched-object",
-					"objectClass": "Тач",
+					"objectClass": "Touch",
 					"sid": 846100865189613,
 					"parameters": {
 						"object": "PAUSE_CONTINUE"
@@ -1286,7 +1286,7 @@
 			"conditions": [
 				{
 					"id": "on-touched-object",
-					"objectClass": "Тач",
+					"objectClass": "Touch",
 					"sid": 882760862448985,
 					"parameters": {
 						"object": "PAUSE_EXIT"
@@ -1353,7 +1353,7 @@
 			"conditions": [
 				{
 					"id": "on-touched-object",
-					"objectClass": "Тач",
+					"objectClass": "Touch",
 					"sid": 172300049538247,
 					"parameters": {
 						"object": "attack"
@@ -1430,7 +1430,7 @@
 			"conditions": [
 				{
 					"id": "on-touched-object",
-					"objectClass": "Тач",
+					"objectClass": "Touch",
 					"sid": 445488744764566,
 					"parameters": {
 						"object": "tipoff"
@@ -1612,9 +1612,9 @@
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 403367294270185,
+					"sid": 151549073287442,
 					"parameters": {
-						"interval-seconds": "5"
+						"interval-seconds": "15"
 					}
 				},
 				{
@@ -1752,37 +1752,6 @@
 			],
 			"sid": 713029769881336,
 			"isOrBlock": true
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player",
-					"sid": 734408395139279,
-					"parameters": {
-						"object": "Zombie"
-					}
-				},
-				{
-					"id": "is-moving",
-					"objectClass": "Player",
-					"sid": 893816111962884,
-					"behaviorType": "8Направлений"
-				}
-			],
-			"actions": [
-				{
-					"id": "move-at-angle",
-					"objectClass": "Zombie",
-					"sid": 568558253672124,
-					"parameters": {
-						"angle": "Player.8Направлений.MovingAngle=1",
-						"distance": "2"
-					}
-				}
-			],
-			"sid": 267438407095770
 		},
 		{
 			"eventType": "block",
@@ -2046,9 +2015,16 @@
 						"layer": "9",
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Player",
+					"sid": 374565847325170,
+					"behaviorType": "8Направлений"
 				}
 			],
 			"sid": 389709359976026,
+			"disabled": true,
 			"isOrBlock": true
 		},
 		{
@@ -2056,7 +2032,7 @@
 			"conditions": [
 				{
 					"id": "on-touched-object",
-					"objectClass": "Тач",
+					"objectClass": "Touch",
 					"sid": 148808982894147,
 					"parameters": {
 						"object": "died_menu"
@@ -2088,7 +2064,7 @@
 			"conditions": [
 				{
 					"id": "on-touched-object",
-					"objectClass": "Тач",
+					"objectClass": "Touch",
 					"sid": 592220695826994,
 					"parameters": {
 						"object": "died_restart"
@@ -2431,6 +2407,695 @@
 				}
 			],
 			"sid": 892899375111058
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Стрелки индикаторов",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Температура",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 494838508372870,
+									"parameters": {
+										"unique-id": "131"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Temp",
+									"sid": 111613149573004,
+									"parameters": {
+										"comparison": 4,
+										"number": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 284558930572032,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "temp_chevron",
+									"sid": 241514446192279,
+									"parameters": {
+										"angle": "180"
+									}
+								}
+							],
+							"sid": 975072729664781
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 260101953499667,
+									"parameters": {
+										"unique-id": "131"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Temp",
+									"sid": 801255278321732,
+									"parameters": {
+										"comparison": 2,
+										"number": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 181304340429327,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "temp_chevron",
+									"sid": 248161849754863,
+									"parameters": {
+										"angle": "0"
+									}
+								}
+							],
+							"sid": 651786687703876
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 719418644231254,
+									"parameters": {
+										"unique-id": "131"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Temp",
+									"sid": 614604450856787,
+									"parameters": {
+										"comparison": 0,
+										"number": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 222705321060673,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 603443008076906
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 689962788698295,
+									"parameters": {
+										"unique-id": "131"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Temp",
+									"sid": 654686558004426,
+									"parameters": {
+										"comparison": 4,
+										"number": "17"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "temp_chevron",
+									"sid": 910781324354357,
+									"parameters": {
+										"frame-number": "0"
+									}
+								}
+							],
+							"sid": 538677916322312
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 905658129365882,
+									"parameters": {
+										"unique-id": "131"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Temp",
+									"sid": 660074291115475,
+									"parameters": {
+										"comparison": 2,
+										"number": "12"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "temp_chevron",
+									"sid": 318307484765511,
+									"parameters": {
+										"frame-number": "2"
+									}
+								}
+							],
+							"sid": 103818533173874
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 332598775907517,
+									"parameters": {
+										"unique-id": "131"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Temp",
+									"sid": 577073474363749,
+									"parameters": {
+										"comparison": 2,
+										"number": "6"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation-frame",
+									"objectClass": "temp_chevron",
+									"sid": 315737876719468,
+									"parameters": {
+										"frame-number": "3"
+									}
+								}
+							],
+							"sid": 955738235407987
+						}
+					],
+					"sid": 833595260366318
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Жизнь",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Blood",
+									"sid": 471708049917144,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 496872612678973,
+									"parameters": {
+										"unique-id": "133"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Blood",
+									"sid": 517190638299236,
+									"parameters": {
+										"instance-variable": "blood",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 437223443865372,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 682547468911048
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 591334091873541,
+									"parameters": {
+										"unique-id": "133"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Blood",
+									"sid": 778266161156259,
+									"parameters": {
+										"instance-variable": "blood",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 992371511515416,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 778912008114262
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Blood",
+									"sid": 764215925065001,
+									"parameters": {
+										"instance-variable": "blood",
+										"comparison": 5,
+										"value": "5"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 446831073360146,
+									"parameters": {
+										"unique-id": "133"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Blood",
+									"sid": 810516558709922,
+									"parameters": {
+										"comparison": 4,
+										"number": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 442275563332830,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "temp_chevron",
+									"sid": 796339313149336,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "temp_chevron",
+									"sid": 173723656025412,
+									"parameters": {
+										"angle": "180"
+									}
+								}
+							],
+							"sid": 951586959316847
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Blood",
+									"sid": 950208372220616,
+									"parameters": {
+										"instance-variable": "blood",
+										"comparison": 5,
+										"value": "5"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 159523747728292,
+									"parameters": {
+										"unique-id": "133"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Blood",
+									"sid": 192145956531644,
+									"parameters": {
+										"comparison": 4,
+										"number": "11"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 796017937211246,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "temp_chevron",
+									"sid": 564419074875263,
+									"parameters": {
+										"frame-number": "2"
+									}
+								}
+							],
+							"sid": 429281064685949
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Blood",
+									"sid": 624975164233095,
+									"parameters": {
+										"instance-variable": "blood",
+										"comparison": 5,
+										"value": "5"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 128399195620626,
+									"parameters": {
+										"unique-id": "133"
+									}
+								},
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Blood",
+									"sid": 634364822192348,
+									"parameters": {
+										"comparison": 4,
+										"number": "15"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 744713525587920,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "temp_chevron",
+									"sid": 494727782821938,
+									"parameters": {
+										"frame-number": "3"
+									}
+								}
+							],
+							"sid": 555750790867266
+						}
+					],
+					"sid": 338434506427997
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Голод",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Hungry",
+									"sid": 497858304160901,
+									"parameters": {
+										"comparison": 0,
+										"number": "0"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 874429983137243,
+									"parameters": {
+										"unique-id": "132"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 627179444190528,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 466444865986613
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Hungry",
+									"sid": 609386234192837,
+									"parameters": {
+										"comparison": 0,
+										"number": "18"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 291273208592930,
+									"parameters": {
+										"unique-id": "132"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 367052835603386,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 508079600888723
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Hungry",
+									"sid": 998443252848676,
+									"parameters": {
+										"comparison": 4,
+										"number": "0"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 383219014759245,
+									"parameters": {
+										"unique-id": "132"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 155203044346896,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "temp_chevron",
+									"sid": 953747792644559,
+									"parameters": {
+										"frame-number": "1"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "temp_chevron",
+									"sid": 424691453496213,
+									"parameters": {
+										"angle": "180"
+									}
+								}
+							],
+							"sid": 306039390468881
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Hungry",
+									"sid": 535113844366604,
+									"parameters": {
+										"comparison": 4,
+										"number": "8"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 394829801250941,
+									"parameters": {
+										"unique-id": "132"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 886179017384960,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "temp_chevron",
+									"sid": 461255795351955,
+									"parameters": {
+										"frame-number": "2"
+									}
+								}
+							],
+							"sid": 366243632087215
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-animation-frame",
+									"objectClass": "Hungry",
+									"sid": 448784819528532,
+									"parameters": {
+										"comparison": 4,
+										"number": "14"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "temp_chevron",
+									"sid": 784960167454897,
+									"parameters": {
+										"unique-id": "132"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "temp_chevron",
+									"sid": 290087499588989,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-animation-frame",
+									"objectClass": "temp_chevron",
+									"sid": 989585023549248,
+									"parameters": {
+										"frame-number": "3"
+									}
+								}
+							],
+							"sid": 660169010934080
+						}
+					],
+					"sid": 682259242036523
+				}
+			],
+			"sid": 605140156507715
 		}
 	],
 	"sid": 206982985980515

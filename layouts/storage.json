@@ -1,0 +1,377 @@
+{
+	"name": "Storage",
+	"layers": [
+		{
+			"name": "Layer 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Food",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 151,
+					"instanceVariables": {
+						"Type": "food",
+						"Frame": 0,
+						"Amount": 1,
+						"Stack": true
+					},
+					"behaviors": {
+						"Nickname": {
+							"properties": {
+								"nickname": "food",
+								"mode": "manual"
+							}
+						}
+					},
+					"world": {
+						"x": 213.73964497041464,
+						"y": 109.82840236686405,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Res",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 55,
+					"instanceVariables": {
+						"Type": "res",
+						"Frame": 0,
+						"Amount": 1,
+						"Stack": true
+					},
+					"behaviors": {
+						"Nickname": {
+							"properties": {
+								"nickname": "res",
+								"mode": "manual"
+							}
+						}
+					},
+					"world": {
+						"x": 360.5325443786989,
+						"y": 102.01775147929004,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Hand",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 124,
+					"instanceVariables": {
+						"Type": "hand",
+						"Frame": 0,
+						"Amount": 1,
+						"Stack": false
+					},
+					"behaviors": {
+						"Nickname": {
+							"properties": {
+								"nickname": "hand",
+								"mode": "manual"
+							}
+						}
+					},
+					"world": {
+						"x": 641.1715976331374,
+						"y": 286.0355029585805,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Head",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 125,
+					"instanceVariables": {
+						"Type": "head",
+						"Frame": 0,
+						"Amount": 1,
+						"Stack": false
+					},
+					"behaviors": {
+						"Nickname": {
+							"properties": {
+								"nickname": "head",
+								"mode": "manual"
+							}
+						}
+					},
+					"world": {
+						"x": 221.10059171597615,
+						"y": 277.6627218934917,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Tors",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 128,
+					"instanceVariables": {
+						"Type": "tors",
+						"Frame": 0,
+						"Amount": 1,
+						"Stack": false
+					},
+					"behaviors": {
+						"Nickname": {
+							"properties": {
+								"nickname": "tors",
+								"mode": "manual"
+							}
+						}
+					},
+					"world": {
+						"x": 375.01775147929004,
+						"y": 276.1005917159769,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Leg",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 152,
+					"instanceVariables": {
+						"Type": "leg",
+						"Frame": 0,
+						"Amount": 1,
+						"Stack": false
+					},
+					"behaviors": {
+						"Nickname": {
+							"properties": {
+								"nickname": "leg",
+								"mode": "manual"
+							}
+						}
+					},
+					"world": {
+						"x": 517.218934911243,
+						"y": 275.19526627218994,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shoes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 3,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 153,
+					"instanceVariables": {
+						"Type": "shoes",
+						"Frame": 0,
+						"Amount": 1,
+						"Stack": false
+					},
+					"behaviors": {
+						"Nickname": {
+							"properties": {
+								"nickname": "shoes",
+								"mode": "manual"
+							}
+						}
+					},
+					"world": {
+						"x": 792.5443786982257,
+						"y": 278.5384615384621,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Weapon",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 1,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 154,
+					"instanceVariables": {
+						"Type": "weap",
+						"Frame": 0,
+						"Amount": 1,
+						"Stack": false
+					},
+					"behaviors": {
+						"Nickname": {
+							"properties": {
+								"nickname": "weap",
+								"mode": "manual"
+							}
+						}
+					},
+					"world": {
+						"x": 223.38461538461462,
+						"y": 433.4082840236697,
+						"width": 128,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 230027687162568,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 486558346876559,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 5120,
+	"height": 2880,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": null
+}

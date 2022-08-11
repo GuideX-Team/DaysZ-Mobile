@@ -1,0 +1,49 @@
+{
+	"name": "Object",
+	"plugin-id": "Sprite",
+	"sid": 851812957963418,
+	"instanceVariables": [
+		{
+			"name": "Type",
+			"type": "string",
+			"desc": "",
+			"sid": 815764079778750
+		},
+		{
+			"name": "Frame",
+			"type": "number",
+			"desc": "",
+			"sid": 450421135001598
+		},
+		{
+			"name": "Amount",
+			"type": "number",
+			"desc": "",
+			"sid": 699842648588725
+		},
+		{
+			"name": "Stack",
+			"type": "boolean",
+			"desc": "",
+			"sid": 573752220084351
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rex_bNickname",
+			"name": "Nickname",
+			"sid": 629949882975574
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Tors",
+		"Shoes",
+		"Res",
+		"Weapon",
+		"Leg",
+		"Food",
+		"Hand",
+		"Head"
+	]
+}

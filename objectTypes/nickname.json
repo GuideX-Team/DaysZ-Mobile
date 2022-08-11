@@ -1,0 +1,10 @@
+{
+	"name": "Nickname",
+	"plugin-id": "Rex_Nickname",
+	"sid": 942567754087740,
+	"singleglobal-inst": {
+		"type": "Nickname",
+		"properties": {},
+		"uid": 162
+	}
+}

@@ -3,7 +3,14 @@
 	"plugin-id": "Sprite",
 	"sid": 532261796995647,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "hungry",
+			"type": "number",
+			"desc": "",
+			"sid": 909589037561158
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Anchor",
