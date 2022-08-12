@@ -119,14 +119,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "Shape3D",
-			"name": "3D фигуры",
-			"author": "Scirra",
-			"version": "r302",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "scrollto",
 			"name": "Следить за",
@@ -317,8 +309,7 @@
 			"Shoes",
 			"Weapon",
 			"LocalStorage",
-			"Nickname",
-			"3DФигуры"
+			"Nickname"
 		],
 		"subfolders": [
 			{

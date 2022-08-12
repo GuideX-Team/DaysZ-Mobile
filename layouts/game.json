@@ -352,7 +352,7 @@
 					"type": "Zombie",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "1",
+						"initial-animation": "walk_up",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -378,7 +378,7 @@
 								"acceleration": 1000,
 								"deceleration": 2000,
 								"rotate-speed": 500,
-								"rotate-object": true,
+								"rotate-object": false,
 								"diagonals": true,
 								"enabled": true
 							}
@@ -387,7 +387,7 @@
 							"properties": {
 								"obstacles": "custom",
 								"range": 500,
-								"cone-of-view": 160,
+								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
 						},
@@ -408,15 +408,27 @@
 								"pixels-per-step": 5,
 								"enabled": true
 							}
+						},
+						"8Направлений": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
 						}
 					},
 					"world": {
 						"x": 3119,
 						"y": 1871,
-						"width": 72.89101400145032,
+						"width": 40.863144212934266,
 						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.557498675145734,
+						"originY": 0.4791910521524256,
 						"color": [
 							1,
 							1,
@@ -431,7 +443,7 @@
 					"type": "Zombie",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "1",
+						"initial-animation": "walk_up",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -457,7 +469,7 @@
 								"acceleration": 1000,
 								"deceleration": 2000,
 								"rotate-speed": 500,
-								"rotate-object": true,
+								"rotate-object": false,
 								"diagonals": true,
 								"enabled": true
 							}
@@ -466,7 +478,7 @@
 							"properties": {
 								"obstacles": "custom",
 								"range": 500,
-								"cone-of-view": 160,
+								"cone-of-view": 360,
 								"use-collision-cells": true
 							}
 						},
@@ -487,15 +499,27 @@
 								"pixels-per-step": 5,
 								"enabled": true
 							}
+						},
+						"8Направлений": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 600,
+								"deceleration": 500,
+								"directions": "dir-8",
+								"set-angle": "smooth",
+								"allow-sliding": false,
+								"default-controls": true,
+								"enabled": true
+							}
 						}
 					},
 					"world": {
 						"x": 2528,
 						"y": 1910,
-						"width": 72.89101400145032,
+						"width": 40.863144212934266,
 						"height": 72.89101400145032,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.557498675145734,
+						"originY": 0.4791910521524256,
 						"color": [
 							1,
 							1,
@@ -946,46 +970,6 @@
 						"y": 3776,
 						"width": 576,
 						"height": 1280,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "3DФигуры",
-					"properties": {
-						"shape": "box",
-						"z-height": 15,
-						"initially-visible": true,
-						"face-back": false,
-						"face-front": true,
-						"face-left": true,
-						"face-right": true,
-						"face-top": true,
-						"face-bottom": true,
-						"z-tiling-factor": 8,
-						"object-back": -1,
-						"object-front": -1,
-						"object-left": -1,
-						"object-right": -1,
-						"object-top": -1,
-						"object-bottom": -1
-					},
-					"uid": 134,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1829,
-						"y": 918,
-						"width": 120,
-						"height": 120,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

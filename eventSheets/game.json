@@ -1821,6 +1821,14 @@
 					"id": "destroy",
 					"objectClass": "bullet2",
 					"sid": 668758486186662
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "bullet2",
+					"sid": 794822559605928,
+					"parameters": {
+						"angle": "Zombie.ПоискПути.MovingAngle"
+					}
 				}
 			],
 			"sid": 783154704104934
@@ -3096,6 +3104,363 @@
 				}
 			],
 			"sid": 605140156507715
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-along-path",
+					"objectClass": "Zombie",
+					"sid": 101059360104035,
+					"behaviorType": "ПоискПути"
+				},
+				{
+					"id": "pick-by-evaluate",
+					"objectClass": "System",
+					"sid": 596416296204479,
+					"parameters": {
+						"object": "Zombie",
+						"expression": "Zombie.ПоискПути.MovingAngle >= 315 & Zombie.ПоискПути.MovingAngle <= 360"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 481443202521126
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 502736382401807,
+					"parameters": {
+						"animation": "\"walk_right\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 176930357576030
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-along-path",
+					"objectClass": "Zombie",
+					"sid": 427335565157723,
+					"behaviorType": "ПоискПути"
+				},
+				{
+					"id": "pick-by-evaluate",
+					"objectClass": "System",
+					"sid": 370955827303555,
+					"parameters": {
+						"object": "Zombie",
+						"expression": "Zombie.ПоискПути.MovingAngle >= 0& Zombie.ПоискПути.MovingAngle <= 45"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 808018627672544
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 781671968971551,
+					"parameters": {
+						"animation": "\"walk_right\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 592590145608049
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-along-path",
+					"objectClass": "Zombie",
+					"sid": 782933343295545,
+					"behaviorType": "ПоискПути"
+				},
+				{
+					"id": "pick-by-evaluate",
+					"objectClass": "System",
+					"sid": 242003570146577,
+					"parameters": {
+						"object": "Zombie",
+						"expression": "Zombie.ПоискПути.MovingAngle >= 135& Zombie.ПоискПути.MovingAngle <= 225"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 259710926492275
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 402426291727414,
+					"parameters": {
+						"animation": "\"walk_left\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 233355810055059
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-along-path",
+					"objectClass": "Zombie",
+					"sid": 726255620218784,
+					"behaviorType": "ПоискПути"
+				},
+				{
+					"id": "pick-by-evaluate",
+					"objectClass": "System",
+					"sid": 494449391837307,
+					"parameters": {
+						"object": "Zombie",
+						"expression": "Zombie.ПоискПути.MovingAngle >= 45& Zombie.ПоискПути.MovingAngle <= 135"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 717863358073629
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 916661298680104,
+					"parameters": {
+						"animation": "\"walk_down\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 301921162299657
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving-along-path",
+					"objectClass": "Zombie",
+					"sid": 768992527972402,
+					"behaviorType": "ПоискПути"
+				},
+				{
+					"id": "pick-by-evaluate",
+					"objectClass": "System",
+					"sid": 182161667715216,
+					"parameters": {
+						"object": "Zombie",
+						"expression": "Zombie.ПоискПути.MovingAngle >= 225& Zombie.ПоискПути.MovingAngle <= 315"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 457207644290346
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 470820732684931,
+					"parameters": {
+						"animation": "\"walk_up\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 717489231190719
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "Zombie",
+					"sid": 437741402089761,
+					"behaviorType": "ПоискПути",
+					"parameters": {
+						"comparison": 0,
+						"speed": "0"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Zombie",
+					"sid": 495032949107604,
+					"parameters": {
+						"animation": "\"walk_up\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 448301794951947,
+					"parameters": {
+						"animation": "\"stand\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Zombie",
+					"sid": 444589532476121,
+					"parameters": {
+						"frame-number": "3"
+					}
+				}
+			],
+			"sid": 956494511326863
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "Zombie",
+					"sid": 364879288025391,
+					"behaviorType": "ПоискПути",
+					"parameters": {
+						"comparison": 0,
+						"speed": "0"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Zombie",
+					"sid": 638687860386911,
+					"parameters": {
+						"animation": "\"walk_down\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 297066556979823,
+					"parameters": {
+						"animation": "\"stand\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Zombie",
+					"sid": 316147538884772,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 982183925157858
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "Zombie",
+					"sid": 428236146383251,
+					"behaviorType": "ПоискПути",
+					"parameters": {
+						"comparison": 0,
+						"speed": "0"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Zombie",
+					"sid": 115144812732798,
+					"parameters": {
+						"animation": "\"walk_right\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 415092153397881,
+					"parameters": {
+						"animation": "\"stand\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Zombie",
+					"sid": 864113151006705,
+					"parameters": {
+						"frame-number": "2"
+					}
+				}
+			],
+			"sid": 379274220249740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-speed",
+					"objectClass": "Zombie",
+					"sid": 223870894998885,
+					"behaviorType": "ПоискПути",
+					"parameters": {
+						"comparison": 0,
+						"speed": "0"
+					}
+				},
+				{
+					"id": "is-animation-playing",
+					"objectClass": "Zombie",
+					"sid": 589590213914882,
+					"parameters": {
+						"animation": "\"walk_left\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Zombie",
+					"sid": 943073749863974,
+					"parameters": {
+						"animation": "\"stand\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Zombie",
+					"sid": 869773905790830,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 407169145336928
 		}
 	],
 	"sid": 206982985980515
